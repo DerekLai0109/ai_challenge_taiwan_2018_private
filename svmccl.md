@@ -6,19 +6,29 @@
 
 The objective of a Linear SVC \(support Vector Classifier\) is ~~_**to fit to**_~~ the data you provided, returning a "best fit" hyperplane that categorizes your data. After getting the hyperplane, you can feed some features to your classifier to see what the "predicted" class is.
 
-**Import packages**![](/assets/SVM_CODE_01.png) Maitipzlotlib is for data visualization that can show how linear SVC works.
-
-Numpy is for array conversion.
+**Import packages**![](/assets/SVM_CODE_01.png)Maitipzlotlib is for data visualization that can show how linear SVC works. And Numpy is for array conversion.
 
 **Define features**
+
+
+
+
 
 Tese features  will be visualized  as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)Result 01 \(ADD FIG\)
 
 **FIG!!  **
 
-Two groups can be divided without further calculation. But, to draw the exact dividing line need further calculation. 
+Two groups can be divided without further calculation. But, to draw the exact dividing line need further calculation.
 
-![](/assets/SVM_CODE_04.png)![](/assets/SVM_CODE_05.png)![](/assets/SVM_CODE_06.png)
+
+
+
+
+
+
+Two features
+
+
 
 **\*\* 再把CODE&RESULTS貼上來!**
 
