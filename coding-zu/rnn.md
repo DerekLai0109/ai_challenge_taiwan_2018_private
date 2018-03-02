@@ -21,7 +21,9 @@ RNNs is to make use of sequential information. In a traditional neural network, 
 
 RNNs have a "memory" which captures information about what has been calculated so far. In theory RNNs can make use of information in arbitrarily long sequences, but in pratice neural networks are limited to looking back only a few steps \(more on this later\). Here is what a typical RNN looks like:
 
-![](http://www.wildml.com/wp-content/uploads/2015/09/rnn.jpg)A recurrent neural network 
+![](http://www.wildml.com/wp-content/uploads/2015/09/rnn.jpg)Forward computations are involved in the RNN and the unfolding in time of the computation.
+
+Fig. shows a RNN being _unrolled_ \(or unfolded\) into a full network. Unrolling means that we write out the network for the complete sequence. 
 
 ---
 
