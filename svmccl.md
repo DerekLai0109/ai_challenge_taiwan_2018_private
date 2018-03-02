@@ -8,13 +8,13 @@ The objective of a Linear SVC \(support Vector Classifier\) is ~~_**to fit to**_
 
 **Import packages**![](/assets/SVM_CODE_01.png) Maitipzlotlib is for data visualization that can show how linear SVC works.
 
-Numpy is for array conversion. 
+Numpy is for array conversion.
+
+
 
 **Define features**
 
-These features  will be visualized  as axis on the graph.
-
-![](/assets/SVM_CODE_02.png)
+Tese features  will be visualized  as axis on the graph.
 
 ![](/assets/SVM_CODE_02.png)![](/assets/SVM_CODE_03.png)
 
