@@ -19,13 +19,11 @@ If you aren't familiar with basic Neural Networks, you may have to read [Impleme
 
 RNNs is to make use of sequential information. In a traditional neural network, all inputs and outputs are independent of each other. But if we want to predict the next word in a sentence, we better know which words came before it. RNNs are called _recurrent_ because neural networks perform the same task for every element of a sequence, with the output depended on the previous computations.
 
-RNNs have a "memory" which captures information about what has been calculated so far. In theory RNNs can make use of information in arbitrarily long sequences, but in pratice neural networks are limited to looking back only a few steps \(more on this later\). Here is what a typical RNN looks like:
+RNNs have a "memory" which captures information about what has been calculated so far. In theory RNNs can make use of information in arbitrarily long sequences, but in practice neural networks are limited to looking back only a few steps \(more on this later\). Here is what a typical RNN looks like:
 
 ![](http://www.wildml.com/wp-content/uploads/2015/09/rnn.jpg)Forward computations are involved in the RNN and the unfolding in time of the computation.
 
-Fig. shows a RNN being _unrolled_ \(or unfolded\) into a full network. Unrolling means that we write out the network for the complete sequence. For example, if the sequence is a sentence of 5 words, the network would be unrolled into a 5-layer neural network, one layer for each work. The formulas for computation happening in a RNN are as follows:
-
-
+Fig. shows a RNN being _unrolled_ \(or unfolded\) into a full network. Unrolling means that we write out the network for the complete sequence. For example, if the sequence is a sentence of 5 words, the network would be unrolled into a 5-layer neural network, one layer for each word. The formulas for computation happening in a RNN are as follows:
 
 ---
 
