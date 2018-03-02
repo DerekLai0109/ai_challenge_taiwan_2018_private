@@ -10,23 +10,21 @@ The objective of a Linear SVC \(support Vector Classifier\) is ~~_**to fit to**_
 
 **Define features**
 
-
-
-
-
-Tese features  will be visualized  as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)Result 01 \(ADD FIG\)
+These features  will be visualized  as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)Result 01 \(ADD FIG\)
 
 **FIG!!  **
 
+**Compile an array**
+
 Two groups can be divided without further calculation. But, to draw the exact dividing line need further calculation.
 
+To feed data into the machine learning algorithm, compiling an array of the features is required, rather than having them as x and y coordinate values. 
+
+The features \(x and y\) is stored in X variable.![](/assets/SVM_CODE_04.png)
 
 
 
-
-
-
-Two features
+Two features de rive a 2D graph. Thus, th problem occurs when there are thousands more features.
 
 
 
