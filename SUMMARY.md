@@ -6,4 +6,5 @@
 ## Coding 組
 
 * [RNN\_Ting](coding-zu/rnn.md)
+* [SVM\_CCL](svmccl.md)
 
