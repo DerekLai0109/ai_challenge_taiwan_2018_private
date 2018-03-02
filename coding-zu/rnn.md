@@ -25,9 +25,7 @@ RNNs have a "memory" which captures information about what has been calculated s
 
 Fig. shows a RNN being _unrolled_ \(or unfolded\) into a full network. Unrolling means that we write out the network for the complete sequence. For example, if the sequence is a sentence of 5 words, the network would be unrolled into a 5-layer neural network, one layer for each work. The formulas for computation happening in a RNN are as follows:
 
-x&lt;sub&gt;t&lt;/sub&gt;$$$$
 
-$$$$$$$$
 
 ---
 
