@@ -10,13 +10,9 @@ The objective of a Linear SVC \(support Vector Classifier\) is ~~_**to fit to**_
 
 Numpy is for array conversion.
 
-
-
 **Define features**
 
-Tese features  will be visualized  as axis on the graph.
-
-![](/assets/SVM_CODE_02.png)![](/assets/SVM_CODE_03.png)
+Tese features  will be visualized  as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)
 
 ![](/assets/SVM_CODE_04.png)![](/assets/SVM_CODE_05.png)![](/assets/SVM_CODE_06.png)
 
