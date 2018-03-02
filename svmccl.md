@@ -12,7 +12,11 @@ Numpy is for array conversion.
 
 **Define features**
 
-Tese features  will be visualized  as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)
+Tese features  will be visualized  as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)Result 01 \(ADD FIG\)
+
+**FIG!!  **
+
+Two groups can be divided without further calculation. But, to draw the exact dividing line need further calculation. 
 
 ![](/assets/SVM_CODE_04.png)![](/assets/SVM_CODE_05.png)![](/assets/SVM_CODE_06.png)
 
