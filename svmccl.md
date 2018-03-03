@@ -2,7 +2,9 @@
 
 180302 CCL
 
-The objective of a Linear SVC \(support Vector Classifier\) is ~~_**to fit to**_~~ the data you provided, returning a "best fit" hyperplane that categorizes your data. After getting the hyperplane, you can feed some features to your classifier to see what the "predicted" class is. A simple supervised learning example working with Linear SVC is descirbed in this article. 
+The objective of a Linear SVC \(support Vector Classifier\) is ~~_**to fit to**_~~ the data you provided, returning a "best fit" hyperplane that categorizes your data. After getting the hyperplane, you can feed some features to your classifier to see what the "predicted" class is. A simple supervised learning example working with Linear SVC is descirbed in this article.
+
+![](/assets/189658.jpg)![](/assets/189660.jpg)
 
 **Import packages**![](/assets/SVM_CODE_01.png)Maitipzlotlib is for data visualization that can show how linear SVC works. And Numpy is for array conversion.
 
