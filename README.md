@@ -16,8 +16,6 @@ The deep learning framework outperforms state-of-the-art approaches in NLP tasks
 
 Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\).
 
-
-
 Fig shows the schematic of hidden Markov models \(HMMs\), Gaussian mixture models \(GMMs\) and deep neural network \(DNN\).  
 The hidden Markov models \(HMMs\) can be used to deal with the temporal variability of speech.  
 The Gaussian mixture models \(GMMs\) can be used to determine how well each state of each HMM fits a frame or a short window of frames of coefficients that represents the acoustic input \[4\].  
@@ -26,9 +24,11 @@ Deep neural networks \(DNNs\) have been shown to outperforms GMMS on a variety o
 
 
 
+Deep learning methods and a technical overview of distributional semantics, i.e., word2vec and CNN, for NLP in a tutorial manner is present in \[5\].
+
+Various models are summarized, compared in \[0\].
 
 
-![](/assets/syntactic_semantic.jpg)
 
 \[0\]
 
@@ -49,11 +49,12 @@ R. Collobert, J. Weston, L. Bottou, M. Karlen, K. Kavukcuoglu, and P. Kuksa, Â¡Â
 
 \[4\]
 
-G. Hinton, D. Deng, D. Yu, G. E. Dahl, etc. \`\`Deep Neural Networks for Acoustic Modeling in Speech Recognition,"IEEE Signal Processing Magzine, vol.82, November, 2012.
+G. Hinton, D. Deng, D. Yu, G. E. Dahl, etc. \`\`Deep Neural Networks for Acoustic Modeling in Speech Recognition,"  
+IEEE Signal Processing Magzine, vol.82, November, 2012.
 
 
 
+\[5\]
 
-
-
+Y. Goldberg, \`\`A primer on neural network models for natu- ral language processing," Journal of Artificial Intelligence Research, vol. 57, pp. 345-420, 2016. 
 
