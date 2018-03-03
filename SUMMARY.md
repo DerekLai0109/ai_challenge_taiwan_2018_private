@@ -4,6 +4,6 @@
 * [NLP Tasks](chapter1.md)
 * [Distributed representation](distributed-representation.md)
   * [Word embedding](distributed-representation/word-embedding.md)
-  * Character Embedding
-  * Word2Vector
+  * [Word2Vector](distributed-representation/word2vector.md)
+  * [Character Embedding](distributed-representation/character-embedding.md)
 
