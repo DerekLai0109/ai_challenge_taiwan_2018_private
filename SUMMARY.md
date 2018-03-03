@@ -1,5 +1,9 @@
 # Summary
 
 * [Recent Trend in NLP](README.md)
-* [First Chapter](chapter1.md)
+* [NLP Tasks](chapter1.md)
+* [Distributed representation](distributed-representation.md)
+  * [Word embedding](distributed-representation/word-embedding.md)
+  * Character Embedding
+  * Word2Vector
 
