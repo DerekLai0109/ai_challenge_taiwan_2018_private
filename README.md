@@ -12,23 +12,23 @@ Traditional machine learning based NLP systems relies on hand-craft features whi
 Deep learning methods employ multiple processing layers to learn hierarchical representations of data, and have produced state-of-the-art results in many domains \[0\].  
 The deep learning framework outperforms state-of-the-art approaches in NLP tasks such as named-entity recognition \(NER\), semantic role labeling \(SRL\), and POS tagging \[3\].
 
+![](/assets/HMM_GMM_DNN.jpg)
+
+Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\).
 
 
 
-
-
-
-
-
-Fig\ref{HMM\_GMM\_DNN} shows the schematic of hidden Markov models \(HMMs\), Gaussian mixture models \(GMMs\) and deep neural network \(DNN\).The hidden Markov models \(HMMs\) can be used to deal with the temporal variability of speech.The Gaussian mixture models \(GMMs\) can be used to determine how well each state of each HMM fits a frame or a short window of frames of coefficients that represents the acoustic input \cite{G.Hinton\_2012}.An alternative way to evaluate the fit is to use a feed-forward neural network that takes several frames of coefficients as input and produces posterior probabilities over HMM states as output.Deep neural networks \(DNNs\) have been shown to outperforms GMMS on a variety of speech recognition benchmarks \cite{G.Hinton\_2012}.
+Fig shows the schematic of hidden Markov models \(HMMs\), Gaussian mixture models \(GMMs\) and deep neural network \(DNN\).  
+The hidden Markov models \(HMMs\) can be used to deal with the temporal variability of speech.  
+The Gaussian mixture models \(GMMs\) can be used to determine how well each state of each HMM fits a frame or a short window of frames of coefficients that represents the acoustic input \[4\].  
+An alternative way to evaluate the fit is to use a feed-forward neural network that takes several frames of coefficients as input and produces posterior probabilities over HMM states as output.  
+Deep neural networks \(DNNs\) have been shown to outperforms GMMS on a variety of speech recognition benchmarks \[4\].
 
 
 
 
 
 ![](/assets/syntactic_semantic.jpg)
-
-
 
 \[0\]
 
@@ -40,12 +40,20 @@ T. Mikolov, I. Sutskever, K. Chen, G. S. Corrado, and J. Dean, ¡§Distributed r
 
 \[2\]
 
-R. Socher, A. Perelygin, J. Y. Wu, J. Chuang, C. D. Manning,   
+R. Socher, A. Perelygin, J. Y. Wu, J. Chuang, C. D. Manning,  
 A. Y. Ng, C. Potts et al., Recursive deep models for semantic compositionality over a sentiment treebank," in Proceedings of the conference on empirical methods in natural language processing \(EMNLP\), vol. 1631, p. 1642, 2013.
 
 \[3\]
 
 R. Collobert, J. Weston, L. Bottou, M. Karlen, K. Kavukcuoglu, and P. Kuksa, ¡§Natural language processing \(almost\) from scratch," Journal of Machine Learning Research, vol. 12, no. Aug, pp. 2493-2537, 2011.
+
+\[4\]
+
+G. Hinton, D. Deng, D. Yu, G. E. Dahl, etc. \`\`Deep Neural Networks for Acoustic Modeling in Speech Recognition,"IEEE Signal Processing Magzine, vol.82, November, 2012.
+
+
+
+
 
 
 
