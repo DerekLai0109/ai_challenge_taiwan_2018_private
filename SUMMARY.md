@@ -1,5 +1,5 @@
 # Summary
 
 * [Recent Trend in NLP](README.md)
-* [First Chapter](chapter1.md)
+* [NLP Tasks](chapter1.md)
 
