@@ -1,7 +1,7 @@
 # Recent Trends in Deep Learning Based Natural Language Processing
 
 Natural language processing \(NLP\) are computational techniques for the automatic analysis and representation of human language.  
- NLP enables computers to perform natural language related tasks, ranging from parsing and part-of-speech \(POS\) tagging, to machine translation and dialog systems.
+ NLP enables computers to perform natural language related tasks.
 
 Machine learning approaches targeting NLP problems have been based on shallow models \(e.g., SVM and logistic regression\) trained on high dimensional and sparse features for decades.  
  Neural networks based on dense vector representations have been producing superior results on various NLP tasks in the last few years.  
@@ -22,13 +22,9 @@ The Gaussian mixture models \(GMMs\) can be used to determine how well each stat
 An alternative way to evaluate the fit is to use a feed-forward neural network that takes several frames of coefficients as input and produces posterior probabilities over HMM states as output.  
 Deep neural networks \(DNNs\) have been shown to outperforms GMMS on a variety of speech recognition benchmarks \[4\].
 
-
-
 Deep learning methods and a technical overview of distributional semantics, i.e., word2vec and CNN, for NLP in a tutorial manner is present in \[5\].
 
-Various models are summarized, compared in \[0\].
-
-
+Various models are summarized, compared in \[0\].
 
 \[0\]
 
@@ -52,9 +48,7 @@ R. Collobert, J. Weston, L. Bottou, M. Karlen, K. Kavukcuoglu, and P. Kuksa, Â¡Â
 G. Hinton, D. Deng, D. Yu, G. E. Dahl, etc. \`\`Deep Neural Networks for Acoustic Modeling in Speech Recognition,"  
 IEEE Signal Processing Magzine, vol.82, November, 2012.
 
-
-
 \[5\]
 
-Y. Goldberg, \`\`A primer on neural network models for natu- ral language processing," Journal of Artificial Intelligence Research, vol. 57, pp. 345-420, 2016. 
+Y. Goldberg, \`\`A primer on neural network models for natu- ral language processing," Journal of Artificial Intelligence Research, vol. 57, pp. 345-420, 2016.
 
