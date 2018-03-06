@@ -25,6 +25,10 @@ RNNs have a "memory" which captures information about what has been calculated s
 
 Fig. shows a RNN being _unrolled_ \(or unfolded\) into a full network. Unrolling means that we write out the network for the complete sequence. For example, if the sequence is a sentence of 5 words, the network would be unrolled into a 5-layer neural network, one layer for each word. The formulas for computation happening in a RNN are as follows:
 
+* ![](/assets/RNN/x_t.png) is the input at time step _t_. For example, ![](/assets/RNN/x_1.png) could be a one-hot vector, corresponding to the second word of a sentence.
+* ![](/assets/RNN/s_t.png) is the hidden state at time step _t_. It is the "memory" of the network. ![](/assets/RNN/s_t.png) is cauculated based on the previous hidden state and the input at the current step: ![](/assets/RNN/s_t_1.png). The function _f_ usually is a nonlinearity such as **tanh** or **ReLU**. ![](/assets/RNN/s_1.png) is required to calculate the first hidden state, is typically initialized to all zeroes.
+* ![](/assets/RNN/o_t.png) is the output at step _t_, For example, if predict the next word in a sentence, it would be a vector of probabilities across vocabulary. ![](/assets/RNN/o_t_1.png).
+
 ---
 
 vanish v. 消失
