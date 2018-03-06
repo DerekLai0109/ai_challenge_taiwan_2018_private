@@ -26,6 +26,11 @@ vectors = np.array([[0.1,   0.3],  # queen
                     [-0.5,  0.4],  # car
                     [-0.45, 0.3]]) # bike
 
+sb.plt.plot(vectors[:, 0], vectors[:, 1], 'o')
+sb.plt.xlim(-0.6, 0.3)
+sb.plt.ylim(-0.3, 0.5)
+for word, x, y in zip(words, vectors[:, 0], vectors[:, 1]):
+    sb.plt.annotate(word, (x, y), size=12)
 ```
 
 
