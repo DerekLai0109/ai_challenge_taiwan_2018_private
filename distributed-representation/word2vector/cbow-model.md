@@ -6,7 +6,12 @@ Considering the CBOW model with the context word number of one, the CBOW model i
 
 In the bigram model, a word is given to predict the next word.
 
-![](/assets/import.png)Architecture of the CBOW model with only one word in the context. $$\bar{\bar{W}}$$ and $$\bar{\bar{W}}'$$ are the input-to-hidden and hidden-to-output weight matrices. $$\bar{v}_{w_k}$$ is the $$k$$-th row of $$\bar{\bar{W}}$$ ; $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$.
+![](/assets/import.png)
+
+
+
+Architecture of the CBOW model with only one word in the context. $$\bar{\bar{W}}$$ and $$\bar{\bar{W}}'$$ are the input-to-hidden and hidden-to-output weight matrices.  
+ $$\bar{v}_{w_k}$$ is the $$k$$-th row of $$\bar{\bar{W}}$$ ; $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$.
 
 Fig shows the architecture of the CBOW model with only one context word.
 
@@ -16,8 +21,6 @@ The vocabulary size is _V_, which is the number of neurons in the input layer an
 The input is a one-hot encoded vector as
 
 $$\bar{x} = [x_1, x_2, \cdots, x_V]^t$$
-
-
 
 \[1\]
 
