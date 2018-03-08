@@ -2,31 +2,13 @@
 
 # 
 
-if $$h \ne 0$$
+$$h=1$$
 
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 
-$$
- h \ne 0  h_0^1 h^{(2)}
-$$
+$$\begin{pmatrix}a & b\\c & d\\\hline1 & 0\\0 & 1\end{pmatrix}$$
 
-
-will  $$h_0^{(2)}$$ make it good
-
-$$h \ne 0$$
-
-if $$a \geq 0$$
-
-$$a=\left \{ \begin{array}{ll}$$
-
-```
-$$
-\begin{matrix}
-1 & x & x^2 \\    
-1 & y & y^2 \\
-1 & z & z^2 \\
-\end{matrix}
-$$
-```
+$$\left[\begin{matrix}1 & x & x^2 \\1 & y & y^2 \\1 & z & z^2 \\\end{matrix}\right]$$
 
 
 
