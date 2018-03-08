@@ -3,18 +3,20 @@
 # 
 
 if $$h \ne 0$$
+
+
 $$
  h \ne 0  h_0^1 h^{(2)}
 $$
- will  $$h_0^{(2)}$$ make it good
+
+
+will  $$h_0^{(2)}$$ make it good
 
 $$h \ne 0$$
 
 if $$a \geq 0$$
 
 $$a=\left \{ \begin{array}{ll}$$
-
-
 
 ```
 $$
@@ -24,9 +26,6 @@ $$
 1 & z & z^2 \\
 \end{matrix}
 $$
-
-
-
 ```
 
 

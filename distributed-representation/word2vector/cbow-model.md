@@ -10,11 +10,12 @@ In the bigram model, a word is given to predict the next word.
 
 Fig shows the architecture of the CBOW model with only one context word.
 
-The vocabulary size is _V_, which is the number of neurons in the input layer and the output layer, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_.
+The vocabulary size is _V_, which is the number of neurons in the input layer and the output layer, and the hidden layer size is _N_.  
+ Usually, _V_ &gt;&gt; _N_.
 
 The input is a one-hot encoded vector as
 
-
+$$a \ne 0$$
 
 \[1\]
 
