@@ -42,9 +42,17 @@ $$
 \bar{v}_{w_j}'^{(new)} = \bar{v}_{w_j}'^{(old)} - \eta \sum_{m = 1}^C e_{j,m} \bar{h}  = \bar{v}_{w_j}'^{(old)} - \eta \sum_{m = 1}^C e_{j,m} \bar{v}_{w_k}
 , \ j = 1, 2, \cdots, V \tag{5}
 $$
-where the prediction error $$e_{j,m}$$ is summed across all context words in the output layer. Note that it is needed to apply the update equation for every hidden-to-output weight for each training instance.
+
+
+where the prediction error $$e_{j,m}$$ is summed across all context words in the output layer.  
+ Note that it is needed to apply the update equation for every hidden-to-output weight for each training instance.
 
 # Update equation for input-to-hidden weights
 
+By using $$(1)$$ and $$(2)$$, the derivative of $$E$$ to $$h_i$$ is obtained as
+$$
+\frac{\partial E}{\partial h_i} = \sum_{j = 1}^V \sum_{m = 1}^C \frac{\partial E}{\partial u_{j,m}} \frac{\partial u_{j,m}}{\partial h_i}
+ = \sum_{j = 1}^V \sum_{m = 1}^C e_{j,m} w_{ij}' \tag{6}
+$$
 
 

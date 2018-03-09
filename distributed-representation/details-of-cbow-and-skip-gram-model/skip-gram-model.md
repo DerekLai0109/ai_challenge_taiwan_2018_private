@@ -20,8 +20,6 @@ or represented component-wise as
 $$
 h_i = v_{w_k, i} = w_{ki} \tag{2}
 $$
-
-
 On the output layer, instead of outputing one multinomial distribution, output $$C$$ multinomial distribtions with each multinomial distribtion computed using the same hidden-to-output weight matrix $$\bar{\bar{W}}'$$. The input of $$j$$-th neuron on $m$-th panel in the output layer is obtained as
 
 
