@@ -16,5 +16,5 @@
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 * [Language Model](language-model.md)
-  * Language Model \(Professor 李宏毅\)
+  * [Language Model \(Professor 李宏毅\)](language-model/language-model-professor-li-hong-6bc529.md)
 
