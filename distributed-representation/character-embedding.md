@@ -10,8 +10,6 @@ $$\begin{pmatrix}a & b\\c & d\\\hline1 & 0\\0 & 1\end{pmatrix}$$
 
 $$\left[\begin{matrix}1 & x & x^2 \\1 & y & y^2 \\1 & z & z^2 \\\end{matrix}\right]$$
 
-
-
 $$f(x)=\left\{
 \begin{aligned}
 x & = & \cos(t) \\
@@ -36,13 +34,6 @@ $$\alpha A A \beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E
 \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P 
 \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon 
 \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega$$
-$$
-\begin{equation} 
-a=1 
-\tag{e2}
-\end{equation}
-$$
-
 
 
 $$
@@ -60,7 +51,20 @@ a=1
 \tag{e2}
 \end{equation}
 $$
+
+
+
+$$
+\begin{equation} 
+a=1 
+\tag{e2}
+\end{equation}
+$$
+
+
 $$\eqref{e2}$$
 
 $$\eqref{e2}$$
+
+$$\ref{e2}$$
 
