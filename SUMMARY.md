@@ -15,4 +15,6 @@
 * [RNN](rnn.md)
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
+* [Language Model](language-model.md)
+  * Language Model \(Professor 李宏毅\)
 
