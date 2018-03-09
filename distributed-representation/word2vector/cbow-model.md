@@ -1,4 +1,4 @@
-# One-context word
+# CBOW Model with One-context word
 
 Derek 03/09/2018
 
@@ -21,6 +21,14 @@ The vocabulary size is _V_, which is the number of neurons in the input layer an
 The input is a one-hot encoded vector as
 
 $$\bar{x} = [x_1, x_2, \cdots, x_V]^t$$
+
+
+
+$$\left[\begin{matrix}1 & x & x^2 \\1 & y & y^2 \\1 & z & z^2 \\\end{matrix}\right]$$
+
+
+
+
 
 \[1\]
 
