@@ -9,7 +9,7 @@
   * [Character Embedding](distributed-representation/character-embedding.md)
   * [Details of CBOW and Skip-gram Models](distributed-representation/details-of-cbow-and-skip-gram-model.md)
     * [CBOW model](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model.md)
-    * Skip-gram model
+    * [Skip-gram model](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model.md)
 * [RNN](rnn.md)
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
