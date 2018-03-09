@@ -1,4 +1,4 @@
-# Pytorch Seq2Seq
+# Seq2Seq using PyTorch framework
 
 MM 03/01/2018
 
