@@ -33,5 +33,11 @@ for word, x, y in zip(words, vectors[:, 0], vectors[:, 1]):
     sb.plt.annotate(word, (x, y), size=12)
 ```
 
+![](/assets/1.png)
 
+
+
+**Reference**
+
+[http://nbviewer.jupyter.org/github/fbkarsdorp/doc2vec/blob/master/doc2vec.ipynb](http://nbviewer.jupyter.org/github/fbkarsdorp/doc2vec/blob/master/doc2vec.ipynb)
 
