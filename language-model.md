@@ -1,23 +1,21 @@
-# Language Model \(prof: 李宏毅\)
+# Language Model \(professor: 李宏毅\)
 
 安安 03/09/2018
 
+## 語言模型\(Language Model\)
 
+語言模型描述一個句子、字串\(Word Sequence\)的機率。
 
-一、 什麼是語言模型\(Language Model\)？
+一個字串由許多字排序組合而成
 
-語言模型描述一個字串\(Word Sequence\)的機率。對於一個字串：
-
-W1, W2, W3, ……, Wn
-
-其中W表示一個字\(Word\)，而組合而成的字串即是句子。  
-一個字串的機率可以表現如下：
+字串=\[W1, W2, W3, ……, Wn\], 其中W表示一個字\(Word\)。  
+一個字串的機率可以表現為：
 
 ```
 P(W1, W2, W3, ……, Wn)
 ```
 
-舉例來說，下列兩個英文字串：
+舉例來說，考慮下列兩個英文字串：
 
 ```
 字串一：“recognize speech”
@@ -124,5 +122,13 @@ RNN 適合long term information
 \[3\] softmax函數的概念是取出一輸入向量的最大值項，但其餘項並沒有完全捨棄。  
 \[4\]過適現象發生於統計模型使用過多參數，但擁有的數據過少，反而破壞了模型一般化的能力。
 
-\[0\] https://www.youtube.com/watch?v=xCGidAeyS4M&t=8s
+
+
+
+
+
+
+## Reference
+
+\[0\] [https://www.youtube.com/watch?v=xCGidAeyS4M&t=8s](https://www.youtube.com/watch?v=xCGidAeyS4M&t=8s)
 
