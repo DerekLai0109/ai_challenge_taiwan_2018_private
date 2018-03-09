@@ -1,5 +1,7 @@
 # Word Embedding
 
+MM 03/01/2018
+
 Distributed representations \(embeddings\) are mainly learnt through context. During 1990s, several research developments marked the foundataions of research in distributional semantics. Later developments were adaptions of these early works, which led to creation of topic models like  language models \[1\]. These works laid out the foundations of representation learning.
 
 ![](/assets/distributional_vectors_by_a_D_dimensional_vec.jpg)
@@ -30,10 +32,16 @@ A neural language modelwas proposed to learn distributed representations for wor
 Fig. shows the neural language model, and C\(i\) is the $i$th word embedding.  
 It is argued that once these word representations was complied into sentence representations using joint probability of word sequences, they achieved an exponential number of semantically neighboring sentences. This helped in generalization, since unseen sentences could gather higher confidence if word sequences with similar words \(in respect to nearby word representation\) were already seen.
 
-The utility of pre-trained word embeddings were first shown in \[2\].   
+The utility of pre-trained word embeddings were first shown in \[2\].  
 The work established word embeddings as a tool for NLP taks.  
-The continuous bag-of-words \(CBOW\) and skip-gram models were proposed to efficiently construct high-quality distributed vector representations \[3\].   
+The continuous bag-of-words \(CBOW\) and skip-gram models were proposed to efficiently construct high-quality distributed vector representations \[3\].  
 Another famous word embedding method was proposed as essentially a "count-based model" \[4\]. The word co-occurrence count matrix is preprocessed by normalizing the counts and log-smoothing them. This matrix is then factorized to get lower dimensional representations which is done by minimizing a "reconstruction loss".
+
+
+
+\[0\]
+
+Young, Tom, et al. "Recent trends in deep learning based natural language processing." arXiv preprint arXiv:1708.02709 \(2017\).
 
 \[1\]
 

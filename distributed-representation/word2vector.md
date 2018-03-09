@@ -1,5 +1,7 @@
 # Word 2 Vector
 
+MM 03/05/2018
+
 ![](/assets/CBOW_skip_gram_model.jpg)CBOW and skip gram Model
 
 Fig. shows the schematic for CBOW and skip gram model.
@@ -10,14 +12,14 @@ The skip-gram model does the exact opposite of the CBOW model, by predicting the
 The context words are assumed to be located symmetrically to the target words within a distance equal to the window size in both directions.  
 Considering a simplified version of the CBOW model where only one word is considered in the context. This essentially replicates a bigram language model.
 
-
-
-
-
 ![](/assets/CBOW_model.jpg)
 
-Fig. shows the  CBOW model, which is a fully connected neural network with one hidden layer.   
+Fig. shows the  CBOW model, which is a fully connected neural network with one hidden layer.  
 The input layer takes the one-hot vector of context word, and has V neurons while the hidden layer has $N$ neurons. The output layer is softmax of all words in the vocabulary.
+
+\[0\]
+
+Young, Tom, et al. "Recent trends in deep learning based natural language processing." arXiv preprint arXiv:1708.02709 \(2017\).
 
 \[1\]
 

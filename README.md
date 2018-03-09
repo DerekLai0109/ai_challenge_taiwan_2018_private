@@ -1,5 +1,7 @@
 # Recent Trends in Deep Learning Based Natural Language Processing
 
+MM 03/01 2018
+
 Natural language processing \(NLP\) are computational techniques for the automatic analysis and representation of human language.  
  NLP enables computers to perform natural language related tasks.
 

@@ -9,6 +9,6 @@
     * [Word2Vector\_coding](distributed-representation/word2vector/word2vectorcoding.md)
   * [Character Embedding](distributed-representation/character-embedding.md)
 * [RNN](rnn.md)
-* SVM
+* [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 

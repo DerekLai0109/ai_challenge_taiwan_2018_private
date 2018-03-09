@@ -1,5 +1,7 @@
 # One-context word
 
+Derek 03/09/2018
+
 The CBOW model predicts one target word by its context \[1\].
 
 Considering the CBOW model with the context word number of one, the CBOW model is reduced to a bigram model.
@@ -7,8 +9,6 @@ Considering the CBOW model with the context word number of one, the CBOW model i
 In the bigram model, a word is given to predict the next word.
 
 ![](/assets/import.png)
-
-
 
 Architecture of the CBOW model with only one word in the context. $$\bar{\bar{W}}$$ and $$\bar{\bar{W}}'$$ are the input-to-hidden and hidden-to-output weight matrices.  
  $$\bar{v}_{w_k}$$ is the $$k$$-th row of $$\bar{\bar{W}}$$ ; $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$.
