@@ -27,11 +27,11 @@ $$
 $$
 
 
-The one-hot encoding means that, for word $$w_k (k = 1,2, \cdots, V)$$, the $$k$$-th component is $$x_k = 1$$ and other components are $$x_{i \neq k} = 0$$. 
-
-
+The one-hot encoding means that, for word $$w_k (k = 1,2, \cdots, V)$$, the $$k$$-th component is $$x_k = 1$$ and other components are $$x_{i \neq k} = 0$$.
 
 The input-to-hidden weight between the neuron $$k$$ in the input layer and the neuron $$i$$ in the hidden layer is denoted as $$w_{ki}$$ , forming a $$V \times N$$ weight matrix as
+
+
 $$
 \bar{\bar{W}} = \left[
 \begin{matrix}
@@ -44,6 +44,8 @@ w_{V1} & w_{V2} & \cdots & \cdots & w_{VN}
 \end{matrix}
 \right] \tag{2}
 $$
+
+
 Thus, output of the hidden layer is obtained as
 
 
@@ -51,11 +53,11 @@ $$
 \bar{h} = \bar{\bar{W}}^t \cdot \bar{x} = \bar{v}_{w_k}
 \tag{3}
 $$
+
+
 where the superscript $$t$$ means transpose and $$\bar{v}_{w_k}$$ is the $$N$$-dimensional vector representation of the input word $$w_k$$ and its components are the values in the $$k$$-th row of $$\bar{\bar{W}}$$.
 
-
-
-The hidden-to-output weights are denoted as $$w_{ij}'$$, which form a $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as 
+The hidden-to-output weights are denoted as $$w_{ij}'$$, which form a $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as
 
 
 $$
@@ -72,22 +74,34 @@ w_{N1}' & w_{N2}' & \cdots & \cdots & w_{NV}'
 $$
 
 
-The vector $$\bar{h}$$ is weighted by $$\bar{\bar{W}}'$$ to obtain the input of the output layer as 
+The vector $$\bar{h}$$ is weighted by $$\bar{\bar{W}}'$$ to obtain the input of the output layer as
+
+
 $$
 \bar{u} = \bar{\bar{W}}'^t \cdot \bar{h} = \left[ \bar{v}'_{w_1}, \cdot, \bar{v}'_{w_j}, \cdot, \bar{v}'_{w_V}\right]^t \cdot \bar{h} 
 \tag{4}
 $$
-namely, 
+
+
+namely,
+
+
 $$
 u_j = \bar{v}'_{w_j} \cdot \bar{v}_{w_k}, \ j = 1, \cdots, V 
 \tag{5}
 $$
-where $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$. The $$j$$-th neuron in the output layer has a softmax output as 
+
+
+where $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$. The $$j$$-th neuron in the output layer has a softmax output as
+
+
 $$
 y_j = p(w_j | w_k)= \frac{e^{u_j}}{\displaystyle \sum_{j = 1}^V e^{u_j}} 
 \tag{6}
 $$
-By substituting $$\eqref{5}$$
+
+
+By substituting $$\eqref{5}$$ into 
 
 \[1\]
 
