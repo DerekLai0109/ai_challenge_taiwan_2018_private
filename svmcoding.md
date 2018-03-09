@@ -2,29 +2,40 @@
 
 180302 CCL
 
-The objective of a Linear SVC \(support Vector Classifier\) is to obtain a best fit hyperplane \(classifier\) to categorize the data.
+The objective of a Linear SVC \(Support Vector Classifier\) isto obtain a "best fit" hyperplane to categorizes the data. After getting the hyperplane, the classifier can predict the label \(or class，類別\) based on the input features. A simple supervised learning example working with Linear SVC isdescribedin this article \(Fig. 01\).
 
-After getting the hyperplane, the classifier can predict the class \(類別\) based on the input features.
+![](/assets/procedure_of_conducting_linear_SVC.png)
 
-A simple supervised learning example working with Linear SVC is descirbed in this article.
+**Import packages**![](/assets/SVM_CODE_01.png)  
+Numpy is for array conversion.
 
-![](/assets/SVM_Procedure.jpg)
+Maitipzlotlib is for data visualization that can show how linear SVC works.
 
-**Import packages**![](/assets/SVM_CODE_01.png)Maitipzlotlib is for data visualization that can show how linear SVC works. And Numpy is for array conversion.
+
 
 **Define features**
 
-These features will be visualized as axis on the graph.![](/assets/SVM_CODE_02.png)Graph the data.![](/assets/SVM_CODE_03.png)Result 01 \(ADD FIG\)
+Considering the data points with \(x,y\) coordinate values of \(1,2\), \(5,8\), \(1.5,1.8\) \(8,8\), \(1,0.6\) and \(9,11\). These data has two dimension feature, i.e., x and y coordinate values.
 
-**FIG!!  **
+Therefore, these data serves as two-feature data example, and they can be expressed as.![](/assets/SVM_CODE_02.png)
+
+##### Graph the data.
+
+![](/assets/distribution_data_fig2.png)F**ig. 02 The distribution of data features**
+
+From Fig. 02, two groups can be easily divided. But, to draw the exact dividing line need further calculation.
 
 **Compile an array**
 
-Two groups can be divided without further calculation. But, to draw the exact dividing line need further calculation.
+The array formats are required when running the machine learning algorithm. Thus, the features \(x and y\) are stored in an array of two elements. \(A variable\)
 
-To feed data into the machine learning algorithm, compiling an array of the features is required, rather than having them as x and y coordinate values.
+In the supervised learning, data sets are labeled \(or classed\) for training purposes. The labeling rule is: 0 are assigned to lower feature pairs and 1 to the higher ones. \(L variable\)
 
-The features \(x and y\) is stored in X variable.![](/assets/SVM_CODE_04.png)
+
+
+
+
+.![](/assets/SVM_CODE_04.png)
 
 Two features derive a 2D graph. Thus, the problem occurs when there are thousands of more features.
 
