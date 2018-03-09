@@ -14,6 +14,7 @@
       * [Update equations for hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context/update-equations-for-hidden-to-output-and-input-to-hidden-weights.md)
     * [Skip-gram model](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model.md)
       * [Update equation for the hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model/update-equation-for-the-hidden-to-output-and-input-to-hidden-weights.md)
+    * [Efficiency Improvement Techniques](distributed-representation/details-of-cbow-and-skip-gram-model/efficiency-improvement-techniques.md)
   * [Sequence\_to\_Sequence](distributed-representation/sequenceto-sequence.md)
     * [Sequence2sequence\_using\_Pytorch](distributed-representation/sequenceto-sequence/sequence2sequenceusing-pytorch.md)
 * [RNN](rnn.md)
