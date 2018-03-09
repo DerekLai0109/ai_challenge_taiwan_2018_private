@@ -110,9 +110,16 @@ y_j = p(w_j | w_k) = \frac{e^{\bar{v}'_{w_j} \cdot \bar{v}_{w_k}}}{\displaystyle
 $$
 
 
-Note that $$\bar{v}_w$$ and $$\bar{v}'_w$$ are two representations of word $$w$$ and are called input vector and output vector, respectively.The training objective is to maximize the probability of observing the target word $$w_{j_o}$$ given the input context word $$w_k$$.
+Note that $$\bar{v}_w$$ and $$\bar{v}'_w$$ are two representations of word $$w$$ and are called input vector and output vector, respectively.
 
-Define the loss function as
+The training objective is to maximize the probability of observing the target word $$w_{j_o}$$ given the input context word $$w_k$$.Define the loss function as 
+$$
+E = -\ln p(w_{j_o} | w_k) 
+\tag{8}
+$$
+Thus, to maximize $$p(w_{j_o} | w_k)$$ is to minimize $$E$$.
+
+The loss function is a special case of the cross-entropy measurement between two probabilistic distributions.
 
 \[1\]
 
