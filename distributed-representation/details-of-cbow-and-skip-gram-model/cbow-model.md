@@ -99,9 +99,12 @@ $$
 y_j = p(w_j | w_k)= \frac{e^{u_j}}{\displaystyle \sum_{j = 1}^V e^{u_j}} 
 \tag{6}
 $$
-
-
-By substituting $$\eqref{5}$$ into 
+By substituting $$(5)$$ into $$(6)$$, we have 
+$$
+y_j = p(w_j | w_k) = \frac{e^{\bar{v}'_{w_j} \cdot \bar{v}_{w_k}}}{\displaystyle \sum_{j = 1}^V e^{\bar{v}'_{w_j} \cdot \bar{v}_{w_k}}} 
+\tag{7}
+$$
+Note that $$\bar{v}_w$$ and $$\bar{v}'_w$$ are two representations of word $$w$$ and are called input vector and output vector, respectively.The training objective is to maximize the probability of observing the target word $$w_{j_o}$$ given the input context word $$w_k$$.
 
 \[1\]
 
