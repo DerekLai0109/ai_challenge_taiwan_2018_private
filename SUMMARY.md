@@ -20,7 +20,7 @@
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 * [RNN](rnn.md)
-  * [RNN \(part 1\)](rnn.md)
+  * [RNN \(coding perspective\)](rnn.md)
   * [RNN \(Professor 李宏毅\)](rnn-part-2.md)
 * [Language Model](language-model.md)
   * [Language Model \(Professor 李宏毅\)](language-model/language-model-professor-li-hong-6bc529.md)
