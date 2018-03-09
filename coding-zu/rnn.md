@@ -31,7 +31,7 @@ Fig. shows a RNN being _unrolled_ \(or unfolded\) into a full network. Unrolling
 
 ---
 
-**Ref.**
+**Reference**
 
 [http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
 
