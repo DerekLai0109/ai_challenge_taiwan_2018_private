@@ -1,5 +1,9 @@
 # Details of CBOW and Skip-gram models
 
+Derek 03/09/2018
+
+## Introduction
+
 The vector representations of words, or word embeddings, learned by word2vec carry semantic meanings with applications in various NLP tasks.  
 Word embedding belongs to the unsupervised learning algorithms.
 
@@ -10,8 +14,6 @@ Efficiency improvement techniques, hierarchical softmax and negative sampling, a
 The detailed derivations are provided in \[3\].
 
 An interacitve demo is available at \[4\].
-
-
 
 \[1\]
 
@@ -27,9 +29,7 @@ T. Mikolov, I. Sutskever, K. Chen, G. Corrado and J. Dean, Distributed represent
 
 X. Rong, word2vec parameter learning explained, arXiv:1411.2738, 2014.
 
-\[4\]
+\[4\]
 
-http://bit.ly/wevi-online
-
-
+[http://bit.ly/wevi-online](http://bit.ly/wevi-online)
 
