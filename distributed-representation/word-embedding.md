@@ -10,11 +10,9 @@ Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V,
 
 Fig. shows that the distributed vectors or word embeddings.
 
+### Distributional vector and word embeddings.
 
-
-
-
-Distributional vector and word embeddings.
+![](/assets/distributional_vectors_word_embeding_highlevel_0310.jpg)
 
 Fig. shows the schematic for distributional vector and word embeddings, which essentially follow the distributional hypothesis, according to which words with similar meanings tend to occur in similar context.  
 These vectors try to capture the characteristics of the neighbors of a word.  
