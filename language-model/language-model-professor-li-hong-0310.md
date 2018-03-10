@@ -1,5 +1,7 @@
 # Language Model
 
+AnAn 03/10 2018
+
 ### 一、語言模型\(Language Model\)
 
 語言模型描述一個字串\(word sequence\)的機率。對於一個字串：
