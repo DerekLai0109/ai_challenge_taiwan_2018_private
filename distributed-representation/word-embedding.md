@@ -10,7 +10,11 @@ Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V,
 
 Fig. shows that the distributed vectors or word embeddings.
 
-![](/assets/distributional_vector_word_embedding.jpg)Distributional vector and word embeddings.
+
+
+
+
+Distributional vector and word embeddings.
 
 Fig. shows the schematic for distributional vector and word embeddings, which essentially follow the distributional hypothesis, according to which words with similar meanings tend to occur in similar context.  
 These vectors try to capture the characteristics of the neighbors of a word.  
@@ -36,8 +40,6 @@ The utility of pre-trained word embeddings were first shown in \[2\].
 The work established word embeddings as a tool for NLP taks.  
 The continuous bag-of-words \(CBOW\) and skip-gram models were proposed to efficiently construct high-quality distributed vector representations \[3\].  
 Another famous word embedding method was proposed as essentially a "count-based model" \[4\]. The word co-occurrence count matrix is preprocessed by normalizing the counts and log-smoothing them. This matrix is then factorized to get lower dimensional representations which is done by minimizing a "reconstruction loss".
-
-
 
 \[0\]
 
