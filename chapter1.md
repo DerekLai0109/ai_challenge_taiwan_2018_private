@@ -2,7 +2,7 @@
 
 MM 03/01 2018
 
-![](/assets/syntactic_semantic.jpg)Syntactic tasks and semantic tasks for NLP
+![](/assets/NLP_task.png)Syntactic tasks and semantic tasks for NLP
 
 Fig. shows the scheatic of NLP tasks.
 
@@ -38,7 +38,7 @@ A language model traditionally estimates the probability of the next word being 
 
 #### Semantically related words \("Synonyms"\).
 
-This is the task of predicting whether two words are semantically related \(synonyms, holonyms, hypernyms,...\) which is measured using WordNet database \([http://wordnet.princeton.edu\](http://wordnet.princeton.edu%29\)\) as ground truth.
+This is the task of predicting whether two words are semantically related \(synonyms, holonyms, hypernyms,...\) which is measured using WordNet database \([http://wordnet.princeton.edu\](http://wordnet.princeton.edu%29%29\) as ground truth.
 
 \[0\]
 
