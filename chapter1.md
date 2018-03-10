@@ -2,7 +2,7 @@
 
 MM 03/01 2018
 
-![](/assets/NLP_task.png)Syntactic tasks and semantic tasks for NLP
+![](/assets/NLP_task.png)**Syntactic tasks and semantic tasks for NLP.**
 
 Fig. shows the scheatic of NLP tasks.
 

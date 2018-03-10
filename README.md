@@ -2,12 +2,10 @@
 
 MM 03/01 2018
 
-Natural language processing \(NLP\) are computational techniques for the automatic analysis and representation of human language.  
- NLP enables computers to perform natural language related tasks.
+Natural language processing \(NLP\) are computational techniques for the automatic analysis and representation of human language. NLP enables computers to perform natural language related tasks.
 
 Machine learning approaches targeting NLP problems have been based on shallow models \(e.g., SVM and logistic regression\) trained on high dimensional and sparse features for decades.  
- Neural networks based on dense vector representations have been producing superior results on various NLP tasks in the last few years.  
-This trend is sparked by the success of word embeddings \[1\] and deep learning methods \[2\].  
+Neural networks based on dense vector representations have been producing superior results on various NLP tasks in the last few years. This trend is sparked by the success of word embeddings \[1\] and deep learning methods \[2\].  
 Deep learning enables multi-level automatic feature representation learning.  
 Traditional machine learning based NLP systems relies on hand-craft features which are time-consuming and incomplete.
 
@@ -16,7 +14,7 @@ The deep learning framework outperforms state-of-the-art approaches in NLP tasks
 
 ![](/assets/HMM_GMM_DNN.jpg)
 
-Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\).
+**Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\).**
 
 Fig shows the schematic of hidden Markov models \(HMMs\), Gaussian mixture models \(GMMs\) and deep neural network \(DNN\).  
 The hidden Markov models \(HMMs\) can be used to deal with the temporal variability of speech.  

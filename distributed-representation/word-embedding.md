@@ -6,7 +6,7 @@ Distributed representations \(embeddings\) are mainly learnt through context. Du
 
 ![](/assets/distributional_vectors_by_a_D_dimensional_vec.jpg)
 
-Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V, where V is size of Vocabulary.
+**Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V, where V is size of Vocabulary.**
 
 Fig. shows that the distributed vectors or word embeddings.
 
@@ -28,10 +28,10 @@ Word embeddings have been responsible for state-of-the-art results in a wide ran
 
 ![](/assets/neural_language_model_Bengio.jpg)
 
-Neural Language Model proposed in \[1\]
+**Neural Language Model proposed in \[1\]**
 
 A neural language modelwas proposed to learn distributed representations for words.  
-Fig. shows the neural language model, and C\(i\) is the $i$th word embedding.  
+Fig. shows the neural language model, and C\(i\) is the _i-_th word embedding.  
 It is argued that once these word representations was complied into sentence representations using joint probability of word sequences, they achieved an exponential number of semantically neighboring sentences. This helped in generalization, since unseen sentences could gather higher confidence if word sequences with similar words \(in respect to nearby word representation\) were already seen.
 
 The utility of pre-trained word embeddings were first shown in \[2\].  
