@@ -19,7 +19,6 @@
     * [Sequence2sequence\_using\_Pytorch](distributed-representation/sequenceto-sequence/sequence2sequenceusing-pytorch.md)
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
-  * [SVM\_coding\(printed\_version\)](svmcoding-printedversion.md)
 * [RNN](rnn.md)
   * [RNN \(Professor 李宏毅\)](rnn-part-2.md)
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
