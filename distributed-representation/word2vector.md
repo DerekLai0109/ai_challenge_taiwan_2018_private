@@ -2,7 +2,9 @@
 
 MM 03/05/2018
 
-![](/assets/CBOW_skip_gram_model.jpg)CBOW and skip gram Model
+![](/assets/CBOW_Skip_gram_0310.png)
+
+**CBOW and skip gram Model are two high-quality distributed vector representation**
 
 Fig. shows the schematic for CBOW and skip gram model.
 
