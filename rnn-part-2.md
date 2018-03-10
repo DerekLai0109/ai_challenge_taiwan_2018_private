@@ -42,11 +42,7 @@ Clipping, in which $$\partial L^n / \partial W^n$$ are bounded by a specified co
 Fig. \(b\) shows the exemplary total loss-epoch diagram, where gradient explode occurs  
 and lead to the divergence of total loss.
 
-
-
 ## The Application of RNN
-
-
 
 ![](/assets/RNN_in_SR.png)
 
