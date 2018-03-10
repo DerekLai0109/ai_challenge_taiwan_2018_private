@@ -24,5 +24,4 @@
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
 * [Language Model](language-model.md)
   * [Language Model \(Professor 李宏毅\)](language-model/language-model-professor-li-hong-6bc529.md)
-  * [Language Model \(Professor 李宏毅\) MM\_modified](language-model/language-model-professor-li-hong-MM.md)
 
