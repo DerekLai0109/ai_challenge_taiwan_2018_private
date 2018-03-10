@@ -4,9 +4,7 @@ Chien-Chang Chen 03/09/2018
 
 With the following online source \[0\],
 
-this document illucidates the role of recurrent neural network \(RNN\) in speech recognition.
-
-Three main topics include the mechanism, the gradient vanishing problem and the application of RNN.
+this document introduces the role of recurrent neural network \(RNN\) in speech recognition.
 
 ## Mechanism of RNN
 
@@ -44,11 +42,15 @@ Clipping, in which $$\partial L^n / \partial W^n$$ are bounded by a specified co
 Fig. \(b\) shows the exemplary total loss-epoch diagram, where gradient explode occurs  
 and lead to the divergence of total loss.
 
+
+
 ## The Application of RNN
+
+
 
 ![](/assets/RNN_in_SR.png)
 
-Application of RNN in speech recognition.
+**Application of RNN in speech recognition.**
 
 Fig shows an application of RNN in speech recognition,  
 where the length of output sequence is shorter than that of input.  
@@ -62,7 +64,7 @@ Connectionist temporal classification \(CTC\), which allows the recognition of N
 
 ![](/assets/RNN_in_translation.png)
 
-Application of RNN in translation.
+**Application of RNN in translation.**
 
 Fig shows an application of RNN in translation,  
 where the length of output sequence is unsure.  
