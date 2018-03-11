@@ -2,9 +2,9 @@
 
 MM 03/01 2018
 
-![](/assets/NLP_task.png)**Syntactic tasks and semantic tasks for NLP.**
+![](/assets/NLP_task.png)**Fig. 1 Syntactic tasks and semantic tasks for NLP.**
 
-Fig. shows the scheatic of NLP tasks.
+Fig. 1 shows the scheatic of NLP tasks.
 
 Syntax \(文法\) is about the structure or the grammar of the language. It answers the question: how do I construct a valid sentence?
 

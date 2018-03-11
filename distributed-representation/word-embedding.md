@@ -6,7 +6,7 @@ Distributed representations \(embeddings\) are mainly learnt through context. Du
 
 ![](/assets/distributional_vectors_by_a_D_dimensional_vec.jpg)
 
-**Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V, where V is size of Vocabulary.**
+**Fig.1 Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V, where V is size of Vocabulary.**
 
 Fig. shows that the distributed vectors or word embeddings.
 
@@ -14,7 +14,9 @@ Fig. shows that the distributed vectors or word embeddings.
 
 ![](/assets/distributional_vectors_word_embeding_highlevel_0310.jpg)
 
-Fig. shows the schematic for distributional vector and word embeddings, which essentially follow the distributional hypothesis, according to which words with similar meanings tend to occur in similar context.  
+**Fig.2 Schematic for distributional vector and word embeddings.**
+
+Fig.2 shows the schematic for distributional vector and word embeddings, which essentially follow the distributional hypothesis, according to which words with similar meanings tend to occur in similar context.  
 These vectors try to capture the characteristics of the neighbors of a word.  
 The main advantage of distributional vectors is that they capture similarity between words. Measuring similarity between vectors is possible, using measures such as cosine similarity.
 
@@ -28,10 +30,10 @@ Word embeddings have been responsible for state-of-the-art results in a wide ran
 
 ![](/assets/neural_language_model_Bengio.jpg)
 
-**Neural Language Model proposed in \[1\]**
+**Fig.3 Neural Language Model proposed in \[1\]**
 
 A neural language modelwas proposed to learn distributed representations for words.  
-Fig. shows the neural language model, and C\(i\) is the _i-_th word embedding.  
+Fig. 3 shows the neural language model, and C\(i\) is the \_i-\_th word embedding.  
 It is argued that once these word representations was complied into sentence representations using joint probability of word sequences, they achieved an exponential number of semantically neighboring sentences. This helped in generalization, since unseen sentences could gather higher confidence if word sequences with similar words \(in respect to nearby word representation\) were already seen.
 
 The utility of pre-trained word embeddings were first shown in \[2\].  
