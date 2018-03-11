@@ -27,6 +27,6 @@
   * [Language Model \(Professor 李宏毅\)](language-model/language-model-professor-li-hong-6bc529.md)
   * [Language Model \(Professor 李宏毅\) AnAn 0310 test update](/language-model/language-model-professor-li-hong-0310.md)
 * [Mathjax\_Example](mathjaxexample.md)
-
-
+* [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
+  * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 
