@@ -4,8 +4,8 @@ MM 03/01 2018
 
 Natural language processing \(NLP\) are computational techniques for the automatic analysis and representation of human language. NLP enables computers to perform natural language related tasks.
 
-Machine learning approaches targeting NLP problems have been based on shallow models \(e.g., SVM and logistic regression\) trained on high dimensional and sparse features for decades.  
-Neural networks based on dense vector representations have been producing superior results on various NLP tasks in the last few years. This trend is sparked by the success of word embeddings \[1\] and deep learning methods \[2\].  
+Machine learning approaches targeting NLP problems have been based on shallow models \(e.g., SVM and logistic regression\) trained on high dimensional and sparse features.  
+Neural networks based on dense vector representations have been producing superior results on various NLP tasks. This trend is sparked by the success of word embeddings \[1\] and deep learning methods \[2\].  
 Deep learning enables multi-level automatic feature representation learning.  
 Traditional machine learning based NLP systems relies on hand-craft features which are time-consuming and incomplete.
 
@@ -14,17 +14,15 @@ The deep learning framework outperforms state-of-the-art approaches in NLP tasks
 
 ![](/assets/HMM_GMM_DNN.jpg)
 
-**Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\).**
+**Fig. 1 Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\).**
 
-Fig shows the schematic of hidden Markov models \(HMMs\), Gaussian mixture models \(GMMs\) and deep neural network \(DNN\).  
+Fig.1 shows the schematic of hidden Markov models \(HMMs\), Gaussian mixture models \(GMMs\) and deep neural network \(DNN\).  
 The hidden Markov models \(HMMs\) can be used to deal with the temporal variability of speech.  
 The Gaussian mixture models \(GMMs\) can be used to determine how well each state of each HMM fits a frame or a short window of frames of coefficients that represents the acoustic input \[4\].  
 An alternative way to evaluate the fit is to use a feed-forward neural network that takes several frames of coefficients as input and produces posterior probabilities over HMM states as output.  
 Deep neural networks \(DNNs\) have been shown to outperforms GMMS on a variety of speech recognition benchmarks \[4\].
 
-Deep learning methods and a technical overview of distributional semantics, i.e., word2vec and CNN, for NLP in a tutorial manner is present in \[5\].
-
-Various models are summarized, compared in \[0\].
+Deep learning methods and a technical overview of distributional semantics, i.e., word2vec and CNN, for NLP in a tutorial manner is present in \[5\].  Various models are summarized, compared in \[0\].
 
 \[0\]
 
