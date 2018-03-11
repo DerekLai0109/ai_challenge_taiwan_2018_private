@@ -24,5 +24,7 @@ $$s_n^{\ell+2,t} = \sum_{m=1}^{N_{\ell+1}} w_{m,n} \times x_m^{\ell+1} + b_n^{\e
 
 ![](/assets/schematic_LSTM.jpg)
 
-Fig.2 Schematic of LSTM network.
+**Fig.2 Schematic of LSTM network.**
+
+
 
