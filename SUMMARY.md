@@ -22,10 +22,9 @@
 * [RNN](rnn.md)
   * [RNN \(Professor 李宏毅\)](rnn-part-2.md)
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
+  * [RNN Ben](rnn-ben.md)
 * [Language Model](language-model.md)
   * [Language Model \(Professor 李宏毅\)](language-model/language-model-professor-li-hong-6bc529.md)
   * [Language Model \(Professor 李宏毅\) AnAn 0310 update](/language-model/language-model-professor-li-hong-0310.md)
 * [Mathjax\_Example](mathjaxexample.md)
-
-
 
