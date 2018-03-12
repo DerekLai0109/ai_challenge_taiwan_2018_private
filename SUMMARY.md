@@ -28,7 +28,7 @@
   * [LSTM Architecture](lstm-architecture.md)
 * [Language Model](language-model.md)
   * [Language Model \(Professor 李宏毅\) AnAn 0310 test update](/language-model/language-model-professor-li-hong-0310.md)
-* Machine Comprehension of Spoken Content
+* [Machine Comprehension of Spoken Content](machine-comprehension-of-spoken-content.md)
   * [Towards Machine Comprehension of Spoken Content: Initial TOEFL Listening Comprehension Test by Machine](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)

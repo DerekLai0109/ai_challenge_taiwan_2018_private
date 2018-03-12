@@ -40,7 +40,7 @@ In Question Answering field, most of the works focused on understanding text doc
 
 \[0\]
 
-B. H. Tseng, S. S. Shen, H. Y. Lee, L. S. Lee, \`\`Towards machine comprehension of spoken content: Initial TOEFL listening comprehension test by machine," {\em Towards machine comprehension of spoken content: Initial TOEFL listening comprehension test by machine}, 2016.
+B. H. Tseng, S. S. Shen, H. Y. Lee, L. S. Lee, \`\`Towards machine comprehension of spoken content: Initial TOEFL listening comprehension test by machine," Towards machine comprehension of spoken content: Initial TOEFL listening comprehension test by machine, 2016.
 
 \[1\]
 
