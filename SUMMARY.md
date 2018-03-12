@@ -28,10 +28,9 @@
   * [LSTM Architecture](lstm-architecture.md)
 * [Language Model](language-model.md)
   * [Language Model \(Professor 李宏毅\) AnAn 0310 test update](/language-model/language-model-professor-li-hong-0310.md)
+* Machine Comprehension of Spoken Content
+  * [Towards Machine Comprehension of Spoken Content: Initial TOEFL Listening Comprehension Test by Machine](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
-* [撰寫Gitbook相關](zhuan-xie-gitbook-xiang-guan.md)
-  * [如何撰寫數學式](zhuan-xie-gitbook-xiang-guan/ru-he-zhuan-xie-shu-xue-shi.md)
-  * [如何使用Change Request](zhuan-xie-gitbook-xiang-guan/ru-he-shi-yong-change-request.md)
-  * [如何產生出呈現數學式的pdf檔](zhuan-xie-gitbook-xiang-guan/ru-he-chan-sheng-chu-cheng-xian-shu-xue-shi-de-pdf-dang.md)
+* Machine Comprehension of Spoken Content
 
