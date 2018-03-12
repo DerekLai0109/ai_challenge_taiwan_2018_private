@@ -18,9 +18,3 @@ $$\frac{\partial E}{\partial w\_{ki}} = \frac{\partial E}{\partial h\_i} \frac{\
 
 $$\bar{v}\_{w\_k}^{\(new\)} = \bar{v}\_{w\_k}^{\(old\)} - \eta \sum\_{j = 1}^V e\_j \bar{v}\_{w\_j}'^{\(old\)} \tag{8}$$
 
-
-
-
-
-
-
