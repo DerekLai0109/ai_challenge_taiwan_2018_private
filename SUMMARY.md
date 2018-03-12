@@ -33,5 +33,5 @@
 * [撰寫Gitbook相關](zhuan-xie-gitbook-xiang-guan.md)
   * [如何撰寫數學式](zhuan-xie-gitbook-xiang-guan/ru-he-zhuan-xie-shu-xue-shi.md)
   * [如何使用Change Request](zhuan-xie-gitbook-xiang-guan/ru-he-shi-yong-change-request.md)
-  * 如何產生出呈現數學式的pdf檔
+  * [如何產生出呈現數學式的pdf檔](zhuan-xie-gitbook-xiang-guan/ru-he-chan-sheng-chu-cheng-xian-shu-xue-shi-de-pdf-dang.md)
 
