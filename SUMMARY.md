@@ -27,11 +27,10 @@
   * [LSTM introduction](lstm-introduction.md)
   * [LSTM Architecture](lstm-architecture.md)
 * [Language Model](language-model.md)
-  * [Language Model \(Professor 李宏毅\)](language-model/language-model-professor-li-hong-6bc529.md)
   * [Language Model \(Professor 李宏毅\) AnAn 0310 test update](/language-model/language-model-professor-li-hong-0310.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [撰寫Gitbook相關](zhuan-xie-gitbook-xiang-guan.md)
   * [如何撰寫數學式](zhuan-xie-gitbook-xiang-guan/ru-he-zhuan-xie-shu-xue-shi.md)
-  * 如何使用Change Request
+  * [如何使用Change Request](zhuan-xie-gitbook-xiang-guan/ru-he-shi-yong-change-request.md)
 
