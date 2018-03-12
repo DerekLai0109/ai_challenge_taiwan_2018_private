@@ -4,7 +4,13 @@
 
 A new task of machine comprehension of spoken content was proposed, and the initial goal is to comprehend TOEFL test, a challenging academic English examination for English learners whose native language is not English.
 
-An Attention-based Multi-hop Recurrent Neural Network \(AM-RNN\) architecture is proposed. Initial results have shon that word-level attentions is more robust than sentence0level attention with ASR errors.
+An Attention-based Multi-hop Recurrent Neural Network \(AM-RNN\) architecture is proposed. Initial results have shown that word-level attentions is more robust than sentence0level attention with ASR errors.
+
+
+
+\(fig.1\) An example of TOEFL listening comprehension test. The story is given in audio format, and its manual transcription is shown. 
+
+Fig.1 shows
 
 ## Introduction
 
@@ -37,6 +43,8 @@ A number of recent efforts have explored various ways to understand multimedia i
 They incorporated attention mechanisms \[7\] with LSTM networks \[8\].
 
 In Question Answering field, most of the works focused on understanding text documents \[9\].
+
+## Reference
 
 \[0\]
 
