@@ -31,6 +31,7 @@
 * [Machine Comprehension of Spoken Content](machine-comprehension-of-spoken-content.md)
   * [Towards Machine Comprehension of Spoken Content: Initial TOEFL Listening Comprehension Test by Machine](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine.md)
     * [TOEFL](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine/toefl.md)
+    * [Attention-based Multi-hop Recurrent Neural Network \(AMRNN\) Model](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine/attention-based-multi-hop-recurrent-neural-network-amrnn-model.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * Machine Comprehension of Spoken Content
