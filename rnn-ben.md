@@ -219,5 +219,7 @@ Recurrent neural network training data就是訓練RNN的資料。\(這邊再聽�
 \[0\]
 
 H. Y. Lee, ML lecture \#26, RNN part II  
-, at [https://www.youtube.com/watch?v=rTqmWlnwz\\_0](https://www.youtube.com/watch?v=rTqmWlnwz_0)
+, at 
+
+https://www.youtube.com/watch?v=rTqmWlnwz\_0
 
