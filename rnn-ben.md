@@ -1,4 +1,4 @@
-# 李宏義
+# Recurrent Neural Network \(Professor 李宏毅 ML \#26 45-90 mins\)
 
 如果要做learning的話要做cost function
 
@@ -215,4 +215,9 @@ Input x =&gt; image y =&gt; discriminator就會去檢查畫和圖是不是一樣
 learning需要有cost function \(也稱做loss function\)。cost function就是計算entropy。是每個時間點的cross entropy。有了loss function後，便將loss function對w \(weight,RNN的權重參數\)微分。BPTT的演算法來計算這些微分運算。RNN不容易訓練，loss很容易沒有收斂。過去以為是有程式bug。後來發現其實是RNN的error surface很不平滑。就像是懸涯峭壁，懸崖上的的gradient很大，若是踩在懸崖上，調整參數\(w\)之後就飛出去了。
 
 Recurrent neural network training data就是訓練RNN的資料。\(這邊再聽一次便再補進文章\)
+
+\[0\]
+
+H. Y. Lee, ML lecture \#26, RNN part II  
+, at [https://www.youtube.com/watch?v=rTqmWlnwz\\_0](https://www.youtube.com/watch?v=rTqmWlnwz_0)
 

@@ -1,4 +1,4 @@
-# Recurrent Neural Network \(Professor 李宏毅\)
+# Recurrent Neural Network \(Professor 李宏毅 ML \#26 0-45 mins\)
 
 Chien-Chang Chen 03/09/2018
 
