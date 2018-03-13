@@ -4,21 +4,21 @@ Ben 03/13/2018
 
 learning需要有cost function \(也稱做loss function\)。cost function就是計算cross entropy。
 
-\(每個時間點的cross entropy\)。 有了loss function後，便將loss function對w \(weight,RNN的權重參數\)微分。
+\(每個時間點的cross entropy\)。 有了loss function後，便將loss function對w \(weight,RNN的權重參數\)微分，$$\frac{\partial L^n}{\partial W^n} $$。
 
-$$a^n = {\displaystyle \sum^n_{i = 1}} W^i x^i$$$$W^{n + 1} = W^n - \eta^n \frac{\partial L^n}{\partial W^n} \tag{1}$$
+而網路的權重調整為:
+
+$$W^{n + 1} = W^n - \eta^n \frac{\partial L^n}{\partial W^n} \tag{2}$$
 
 BPTT的演算法來計算這些微分運算。
 
 訓練的過程，Loss應該慢慢地會下降，而RNN不容易訓練，loss很容易沒有收斂。 過去以為是有程式bug。 後來發現其實是RNN的error surface很不平滑。 就像是懸涯峭壁，懸崖上的的gradient很大， 若是踩在懸崖上，調整參數\(w\)之後就飛出去了。
 
-
-
 發明word vector的人有很長一段時間只有他能train起model
 
 最後他在他的博士論文解到解決懸崖上gradient很大的方法是：Clipping，如果gradient value&gt; specific value，就設定為specific value
 
------------------------------------------------------------------------------------
+---
 
 Sigmoid function可以讓gradient非常的小嗎？
 
