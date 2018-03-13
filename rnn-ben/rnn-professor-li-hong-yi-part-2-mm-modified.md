@@ -2,57 +2,23 @@
 
 Ben 03/13/2018
 
-如果要做learning的話要做cost function
+learning需要有cost function \(也稱做loss function\)。cost function就是計算cross entropy。
 
-Recurrent neural network
+\(每個時間點的cross entropy\)。 有了loss function後，便將loss function對w \(weight,RNN的權重參數\)微分。
 
-Training data
+$$a^n = {\displaystyle \sum^n_{i = 1}} W^i x^i$$$$W^{n + 1} = W^n - \eta^n \frac{\partial L^n}{\partial W^n} \tag{1}$$
 
-了解sentence的label
+BPTT的演算法來計算這些微分運算。
 
-Cost要怎麼定呢?
+訓練的過程，Loss應該慢慢地會下降，而RNN不容易訓練，loss很容易沒有收斂。 過去以為是有程式bug。 後來發現其實是RNN的error surface很不平滑。 就像是懸涯峭壁，懸崖上的的gradient很大， 若是踩在懸崖上，調整參數\(w\)之後就飛出去了。
 
-Word sequence要當成一個整體來看
 
-Cost就是每個時間點的對象
-
-算他的cross antropogy
-
-Taipei丟進去的話
-
-X2丟進去之前要先知道X1
-
-Cost就是每個時間點的Cross antrop
-
-有了loss function\(L\)之後，要怎麼去做?
-
-計算w對XXX的偏微分
-
-為了計算方便，也有開發一個演算法叫做BPTT這邊不講DBPTT
-
-RNN就是用Gradient decent去train
-
-RNN training is difficult to learn
-
-Loss應該慢慢地會下降，因為參數愈來越多，每次train可以用的資料就越多
-
-但是綠色的線條可能會產生?
-
-第一個想法是程式有bug
 
 發明word vector的人有很長一段時間只有他能train起model
 
-\(講故事的時間\)：如何解決RNN的問題?
+最後他在他的博士論文解到解決懸崖上gradient很大的方法是：Clipping，如果gradient value&gt; specific value，就設定為specific value
 
-RNN的error surface空間上有些地方像是懸崖峭壁
-
-Total loss對參數\(w1, w2, w3…\)的變化，非常的陡峭
-
-踩在懸崖上的的gradient很大，如果learning \* gradient就會跳出去，調整參數之後就飛出去了
-
-用了一招：只有他可以讓他RNN的model可以training
-
-就是Clipping，設定gradient&gt; assigned value，就固定為assigned value
+-----------------------------------------------------------------------------------
 
 Sigmoid function可以讓gradient非常的小嗎？
 

@@ -22,6 +22,7 @@
 * [RNN](rnn.md)
   * [RNN \(Professor 李宏毅 \#26 0-45 mins\)](rnn-part-2.md)
   * [RNN \(Professor 李宏毅 \#26 45-90 mins\)](rnn-ben.md)
+    * [RNN \(Professor 李宏毅 part 2, MM modified\)](rnn-ben/rnn-professor-li-hong-yi-part-2-mm-modified.md)
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
 * LSTM
   * [LSTM introduction](lstm-introduction.md)
