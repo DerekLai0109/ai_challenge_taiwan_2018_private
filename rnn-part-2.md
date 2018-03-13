@@ -73,5 +73,5 @@ This issue can be handled with the incorporation of a halt symbol in the output 
 \[0\]
 
 H. Y. Lee, ML lecture \#26, RNN part II  
-https://www.youtube.com/watch?v=rTqmWlnwz\_0
+[https://www.youtube.com/watch?v=rTqmWlnwz\_0](https://www.youtube.com/watch?v=rTqmWlnwz_0)
 
