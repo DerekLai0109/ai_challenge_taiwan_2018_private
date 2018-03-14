@@ -12,15 +12,23 @@ Ben 03/13/2018
 
 綠色方框是RNN模型， $$(x^1, x^2, \cdots)$$是RNN的輸入字詞，$$(y^1, y^2, \cdots)$$是RNN的輸出類別。
 
-當第一個字詞arrive輸入時，我們希望RNN的輸出是other;
+當第一個字詞arrive輸入時，我們希望RNN的輸出是other的機率$$y_{\rm other}^1$$最大;
 
-當第二個字詞Taipei輸入時，我們希望RNN的輸出是dest \(destination\);
+當第二個字詞Taipei輸入時，我們希望RNN的輸出是dest \(destination\)的機率$$y_{\rm dest}^2$$最大;
 
-當第三個字詞on輸入時，我們希望RNN的輸出是other;
+當第三個字詞on輸入時，我們希望RNN的輸出是other的機率$$y_{\rm other}^3$$最大;
 
-當第四個字詞November輸入時，我們希望RNN的輸出是time;
+當第四個字詞November輸入時，我們希望RNN的輸出是time的機率$$y_{\rm time}^4$$最大;
 
-當第四個字詞$$2^{nd}$$輸入時，我們希望RNN的輸出是time。
+當第四個字詞$$2^{nd}$$輸入時，我們希望RNN的輸出是time的機率$$y_{\rm time}^5$$最大;
+
+定義
+
+
+$$
+L=-\sum_{n=1} y_n \log \hat{y}_n
+$$
+$$y_n=\hbox{softmax}(s_n)$$
 
 
 
