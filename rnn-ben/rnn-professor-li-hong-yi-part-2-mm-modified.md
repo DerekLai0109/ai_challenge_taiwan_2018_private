@@ -10,7 +10,7 @@ Ben 03/13/2018
 
 圖一 呈現使用RNN預測字詞的訓練過程示意圖。
 
-綠色方框是RNN模型， $$(x^1, x^2, \cdots)$$是RNN的輸入字詞，$$(y^1, y^2, \cdots)$$是RNN的輸出類別。
+綠色方框是RNN模型， $$(x^1, x^2, \cdots x^t, \cdots)$$是RNN的輸入字詞，$$(y^1, y^2, \cdots y^{t},\cdots)$$是RNN的輸出類別。
 
 當第一個字詞arrive輸入時，我們希望RNN的輸出是other的機率$$y_{\rm other}^1$$最大;
 
@@ -26,11 +26,11 @@ Ben 03/13/2018
 
 
 $$
-L=-\sum_{n=1} y_n \log \hat{y}_n
+L=-\sum_{n=1} \hat{y}_n \log y_n
 $$
+
+
 $$y_n=\hbox{softmax}(s_n)$$
-
-
 
 In the $$n$$-th step, $$a^n = {\displaystyle \sum^n_{i = 1}} W^i x^i$$ and the $$n$$-th loss function $$L^n$$, are calculated, and the $$n+1$$-th weight $$W^{n+1}$$ are chosen to minimize $$L^n$$. $$L^n$$ can be defined as the sum of cross entropy between the output $$y^i$$ and a reference parameter $$z^i$$, $$\forall i \le n$$; $$z^i$$ is an identity vector, where the non-zero entry is the slot $$x^i$$ belongs to.
 
