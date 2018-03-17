@@ -16,7 +16,9 @@ Fig. shows that the distributed vectors or word embeddings.
 
 **Fig.2 Schematic for distributional vector and word embeddings.**
 
-Fig.2 shows the schematic for distributional vector and word embeddings, which essentially follow the distributional hypothesis, according to which words with similar meanings tend to occur in similar context.  
+Fig.2 shows the schematic for distributional vector and word embeddings, which essentially follow the distributional hypothesis.
+
+Distributional Hypothesis means that words are characterized by words they hang out with, and words with similar meanings tend to occur in similar context.  
 These vectors try to capture the characteristics of the neighbors of a word.  
 The main advantage of distributional vectors is that they capture similarity between words. Measuring similarity between vectors is possible, using measures such as cosine similarity.
 
