@@ -2,217 +2,142 @@
 
 Ben 03/13/2018
 
-如果要做learning的話要做cost function
+有了seq 2 seq的技術之後，就可做到beyond sequence
 
-Recurrent neural network
+e.g. 讓machine產生syntactic parsing tree  
 
-Training data
+要如何讓machine得到一個樹狀結構呢?
 
-了解sentence的label
+過去要用structure learning的技術，才能夠解這個問題。現在只要把樹狀圖描述成一個sequence，用seq2seq model的output就是一個syntactic parsing tree就可training 起來，下圖就把一句話描述成seq的例子。
 
-Cost要怎麼定呢?
+![](/assets/RNN part2_1.png)
 
-Word sequence要當成一個整體來看
+把一個document表示成一個vector的話，之前會用bag-of-word的方法，但會忽略”word order”
 
-Cost就是每個時間點的對象
+![](/assets/RNN part2_2.png)
 
-算他的cross antropogy
+在Word sequence的情況下，來解決字彙量一樣，但組起來語句不同的問題 =&gt; 
 
-Taipei丟進去的話
+透過RNN把一組Word sequence變成embedded vector，當成decoder的輸入，讓decoder找回一個一模一樣的句子，換句話說，就是embedded vector具有重要的資訊。
 
-X2丟進去之前要先知道X1
+seq2seq auto-encoder 不需要label data，只需要丟入大量的data即可。
 
-Cost就是每個時間點的Cross antrop
+![](/assets/RNN part2_3.png)
 
-有了loss function\(L\)之後，要怎麼去做?
+可具有hierarchy，也就是說每個句子都先得到一個vector。每個句子的vector相加之後= document high level vector丟入decoder，再反向解回word，這就是一個自成的LSTM，順序就是word seq=&gt; sentence seq=&gt; document level =&gt; sentence seq =&gt; word seq
 
-計算w對XXX的偏微分
+![](/assets/RNN part2_4.png)
 
-為了計算方便，也有開發一個演算法叫做BPTT這邊不講DBPTT
+用在 speech中，可以把audio segments\(word-level\) 轉成一個fixed-length vector，可以用再甚麼地方呢？e.g.語音搜尋，不需要聲音辨識，只需要做聲音相似度的辨識即可。audio segment to vector
 
-RNN就是用Gradient decent去train
+使用者說了一段語音之後，也將audio轉成vector，比對相似性，找出是否相同。
 
-RNN training is difficult to learn
+![](/assets/RNN part2_5.png)
 
-Loss應該慢慢地會下降，因為參數愈來越多，每次train可以用的資料就越多
+Audio segment =&gt; acoustic features =&gt; RNN encoder =&gt; RNN Decoder \(encoder & decoder是一起train的\)
 
-但是綠色的線條可能會產生?
+用seq2seq autoencoder來訓練chat-bot：收集很多的對話\(電視影集4萬多句+美國大選辯論\)
 
-第一個想法是程式有bug
+![](/assets/RNN part2_6png)
 
-發明word vector的人有很長一段時間只有他能train起model
+LSTM encoder =&gt; LSTM decoder，腦中會記得很多事情，也會自動忽略無關緊業的事情，當問一件事情的時候，就會去提取相關的資訊。
 
-\(講故事的時間\)：如何解決RNN的問題?
+除了RNN以外，attention-based model具有memory，常被用在reading comprehension，讓機器去讀文件，每句話都會變成vector，Query=&gt; 中央處理器\(DNN/RNN\)去控制reading head controller，讀取的過程可以是iterative，也就是會到很多地方去讀information，如果讀到相關的information之後，就把header放在上面，再放回去DNN/RNN=&gt; get answer
 
-RNN的error surface空間上有些地方像是懸崖峭壁
 
-Total loss對參數\(w1, w2, w3…\)的變化，非常的陡峭
-
-踩在懸崖上的的gradient很大，如果learning \* gradient就會跳出去，調整參數之後就飛出去了
-
-用了一招：只有他可以讓他RNN的model可以training
-
-就是Clipping，設定gradient&gt; assigned value，就固定為assigned value
-
-Sigmoid function可以讓gradient非常的小嗎？
-
-ReLU
-
-改變w的時候，對於最後的output的影響會有多大呢?
-
-Gradient&gt;1設定small learning rate
-
-Gradient&lt;1設定large learning rate
-
-這樣會造成我們很難調整learning rate
-
-難training RNN的原因不是在activation，而是在gradient
-
-Solution: Long Short-term Memory
-
-可以解決gradient vanishing的問題
-
-RNN和LSTM在面對memory裡面的資訊，operation是不一樣的
-
-RNN每次memory都會被完全洗掉
-
-LSTM把原來memory\*值+ input放入cell裡面
-
-OH~ LSTM裡面會對memory影響的值只要一產生之後，就會一值存在
-
-LSTM 1997年提出，當初沒有forget gate，總共有3個gate
-
-用gate操控memory的cell: gated recurrent unit\(GRU\)只有兩個gate
-
-精神是：舊的不去，新的不來
-
-forget gate
-
-input gate之間的關係
-
-identity
-
-many vectors to one vector
-
-利用RNN給machine去看一篇文章，他會去找裡面有哪些關鍵詞彙?
-
-Many vector to many vectors
-
-長sequence轉成短sequence
-
-e.g. speech recognition
-
-為了要把好棒跟好棒棒分開
-
-那就用了一招connectionist temporal classification\(CTC\)
-
-多了一個null值
-
-因此，CTC Training
-
-窮舉所有的alignments當成都是正確的
-
-有個巧妙的演算法解決不用全部列完的
-
-英文辨識英文字母+空白
-
-傳說google的語音辨識，現在已經全部都轉換成CTC training了
-
-如果沒有出現過的詞彙第一次被講，也能被正確的辨識出來
-
-不知道英文和中文裡，input & output哪個長？哪個短？
-
-推文接龍
-
-回到machine learning裡面，add a symbol ===讓他斷掉
-
-Google brain：seq 2 seq learning
-
-Input某種語言的聲音 opunt另種語言的文字
-
-英文的聲音訊號轉成中文的文字
-
-目前有做到輸入法文語音，model已經可以做到可辨識成中文
-
-需要有語音和對應的翻譯丟進去
-
-做到beyond sequence
-
-產生syntactic parsing如何讓machine得到一個樹狀結構?
-
-有了seq 2 seq之後，
-
-過去要用structure learning的技術，只需要把樹狀圖描述成一個sequence
-
-Output就是一個syntactic parsing tree，就可training起來
-
-考慮Word sequence的情況之後，來解決字彙量一樣，但組起來語句不同的問題=&gt; seq 2 seq encoder接著可以具有hierarchy
-
-同時也可以用到speech上，
-
-語音的搜尋
-
-不需要聲音辨識，只需要做聲音相似度的辨識即可audio segment to vector
-
-Audio segment =&gt; acoustic features =&gt; RNN encoder =&gt; RNN Decoder
-
-LSTM encoder =&gt; LSTM decoder
-
-除了RNN以外，有用到memory的model是attention-based model
 
 Input =&gt; DNN/RNN =&gt; ouput
 
-多了reading head controller及writing head controller
+多了reading head controller 及writing head controller，稱為Neural Turing Machine
 
-稱為Neural Turing Machine
+![](/assets/RNN part2_7.png)
 
-Query=&gt;中央處理器\(DNN/RNN\)去控制reading head controller如果讀到相關的information之後，就把header放在上面，再放回去DNN/RNN=&gt; get answer
+讓機器做reading comprehesion：what color is Greg? 藍色代表reading head放的位置，Hop代表放的時間點，透過三次的讀寫，透過Neural netwrok，機器自己學到的。
 
-Keras有example在處理讀一句話回答答案
+那怎麼樣才能做到visual question answer？例如看一張香蕉
 
-可以餵機器visual /語音輸入\(TOFEL\)，來回答答案
+先讓CNN去讀圖，丟入了Query後，reading heading會去讀取很多次的資訊。
 
-實驗結果隨意猜的結果是25%  
- shortest或是一選項和另外三個選項語意相關的話，這兩種方法可以到達35%
+讓機器做speech question answering
 
-Memory Network可以達到39.2%
+
+
+問題轉成語義分析 
+
+聲音辨識轉成語義分析 =&gt; 機器了解聲音和問題的語義後，畫重點，之後就去比對，產生答案之後，還會在比對相似度，再去修正畫的重點。
+
+example是在處理讀一句話回答答案
+
+給機器visual / 語音輸入\(TOFEL\)，來回答答案
+
+實驗結果 隨意猜的結果是25% 
+
+找最短的答案 或是 比對一選項和另外三個選項語義相似度，這兩種方法可以到達35%
+
+Memory Network 可以達到39.2%
 
 proposed approach:可以到達48.8%
 
-Deep & Structure Learning的關係
+![](/assets/RNN part2_8.png)
+
+RNN & Structure Learning的關係 \(應該就會是未來的一個研究方向\)
 
 | RNN, LSTM | HMM, CRF, Structured Perceptron/SVM |
 | :--- | :--- |
 | Unidirectional RNN不考慮整個seq | 因為用Viterbi，所以可考慮整個seq |
-| Cost和error往往沒有關係 | 可以很explicitly去考慮label間關係?可以 |
-| 可以是deep | Cost function是error的上界 |
+| Cost和error往往沒有關係 | 可以explicitly去考慮label間關係，Cost function是error的上界 |
+| 可以是deep |  |
 | Deep Leaning可以佔到比較大的優勢 |  |
 
-Input feature先通過RNN/LSTM，再餵到HMM, CRF, Structured Perceptron/SVM
+RNN+LSTM考慮的cost是考慮交叉 火商
 
-語音辨認: CNN/LSTM/DNN +HMM
+底部Input feature 先通過RNN/LSTM，oupput再餵到HMM, CRF, Structured Perceptron/SVM
 
-RNN是一個一個frame去看
+![](/assets/RNN part2_10.png)
+
+語音辨認常見的組合 : CNN/LSTM/DNN +HMM
+
+要去計算x和y的evaluation function，x是生醫訊號，y是語音辨識的結果
+
+RNN是一個一個frame去看，DNN就是取代immession的部份，要的是P\(xl\|yl\)
+
+假若不同的錯誤對於語音辨識的影響很大，但RNN認不出這件事情，因此需要加上HMM
+
+![](/assets/RNN part2_11.png)
+
+
 
 語意tagging: Bi-directional LSTM+ CRF/Structured SVM
 
+先用Bi-directional LSTM抽出features，再拿這些features定義CRF/Structured SVM需要的features
+
+![](/assets/RNN part2_12.png)
+
 Structure learning要解三個問題
 
-1.Inference
+1.	Inference
 
-2.解inference的問題，要窮舉所有的可能
+2.	解inference的問題，要窮舉所有的可能\(因此往往最困難\)
 
-3.How to learn how to learn F\(x\)
+3.	How to learn how to learn F\(x\)
 
-把GAN中的discriminator看成evaluation function可以解Problem 1
 
-把generator當成可以窮舉所有的可能
+
+把GAN中的discriminator看成 evaluation function可以解Problem 1
+
+把generator當成可以窮舉所有的可能，就是解inference窮舉的問題，可以解problem 2
+
+![](/assets/RNN part2_13.png)
 
 **Conditional GAN**
 
 Discriminator會去Check real \(x,y\) pair
 
-Input x =&gt; image y =&gt; discriminator就會去檢查畫和圖是不是一樣?
+Input x =&gt; image y =&gt; discriminator 就會去檢查畫和圖是不是一樣?
+
+GAN 和energy-based model 結合起來了
+
+
 
 learning需要有cost function \(也稱做loss function\)。cost function就是計算entropy。是每個時間點的cross entropy。有了loss function後，便將loss function對w \(weight,RNN的權重參數\)微分。BPTT的演算法來計算這些微分運算。RNN不容易訓練，loss很容易沒有收斂。過去以為是有程式bug。後來發現其實是RNN的error surface很不平滑。就像是懸涯峭壁，懸崖上的的gradient很大，若是踩在懸崖上，調整參數\(w\)之後就飛出去了。
 
