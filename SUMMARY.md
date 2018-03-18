@@ -29,15 +29,13 @@
   * [LSTM Architecture](lstm-architecture.md)
 * [Language Model](language-model.md)
   * [Language Model \(Professor 李宏毅\) AnAn 0310 test update](/language-model/language-model-professor-li-hong-0310.md)
+* [Acoustic Model](acoustic-model.md)
+  * [Acoustic Model \(English\)](acoustic-model/acoustic-model-english.md)
+  * [Acoustic Model \(Chinese\)](acoustic-model/acoustic-model-chinese.md)
 * [Machine Comprehension of Spoken Content](machine-comprehension-of-spoken-content.md)
   * [Towards Machine Comprehension of Spoken Content: Initial TOEFL Listening Comprehension Test by Machine](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine.md)
     * [TOEFL](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine/toefl.md)
     * [Attention-based Multi-hop Recurrent Neural Network \(AMRNN\) Model](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine/attention-based-multi-hop-recurrent-neural-network-amrnn-model.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
-* Machine Comprehension of Spoken Content
-* Version Management Proposal
-  * [Test 1](test-1.md)
-  * [Test 2](test-2.md)
-  * [Test A](test-a.md)
 
