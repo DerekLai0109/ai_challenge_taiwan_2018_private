@@ -37,4 +37,7 @@
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * Machine Comprehension of Spoken Content
 * Version Management Proposal
+  * Test 1
+  * Test 2
+  * Test A
 
