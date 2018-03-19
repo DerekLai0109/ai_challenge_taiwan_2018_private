@@ -24,7 +24,7 @@
     * [RNN \(Professor 李宏毅 \#26 0-45 mins\)\_中文版 MM modified\)](rnn-ben/rnn-professor-li-hong-yi-part-2-mm-modified.md)
     * [RNN \(Professor 李宏毅 \#26 0-45 mins\)\_英文版](rnn-ben/rnn-professor-li-hong-yi-26-0-45-mins-ff3f-ying-wen-ban.md)
   * [RNN \(Professor 李宏毅 \#26 45-90 mins\)](rnn-professor-li-hong-yi-26-45-90-mins.md)
-    * RNN \(Professor 李宏毅 \#26 45-90 mins\)＿英文版
+    * [RNN \(Professor 李宏毅 \#26 45-90 mins\)＿英文版](rnn-professor-li-hong-yi-26-45-90-mins-ff3f-ying-wen-ban.md)
     * [RNN \(Professor 李宏毅 \#26 45-90 mins\)\_中文版](rnn-ben.md)
       * [RNN \(Professor　李宏毅　\#26 45-90 mins\)\_中文版＿MM\_modified](rnn-ben/rnn-professorli-hong-yi-26-45-90-mins-zhong-wen-ban-ff3f-mm-modified.md)
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
