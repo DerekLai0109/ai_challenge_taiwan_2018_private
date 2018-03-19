@@ -16,13 +16,13 @@ Fig.1 shows
 
 With the popularity of shared videos, social networks, online course, etc, the quantity of multimedia or spoken content is growing much faster beyond what human beings can view or listen to.
 
-Accessing large collections of multimedia or spoden content is difficult and time-consuming for humans.
+Accessing large collections of multimedia or spoken content is difficult and time-consuming for humans.
 
-It will be great if the machine can automatically listen to and understand teh spoken content, and even visualize the key information for humans.
+It will be great if the machine can automatically listen to and understand the spoken content, and even visualize the key information for humans.
 
 In an initial task, the machine is expected to listen to and understand an audio story, and answer the questions related to that audio content.
 
-The listening comprehension task considered is related to Spoken Question Answering \[1\].
+The listening comprehension task considered is related to Spoken Question Answering \(SQA\) \[1\].
 
 In SQA, when the users enter questions in either text or spoken form, the machine needs to find the answer from some audio files.
 
