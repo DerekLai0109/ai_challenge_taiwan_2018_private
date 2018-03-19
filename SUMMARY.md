@@ -28,6 +28,7 @@
     * [RNN \(Professor 李宏毅 \#26 45-90 mins\)\_中文版](rnn-ben.md)
       * [RNN \(Professor　李宏毅　\#26 45-90 mins\)\_中文版＿MM\_modified](rnn-ben/rnn-professorli-hong-yi-26-45-90-mins-zhong-wen-ban-ff3f-mm-modified.md)
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
+  * [Backpropagation](backpropagation.md)
 * LSTM
   * [LSTM introduction](lstm-introduction.md)
   * [LSTM Architecture](lstm-architecture.md)
