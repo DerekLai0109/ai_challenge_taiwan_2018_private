@@ -21,8 +21,10 @@
   * [SVM\_coding](svmcoding.md)
 * [RNN](rnn.md)
   * [RNN \(Professor 李宏毅 \#26 0-45 mins\)](rnn-part-2.md)
-  * [RNN \(Professor 李宏毅 \#26 45-90 mins\)](rnn-ben.md)
-    * [RNN \(Professor 李宏毅 part 2, MM modified\)](rnn-ben/rnn-professor-li-hong-yi-part-2-mm-modified.md)
+    * [RNN \(Professor 李宏毅 \#26 0-45 mins\)\_中文版 MM modified\)](rnn-ben/rnn-professor-li-hong-yi-part-2-mm-modified.md)
+    * [RNN \(Professor 李宏毅 \#26 0-45 mins\)＿英文版](rnn-ben/rnn-professor-li-hong-yi-26-0-45-mins-ff3f-ying-wen-ban.md)
+  * [RNN \(Professor 李宏毅 \#26 45-90 mins\)\_中文版](rnn-ben.md)
+    * RNN \(Professor　李宏毅　\#26 45-90 mins\)\_中文版＿MM\_modified
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
 * LSTM
   * [LSTM introduction](lstm-introduction.md)
