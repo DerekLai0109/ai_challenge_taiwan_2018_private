@@ -17,7 +17,6 @@
       * Negative Sampling
     * [Word2Vector\_coding](distributed-representation/word2vector/word2vectorcoding.md)
   * [Character Embedding](distributed-representation/character-embedding.md)
-  * [Details of CBOW and Skip-gram Models](distributed-representation/details-of-cbow-and-skip-gram-model.md)
   * [Sequence\_to\_Sequence](distributed-representation/sequenceto-sequence.md)
     * [Sequence2sequence\_using\_Pytorch](distributed-representation/sequenceto-sequence/sequence2sequenceusing-pytorch.md)
 * [SVM](svm.md)
