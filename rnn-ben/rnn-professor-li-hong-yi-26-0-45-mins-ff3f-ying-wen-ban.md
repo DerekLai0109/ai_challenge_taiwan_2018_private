@@ -25,7 +25,7 @@ $$
 
 
 where $$\eta^n$$ is the learning rate at the $$n$$-th step. A algorithm called backpropagation through time \(BPTT\) can be used for the implementation of gradient descent in RNN.  
-Since $$a^n$$ contains $$x^i$$, $$\forall i \le n$$, and feed to RNN in the $$n+1$$-th step, sequential input are required for RNN.
+
 
 ## Gradient Vanishing Problem in RNN
 

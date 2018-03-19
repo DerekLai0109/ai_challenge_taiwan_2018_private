@@ -30,11 +30,9 @@ L=-\sum_{n=1} \hat{y}_n \log y_n
 $$
 
 
-$$y_n=\hbox{softmax}(s_n)$$
+其中，$$y_n=\hbox{softmax}(s_n)$$。
 
-In the $$n$$-th step, $$a^n = {\displaystyle \sum^n_{i = 1}} W^i x^i$$ and the $$n$$-th loss function $$L^n$$, are calculated, and the $$n+1$$-th weight $$W^{n+1}$$ are chosen to minimize $$L^n$$. $$L^n$$ can be defined as the sum of cross entropy between the output $$y^i$$ and a reference parameter $$z^i$$, $$\forall i \le n$$; $$z^i$$ is an identity vector, where the non-zero entry is the slot $$x^i$$ belongs to.
-
-$$W^{n+1}$$ can be obtained by applying gradient descent method, namely,
+$$W^{n+1}$$ 可以由gradient descent method計算為
 
 
 $$
@@ -42,10 +40,11 @@ W^{n + 1} = W^n - \eta^n \frac{\partial L^n}{\partial W^n} \tag{1}
 $$
 
 
-where $$\eta^n$$ is the learning rate at the $$n$$-th step. A algorithm called backpropagation through time \(BPTT\) can be used for the implementation of gradient descent in RNN.  
-Since $$a^n$$ contains $$x^i$$, $$\forall i \le n$$, and feed to RNN in the $$n+1$$-th step, sequential input are required for RNN.
+其中$$\eta^n$$ 是學習效率係數　\(learning rate\)，上標n表是他也可以隨著跌代而不同數值。
 
-## Gradient Vanishing Problem in RNN
+backpropagation through time \(BPTT\)技術被用來執行RNN的gradient descent 計算。
+
+## RNN的梯度消失議題
 
 ![](/assets/error_surface_and_total_loss.png)
 
