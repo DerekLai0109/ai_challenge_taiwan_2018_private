@@ -5,16 +5,19 @@
 * [Distributed representation](distributed-representation.md)
   * [Word embedding](distributed-representation/word-embedding.md)
   * [Word2Vector](distributed-representation/word2vector.md)
+    * [CBOW Model](distributed-representation/word2vector/cbow.md)
+      * [CBOW model with One-context word](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model.md)
+        * [Update equations for hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/update-equation-for-hidden-to-output-weights.md)
+      * [CBOW Model with Multi-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context.md)
+        * [Update equations for hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context/update-equations-for-hidden-to-output-and-input-to-hidden-weights.md)
+    * [Skip-gram Model](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model.md)
+      * [Update equation for the hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model/update-equation-for-the-hidden-to-output-and-input-to-hidden-weights.md)
+    * [Efficiency Improvement Techniques](distributed-representation/details-of-cbow-and-skip-gram-model/efficiency-improvement-techniques.md)
+      * Hierarchical Softmax
+      * Negative Sampling
     * [Word2Vector\_coding](distributed-representation/word2vector/word2vectorcoding.md)
   * [Character Embedding](distributed-representation/character-embedding.md)
   * [Details of CBOW and Skip-gram Models](distributed-representation/details-of-cbow-and-skip-gram-model.md)
-    * [CBOW model with One-context word](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model.md)
-      * [Update equations for hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/update-equation-for-hidden-to-output-weights.md)
-    * [CBOW Model with Multi-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context.md)
-      * [Update equations for hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context/update-equations-for-hidden-to-output-and-input-to-hidden-weights.md)
-    * [Skip-gram model](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model.md)
-      * [Update equation for the hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model/update-equation-for-the-hidden-to-output-and-input-to-hidden-weights.md)
-    * [Efficiency Improvement Techniques](distributed-representation/details-of-cbow-and-skip-gram-model/efficiency-improvement-techniques.md)
   * [Sequence\_to\_Sequence](distributed-representation/sequenceto-sequence.md)
     * [Sequence2sequence\_using\_Pytorch](distributed-representation/sequenceto-sequence/sequence2sequenceusing-pytorch.md)
 * [SVM](svm.md)
@@ -33,5 +36,5 @@
     * [TOEFL](towards-machine-comprehension-of-spoken-content-initial-toefl-listening-comprehension-test-by-machine/toefl.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
-* Machine Comprehension of Spoken Content
+* [Machine Comprehension of Spoken Content](machine-comprehension-of-spoken-content.md)
 
