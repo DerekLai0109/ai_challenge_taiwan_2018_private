@@ -43,9 +43,13 @@ $$
 {w_j} \leftarrow {w_j} + \eta {\textstyle{{\partial C} \over {\partial {w_j}}}} + \eta {\textstyle{{\partial C} \over {\partial {w_i}}}}
 $$
 
-![CBOW vs skip-gram model](/assets/CBOW vs skip-gram model.png) 
-*圖三 CBOW model vs skip-gram model*
+![Prediction-based Training](/assets/Prediction-based Training.png)
+*圖三 Prediction-based Training*
 
+在Word Embedding的架構裡面，最常使用的架構有兩種：
+
+![CBOW vs skip-gram model](/assets/CBOW vs skip-gram model.png) 
+*圖四 CBOW model vs skip-gram model*
 
 
 \[0\]
