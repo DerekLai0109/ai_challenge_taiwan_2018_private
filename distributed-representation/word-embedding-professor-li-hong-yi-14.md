@@ -49,6 +49,7 @@ $$
 在Word Embedding的架構裡面，最常使用的架構有兩種：
 1. Continous Bag-of-Word (CBOW) model
 2. skip-gram model
+兩個各有擅長，不分上下。主要的差異如圖四所示，CBOW是使用前後的word當輸入來預測現在出現的詞彙；skip-gram是用現在的詞彙當輸入，來預測前後會出現的詞彙。
 
 ![CBOW vs skip-gram model](/assets/CBOW vs skip-gram model.png) 
 *圖四 CBOW model vs skip-gram model*
