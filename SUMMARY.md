@@ -19,6 +19,7 @@
   * [Character Embedding](distributed-representation/character-embedding.md)
   * [Sequence\_to\_Sequence](distributed-representation/sequenceto-sequence.md)
     * [Sequence2sequence\_using\_Pytorch](distributed-representation/sequenceto-sequence/sequence2sequenceusing-pytorch.md)
+  * [Word Embedding \(Professor 李宏毅 \#14\)](distributed-representation/word-embedding-professor-li-hong-yi-14.md)
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 * [RNN](rnn.md)
