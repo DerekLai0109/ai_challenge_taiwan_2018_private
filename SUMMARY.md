@@ -22,10 +22,8 @@
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 * [RNN](rnn.md)
-  * [RNN \(Professor 李宏毅 \#26 0-45 mins\)](rnn-part-2.md)
-  * [RNN \(Professor 李宏毅 \#26 45-90 mins\)](rnn-ben.md)
   * [RNN\(coding\_perspective\)](rnncodingperspective.md)
-* LSTM
+* [LSTM](lstm.md)
   * [LSTM introduction](lstm-introduction.md)
   * [LSTM Architecture](lstm-architecture.md)
 * [Backpropagation](123.md)
