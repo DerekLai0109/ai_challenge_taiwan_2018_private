@@ -47,6 +47,8 @@ $$
 *圖三 Prediction-based Training*
 
 在Word Embedding的架構裡面，最常使用的架構有兩種：
+1. Continous Bag-of-Word (CBOW) model
+2. skip-gram model
 
 ![CBOW vs skip-gram model](/assets/CBOW vs skip-gram model.png) 
 *圖四 CBOW model vs skip-gram model*
