@@ -22,7 +22,7 @@
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 * [RNN](rnn.md)
-  * [RNN\(coding\_perspective\)](rnncodingperspective.md)
+  * [RNN\(coding\_perspective\)](rnn-ben/rnncodingperspective.md)
 * [LSTM](lstm.md)
   * [LSTM introduction](lstm-introduction.md)
   * [LSTM Architecture](lstm-architecture.md)
