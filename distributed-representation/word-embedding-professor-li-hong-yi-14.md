@@ -57,6 +57,5 @@ $$
 
 \[0\]
 H. Y. Lee, ML lecture \#14, Word Embedding, at
-
 [https://www.youtube.com/watch?v=X7PH3NuYW0Q&t=1846s](https://www.youtube.com/watch?v=X7PH3NuYW0Q&t=1846s)
 
