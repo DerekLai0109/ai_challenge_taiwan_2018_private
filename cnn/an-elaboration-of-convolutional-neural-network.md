@@ -54,6 +54,6 @@ The output layer can be constructed from sigmoidal neurons or radial-basis funct
 <\end{figure}
 
 ![other_kind_Layers_architecture_in_CNN](/assets/other_kind_Layers_architecture_in_CNN.jpg)
-*Fig.3 Other Layers architecture in a CNN. The difference between fig.3 <\ref{other_kind_Layers_architecture_in_CNN}> and fig.2<\ref{Layers_architecture_in_CNN}> is the last convolution layer is replaced by the spreading out layer.*
+*Fig.3 Other Layers architecture in a CNN. The difference between fig.3* <\ref{other_kind_Layers_architecture_in_CNN}> *and fig.2*<\ref{Layers_architecture_in_CNN}> *is the last convolution layer is replaced by the spreading out layer.*
 
-The layers architecture can be combined in other order. For example, fig.\ref{other_kind_Layers_architecture_in_CNN} shows another layers architecture, and the difference between fig.\ref{other_kind_Layers_architecture_in_CNN} and fig.\ref{Layers_architecture_in_CNN} is the last convolution layer is replaced by the spreading out layer.
+The layers architecture can be combined in other order. For example, fig.3 <\ref{other_kind_Layers_architecture_in_CNN}> shows another layers architecture, and the difference between fig.3 <\ref{other_kind_Layers_architecture_in_CNN}> and fig.2 <\ref{Layers_architecture_in_CNN}> is the last convolution layer is replaced by the spreading out layer.
