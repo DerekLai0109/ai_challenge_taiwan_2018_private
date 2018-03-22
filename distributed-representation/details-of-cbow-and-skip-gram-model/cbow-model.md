@@ -6,7 +6,7 @@ The CBOW model predicts one target word by its context words \[1\].
 
 Considering the CBOW model with one context word, which is reduced to a bigram model.
 
-In the bigram model, a word is given to predict the next word.
+In the bigram model, a word \(context word\) is given to predict the next word \(target word\).
 
 ![](/assets/import.png)
 
