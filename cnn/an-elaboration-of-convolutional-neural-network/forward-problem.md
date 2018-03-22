@@ -93,15 +93,17 @@ $$
 \caption{Convolution layer multiple-one mapping \($V^\ell\_m$\).}  
 \label{convolution\_layer\_in\_CNN\_case2\_general}  
 \end{figure}  
+
 Fig.\ref{convolution\_layer\_in\_CNN\_case1\_general} and Fig.\ref{convolution\_layer\_in\_CNN\_case2\_general} show the schematic of convolution layer by exploiting the concept of U \(one-multiple mapping\) and V \(multiple-one mapping\).
 
-Feature map $n$ of convolution layer $\ell$ is calculated as  
-\begin{eqnarray}  
-&&\bar{\bar{y}}_n^\ell = f_\ell \left\( \sum_{m \in V\_n^\ell} \bar{\bar{y}}^{\ell -1}\_m \bigcirc !!!!!!! \times \hspace{0.1 in} \bar{\bar{w}}_{m,n}^\ell + b_n^\ell \right\)  
-\label{convolution\_layer\_output} \  
-&&=f_\ell \left\( \sum_{m \in V\_n^\ell} \bar{\bar{C}}_{m,n}^\ell + b_n^\ell \right\) = f_\ell \( \bar{\bar{s}}_n^\ell \)  
-\nonumber   
-\end{eqnarray}  
+Feature map $$n$$ of convolution layer $$\ell$$ is calculated as  
+$$
+\bar{\bar{y}}_n^\ell = f_\ell \left(\sum_{m \in V_n^\ell} \bar{\bar{y}}^{\ell -1}_m \otimes
+\bar{\bar{w}}_{m,n}^\ell + b_n^\ell \right) \\ 
+=f_\ell \left( \sum_{m \in V_n^\ell} \bar{\bar{C}}_{m,n}^\ell + b_n^\ell \right) = f_\ell ( \bar{\bar{s}}_n^\ell ) \nonumber   
+$$
+  
+ is 
 where   
 \begin{eqnarray}  
 \bar{\bar{C}}_{m,n}^\ell= \bar{\bar{y}}_m^{\ell-1} \bigcirc !!!!!!! \times  \hspace{0.1 in}  \bar{\bar{w}}_{m,n}^\ell  
