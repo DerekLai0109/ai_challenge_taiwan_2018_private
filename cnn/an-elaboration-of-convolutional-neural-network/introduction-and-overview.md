@@ -21,7 +21,7 @@ The illustrative example is given in section IV.
 ###Heuristic View on CNN\begin{figure}[h]
 ![heuristic_on_CNN](/assets/heuristic_on_CNN.jpg)
 *Fig.1 Heuristic view on CNN.*
-Fig. 1 <\ref{heuristic_on_CNN}> shows the heuristic view of CNN, where $$\bar{\bar{x}}$$ is the input image. $$\bar{y}^L$$ is the output vector of CNN. $$\bar{d}$$ is the desired output vector. $$\bar{e} = \bar{y}^L - \bar{d}$$ is the error vector. $$w_n^\ell$$ \($$\bar{\bar{w}}_n^{\ell}$$\) and $$b_n^\ell$$ are the weights and bias, respectively, of $$n$$th neuron in $$\ell$$th layer. $$L$$ is the number of layer. $$N_\ell$$ is the number of neuron in $$\ell$$ layer. These parameters needs to be initialized. The **UpdateNet** block updates weights and biases $$\bar{\bar{w}}_n^{\ell, (t)}, b_n^{\ell, (t)}, w_n^{\ell, (t)}$$ into the new ones, i.e., $$\bar{\bar{w}}_n^{\ell, (t+1)}, b_n^{\ell, (t+1)}, w_n^{\ell, (t+1)}$$.
+Fig. 1 shows the heuristic view of CNN, where $$\bar{\bar{x}}$$ is the input image. $$\bar{y}^L$$ is the output vector of CNN. $$\bar{d}$$ is the desired output vector. $$\bar{e} = \bar{y}^L - \bar{d}$$ is the error vector. $$w_n^\ell$$ \($$\bar{\bar{w}}_n^{\ell}$$\) and $$b_n^\ell$$ are the weights and bias, respectively, of $$n$$th neuron in $$\ell$$th layer. $$L$$ is the number of layer. $$N_\ell$$ is the number of neuron in $$\ell$$ layer. These parameters needs to be initialized. The **UpdateNet** block updates weights and biases $$\bar{\bar{w}}_n^{\ell, (t)}, b_n^{\ell, (t)}, w_n^{\ell, (t)}$$ into the new ones, i.e., $$\bar{\bar{w}}_n^{\ell, (t+1)}, b_n^{\ell, (t+1)}, w_n^{\ell, (t+1)}$$.
 
 ###CNN Network Model Overview
 
