@@ -47,8 +47,8 @@
   * [An Elaboration of Convolutional Neural Network](cnn/an-elaboration-of-convolutional-neural-network.md)
     * [Introduction and Overview](cnn/an-elaboration-of-convolutional-neural-network/introduction-and-overview.md)
     * [Forward Problem](cnn/an-elaboration-of-convolutional-neural-network/forward-problem.md)
-    * Backward Problem
-    * Illustrative Example of CNN with 6 Layers
+    * [Backward Problem](cnn/an-elaboration-of-convolutional-neural-network/backward-problem.md)
+    * [Illustrative Example of CNN with 6 Layers](cnn/an-elaboration-of-convolutional-neural-network/illustrative-example-of-cnn-with-6-layers.md)
 * [Structured Learning](structured-learning.md)
   * [structure learning 李宏毅教授](structured-learning/structure-learning-li-hong-yi-jiao-shou.md)
 
