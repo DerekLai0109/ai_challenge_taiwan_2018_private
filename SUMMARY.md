@@ -46,4 +46,7 @@
 * [CNN](cnn.md)
   * [An Elaboration of Convolutional Neural Network](cnn/an-elaboration-of-convolutional-neural-network.md)
     * [Introduction and Overview](cnn/an-elaboration-of-convolutional-neural-network/introduction-and-overview.md)
+    * [Forward Problem](cnn/an-elaboration-of-convolutional-neural-network/forward-problem.md)
+    * Backward Problem
+    * Illustrative Example of CNN with 6 Layers
 
