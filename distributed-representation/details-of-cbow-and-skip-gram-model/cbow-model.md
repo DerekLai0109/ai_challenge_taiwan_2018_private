@@ -2,9 +2,9 @@
 
 Derek, 03/09/2018 created; 03/22/2018 last modified
 
-The CBOW model predicts one target word by its context \[1\].
+The CBOW model predicts one target word by its context words \[1\].
 
-Considering the CBOW model with the context word number of one, the CBOW model is reduced to a bigram model.
+Considering the CBOW model with one context word, which is reduced to a bigram model.
 
 In the bigram model, a word is given to predict the next word.
 
