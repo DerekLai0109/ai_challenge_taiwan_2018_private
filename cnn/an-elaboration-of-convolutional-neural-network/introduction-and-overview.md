@@ -1,12 +1,12 @@
 #An Elaboration of Convolutional Neural Network
 2018/3/22 M.M. Chiou
 
-###Abstract 
+###Abstract
 The computation of Convolution Neural Network (CNN) has been elaborated.
 One illustrative example of CNN with 6 layers is present.
 
 ###Introduction
- Conovlutional neural network (CNN) are desinged to process 2D image.
+Conovlutional neural network (CNN) are desinged to process 2D image.
 CNN, originally proposed by LeCun \cite{Y.L_1998}, is a neural network model with three key architectural ideas: local receptive fields, weight sharing, and sub-sampling in the spatial domain.
 The network is designed for the recognition of two-dimensional visual patterns.
 CNN has two strengths. First, feature extraction and classification are integrated into one structure which are adaptive.
@@ -21,7 +21,7 @@ The illustrative example is given in section IV.
 ###Heuristic View on CNN\begin{figure}[h]
 ![heuristic_on_CNN](/assets/heuristic_on_CNN.jpg)
 *Fig.1 Heuristic view on CNN.*
-Fig. 1 <\ref{heuristic_on_CNN}> shows the heuristic view of CNN, where $$\bar{\bar{x}}$$ is the input image. $$\bar{y}^L$$ is the output vector of CNN. $$\bar{d}$$ is the desired output vector. $$\bar{e} = \bar{y}^L - \bar{d}$$  is the error vector. $$w_n^\ell$$ \($$\bar{\bar{w}}_n^{\ell}$$\) and $$b_n^\ell$$ are the weights and bias, respectively, of $$n$$th neuron in $$\ell$$th layer. $$L$$ is the number of layer. $$N_\ell$$ is the number of neuron in $$\ell$$ layer. These parameters needs to be initialized. The **UpdateNet** block updates weights and biases $$\bar{\bar{w}}_n^{\ell, (t)}, b_n^{\ell, (t)}, w_n^{\ell, (t)}$$ into the new ones, i.e., $$\bar{\bar{w}}_n^{\ell, (t+1)}, b_n^{\ell, (t+1)}, w_n^{\ell, (t+1)}$$.
+Fig. 1 <\ref{heuristic_on_CNN}> shows the heuristic view of CNN, where $$\bar{\bar{x}}$$ is the input image. $$\bar{y}^L$$ is the output vector of CNN. $$\bar{d}$$ is the desired output vector. $$\bar{e} = \bar{y}^L - \bar{d}$$ is the error vector. $$w_n^\ell$$ \($$\bar{\bar{w}}_n^{\ell}$$\) and $$b_n^\ell$$ are the weights and bias, respectively, of $$n$$th neuron in $$\ell$$th layer. $$L$$ is the number of layer. $$N_\ell$$ is the number of neuron in $$\ell$$ layer. These parameters needs to be initialized. The **UpdateNet** block updates weights and biases $$\bar{\bar{w}}_n^{\ell, (t)}, b_n^{\ell, (t)}, w_n^{\ell, (t)}$$ into the new ones, i.e., $$\bar{\bar{w}}_n^{\ell, (t+1)}, b_n^{\ell, (t+1)}, w_n^{\ell, (t+1)}$$.
 
 ###CNN Network Model Overview
 
@@ -38,16 +38,7 @@ In the last convolution layer, the convolution masks have exactly the same size 
 
 The output layer can be constructed from sigmoidal neurons or radial-basis function (RBF) neurons. The outputs of output layer are considered as the network outputs. In applications of visual pattern classification, these outputs indicate the category of the input image.
 
-
-<\begin{figure}[h]
-<\vskip 6.5 cm
-<\hskip -0.2 cm
-<\special{wmf:other_kind_Layers_architecture_in_CNN.jpg x=9.3 cm y=6.5 cm}
-<\caption{Other Layers architecture in a CNN. The difference between fig.\ref{other_kind_Layers_architecture_in_CNN} and fig.\ref{Layers_architecture_in_CNN} is the last convolution layer is replaced by the spreading out layer. }
-<\label{other_kind_Layers_architecture_in_CNN}
-<\end{figure}
-
 ![other_kind_Layers_architecture_in_CNN](/assets/other_kind_Layers_architecture_in_CNN.jpg)
-*Fig.3 Other Layers architecture in a CNN. The difference between fig.3* <\ref{other_kind_Layers_architecture_in_CNN}> *and fig.2*<\ref{Layers_architecture_in_CNN}> *is the last convolution layer is replaced by the spreading out layer.*
+*Fig.3 Other Layers architecture in a CNN. The difference between fig.3 and fig.2 is the last convolution layer is replaced by the spreading out layer.*
 
-The layers architecture can be combined in other order. For example, fig.3 <\ref{other_kind_Layers_architecture_in_CNN}> shows another layers architecture, and the difference between fig.3 <\ref{other_kind_Layers_architecture_in_CNN}> and fig.2 <\ref{Layers_architecture_in_CNN}> is the last convolution layer is replaced by the spreading out layer.
+The layers architecture can be combined in other order. For example, fig.3 shows another layers architecture, and the difference between fig.3 and fig.2 is the last convolution layer is replaced by the spreading out layer.
