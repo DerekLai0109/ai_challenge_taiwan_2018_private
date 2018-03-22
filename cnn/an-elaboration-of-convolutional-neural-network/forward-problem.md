@@ -52,12 +52,15 @@ Fig.3 <\ref{convolution\_layer\_in\_CNN\_case1}> shows another illustrative exam
 *Fig.4 Schematic of $$U^\ell$$ and $$V^{\ell+1}$$, which are applied to describe the connection between successive layer.*
   
 Fig.4 <\ref{schematic\_convolution\_U\_and\_V}> shows the schematic of $$U^\ell$$ and $$V^{\ell+1}$$, which are applied to describe the connection between successive layer. $$U^\ell_n$$ stores the next elements connection for $$n$$th neuron \(feature map\) in layer $$\ell$$ to $$\ell+1$$ layer. $$V^{\ell+1}\_m$$ stores the preceding elements conection for $$m$$th neuron \(feature map\) in layer $$\ell+1$$ to $$\ell$$ layer.  In this illustrative example, the first neuron in layer $$\ell$$ is connected to the first, second and fourth neurons in the layer $$\ell+1$$ \(next layer\), and it renders   
+
 $$
 U_1^\ell = [U_1^\ell(1), U_1^\ell(2), U_1^\ell(3) ] = [1,2,4] \nonumber   
 $$
+
 The second neuron in layer $$\ell+1$$ is connected to the first, second and third neruons in the $$\ell$$ layer \(preceding neuron\), and it renders
+
 $$ 
-V_2^{\ell+1}=[V_2^{\ell+1}(1), V_2^{\ell+1}(2), V_2^{\ell+1}(3) ] = [1,2,3] \nonumber  
+V_2^{\ell+1} = [V_2^{\ell+1}(1), V_2^{\ell+1}(2), V_2^{\ell+1}(3) ] = [1,2,3] \nonumber  
 $$
 
 Note that the U in $\ell$ layer, $U^\ell$, and V in $\ell+1$ layer, $V^{\ell+1}$ carry equivalent information.  
