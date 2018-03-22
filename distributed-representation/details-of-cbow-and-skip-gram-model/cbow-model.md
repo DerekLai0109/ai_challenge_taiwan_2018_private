@@ -8,7 +8,9 @@ Considering the CBOW model with one context word, which is reduced to a bigram m
 
 In the bigram model, a word \(context word\) is given to predict the next word \(target word\).
 
-Define a vocabulary containing V words as  
+Define a vocabulary containing V words as
+
+
 $$
 {\cal V} = \{ d_1, d_2, \cdots, d_i, \cdots, d_V\}
 $$
@@ -18,13 +20,12 @@ where $$d_i$$ is the  $$i$$-th word in the vocabulary.
 
 ![](/assets/import.png)
 
-**Fig.1. Architecture of the CBOW model with only one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices.        
+**Fig.1. Architecture of NN for the CBOW model with only one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices.          
  **$$\bar{v}_{w_k}$$** is the **$$k$$**-th row of **$$\bar{\bar{W}}$$** ; **$$\bar{v}_{w_j}'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$**.**
 
-Fig.1 shows the architecture of the CBOW model with one context word. $${\cal V}$$ $$V$$
+Fig.1 shows the architecture of the neural network \(NN\) for the CBOW model with one context word. 
 
-The vocabulary size is _V_, which is the number of neurons in the input layer and the output layer, and the hidden layer size is _N_.  
- Usually, _V_ &gt;&gt; _N_.
+The the number of neurons in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_.
 
 The input is a one-hot encoded vector as
 
