@@ -1,113 +1,5 @@
 # structure learning 李宏毅教授
 
-&lt;!--  
- /\* Font Definitions \*/  
- @font-face  
-	{font-family:PMingLiU;  
-	panose-1:2 2 5 0 0 0 0 0 0 0;  
-	mso-font-alt:新細明體;  
-	mso-font-charset:136;  
-	mso-generic-font-family:roman;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}  
-@font-face  
-	{font-family:"Cambria Math";  
-	panose-1:2 4 5 3 5 4 6 3 2 4;  
-	mso-font-charset:1;  
-	mso-generic-font-family:roman;  
-	mso-font-format:other;  
-	mso-font-pitch:variable;  
-	mso-font-signature:0 0 0 0 0 0;}  
-@font-face  
-	{font-family:Calibri;  
-	panose-1:2 15 5 2 2 2 4 3 2 4;  
-	mso-font-charset:0;  
-	mso-generic-font-family:swiss;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-520092929 1073786111 9 0 415 0;}  
-@font-face  
-	{font-family:"\@PMingLiU";  
-	panose-1:2 2 5 0 0 0 0 0 0 0;  
-	mso-font-alt:"\@Arial Unicode MS";  
-	mso-font-charset:136;  
-	mso-generic-font-family:roman;  
-	mso-font-pitch:variable;  
-	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}  
-@font-face  
-	{font-family:"Microsoft JhengHei";  
-	panose-1:2 11 6 4 3 5 4 4 2 4;  
-	mso-font-charset:136;  
-	mso-generic-font-family:swiss;  
-	mso-font-pitch:variable;  
-	mso-font-signature:135 680476672 22 0 1048585 0;}  
-@font-face  
-	{font-family:"\@Microsoft JhengHei";  
-	panose-1:2 11 6 4 3 5 4 4 2 4;  
-	mso-font-charset:136;  
-	mso-generic-font-family:swiss;  
-	mso-font-pitch:variable;  
-	mso-font-signature:135 680476672 22 0 1048585 0;}  
- /\* Style Definitions \*/  
- p.MsoNormal, li.MsoNormal, div.MsoNormal  
-	{mso-style-unhide:no;  
-	mso-style-qformat:yes;  
-	mso-style-parent:"";  
-	margin-top:0cm;  
-	margin-right:0cm;  
-	margin-bottom:8.0pt;  
-	margin-left:0cm;  
-	line-height:107%;  
-	mso-pagination:widow-orphan;  
-	font-size:11.0pt;  
-	font-family:"Calibri",sans-serif;  
-	mso-ascii-font-family:Calibri;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:PMingLiU;  
-	mso-fareast-theme-font:minor-fareast;  
-	mso-hansi-font-family:Calibri;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;}  
-a:link, span.MsoHyperlink  
-	{mso-style-noshow:yes;  
-	mso-style-priority:99;  
-	color:blue;  
-	text-decoration:underline;  
-	text-underline:single;}  
-a:visited, span.MsoHyperlinkFollowed  
-	{mso-style-noshow:yes;  
-	mso-style-priority:99;  
-	color:\#954F72;  
-	mso-themecolor:followedhyperlink;  
-	text-decoration:underline;  
-	text-underline:single;}  
-.MsoChpDefault  
-	{mso-style-type:export-only;  
-	mso-default-props:yes;  
-	font-family:"Calibri",sans-serif;  
-	mso-ascii-font-family:Calibri;  
-	mso-ascii-theme-font:minor-latin;  
-	mso-fareast-font-family:PMingLiU;  
-	mso-fareast-theme-font:minor-fareast;  
-	mso-hansi-font-family:Calibri;  
-	mso-hansi-theme-font:minor-latin;  
-	mso-bidi-font-family:"Times New Roman";  
-	mso-bidi-theme-font:minor-bidi;}  
-.MsoPapDefault  
-	{mso-style-type:export-only;  
-	margin-bottom:8.0pt;  
-	line-height:107%;}  
-@page WordSection1  
-	{size:612.0pt 792.0pt;  
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;  
-	mso-header-margin:35.4pt;  
-	mso-footer-margin:35.4pt;  
-	mso-paper-source:0;}  
-div.WordSection1  
-	{page:WordSection1;}  
---&gt;  
-
-
 什麼是structure learning, 到目前為止，我們考慮的問題，他的input其實都是一個vector，output都是另外一個vector。不管我們是在作SVM，還是在作Deep Learning的實後。我們的input或output都只是vector而以。但實際上我們要面對的問題往往比這個更困難。我們可能需要input或是output事一個sequence，我們可能需要output事一個list。Output 事一個tree。
 
 Output 事一個bounding box等等。像你在representation 的final裡面。你可能希望你的output就直接室一個list，而不是一個一個element。
@@ -119,14 +11,6 @@ Output 事一個bounding box等等。像你在representation 的final裡面。�
 只是我們不知道要怎麼做。
 
 如果我們目前學過的deep learning的network架構。我們要怎麼都個network，他個inpu才會事一個tree structure。Output 才會是另一個tree structure。你可能不知道要怎麼做這件事。
-
-
-
-
-
-
-
-
 
 像這種structure learning的task。他有非常多的應用，他的應用比比接是。我們知道一班的machine learning的課程是不會講structure learning的。其實structure learning他的application非常多。
 
@@ -190,8 +74,6 @@ Output事一個bounding box
 
 舉例來說，線在假設我們的task呢事要做一個量工春日的detection。
 
-
-
 Input事一張image。
 
 Output的bounding box 就是量工春日的所在位置。這樣子。
@@ -224,25 +106,15 @@ Deep learning根structure learning他們並不是independent的。
 
 但是我還是要舉bounding box的例子。我只是要偵測量工春日的圖這樣子。
 
-
-
 而如果是object detection是怎麼做的呢?
 
 你的image呢你個input X就事一張image。Y 就是bounding box。
 
-
-
 F\(X,Y\)就是說假設這張image，配上這個紅色的bounding box這個位置。
-
-
 
 跟這個紅色的bounding box 他們有多匹配。
 
-
-
 如果是在object detection的例子就是他有多正確。
-
-
 
 你有沒有真的把量工春日框出來。
 
@@ -252,11 +124,7 @@ F\(X,Y\)就是說假設這張image，配上這個紅色的bounding box這個位�
 
 框在這邊，綠色的框框有點不對，
 
-
-
 框在，十九留頭上就不對這樣子。
-
-
 
 如果是另外一張圖，框在紅色框框很對。
 
@@ -265,8 +133,6 @@ F\(X,Y\)就是說假設這張image，配上這個紅色的bounding box這個位�
 好
 
 那接下來testing的時候給一張圖。這個x這個x是從來沒有看過的圖。那麼，你窮舉所有可能的bounding box這個bounding box這個bounding box可以話在這個地方可以話在這個地方。可以話在這個地方這個地方這個地方，可以話在各個不同可能的地方。看說那個得到的分數最高，可能紅色的得到十分，綠色的得兩分。藍色的三分，綠色的一分等等。然後紅色的最高，紅色就是你model的output。
-
-
 
 那在別的task裡面呢，其實，也是差不多的假設我們今天要做sumarization。
 
@@ -278,29 +144,19 @@ Summarizton的task就是，input一個document很長的。他有很多句子，o
 
 Testing的時候呢，就是窮舉所有可能的summary，看那一個summary可以讓你的f最大。他就事一個正確，他就是你的model的output。
 
-
-
 或這是retrival的時候呢，就是，也是一樣，retrival作的task
 
 Input事一個查詢詞output事一個搜尋的結果。Webpage的list
 
-
-
 那麼training的時候呢。我們要一些training的data知道說input這個query output是哪一list才是perfect。
-
-
 
 Input Obama的時候output是這個list是perfect。分數最高，
 
 Output是這個list是不對的。所以他的分數比較低。
 
-
-
 Input trump的時候，output是這個list是對的。所以分數比較高
 
 Output是這個list是不對的，所以分數比較低等等。
-
-
 
 作搜尋的時候有人輸入一個量工春日。就全窮舉所有可能的list看看。那一個list分數最高。你可能覺得什麼窮舉所有的例子聽起來是多麼荒謬喔。
 
@@ -318,11 +174,7 @@ Output是這個list是不對的，所以分數比較低等等。
 
 好這個unified的framework或許你聽的很陌生。
 
-
-
 覺得很怪這樣子第一次聽到的人可能都覺得你搞什麼東西阿真的。
-
-
 
 怎麼出現一個f這樣。那我們換一個說法看你有沒有比較接受。這個說法是這樣的。
 
@@ -337,8 +189,6 @@ P\(y\|x\)的機率。那麼那一個y積率最高，那麼他就是我的答案�
 P\(x\)對於你最後找出來的y沒有影響
 
 那麼就是找P\(x,y\)在哪一個y的probability最高，那個y就是最後你的output。
-
-
 
 而這個training就是這個training
 
@@ -364,8 +214,6 @@ P\(x\)對於你最後找出來的y沒有影響
 
 那麼你現在是ㄧ個有structure的東西X Y都是一個很大的space。很大的space這個要怎麼做summaiton阿很難。所以就像用石頭砸自己的腳這樣子。你把機率的東西引進來，然後要normalize變成機率，然後結果你會發現大部分的時間你在想說要怎麼把他做normalization。那麼何不想說，不要去做normalization呢?
 
-
-
 那作機率有一個好處啦
 
 就是機率是meaningful的。你比較容易了解想像他是什麼樣的一個東西這樣。
@@ -382,17 +230,11 @@ P\(x\)對於你最後找出來的y沒有影響
 
 我知道快下課了，所以我就很快帶過這三個問題。
 
-
-
 第一個問題是F\(X,Y\)長什麼樣子，你很難想像F\(X,Y\)應該是長什麼樣子，現在input是，input是ㄧ個image，
 
 Input是ㄧ個image加上一個bounding box，這個F\(X,Y\)應該是長什麼樣子
 
-
-
 Input是ㄧ個keyword根list這個F\(X,Y\)應該長什麼樣子。
-
-
 
 再來就是那個荒唐的inference的問題，怎麼解arg max的這個問題
 
@@ -403,8 +245,6 @@ Input是ㄧ個keyword根list這個F\(X,Y\)應該長什麼樣子。
 第三個問題是training，training的時候的priciple又是我們正確的X根Y的pair可以大過其他的正確XY pair可以大過其他的這個training是可以完成的嗎?指要你，指要你解出這三個問題，你就可以解出structure learning的problem，或著三張神之卡就可以成為法老王。ㄟ地震警報，現在有地震嗎?沒有喔…好那其實是這樣子啦。
 
 我覺得gain其實就可以解出這三個問題的solution，你可能看不出來gain跟這個問題有什麼關係，他們是有關係的。Gain好像就是我看到就是解這三個問題的曙光這樣子
-
-
 
 好，那其實這三個問題，你在別的地方是有聽過的喔你如果有修過數位影音處理的時候，里寧三老師就有說過他也說過HAN有三個問題，其實這三個問題general的structure learning的三個問題這樣子。他不只用在HAN上，他可以用在任何的strucrue learning的problem上，
 
@@ -440,23 +280,6 @@ Negtive的cross entrophy就是F\(X,Y\)
 
 那找max其實就是那個窮舉的那個行，可你輕易做到。
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Input is a vector
 
 Output is a vector
@@ -465,27 +288,17 @@ Deep Learning,
 
 Output: List, tree, bonding box
 
-
-
 Structure learning:
 
 Speech recognition input sequence output sequence
 
 Translation:
 
-
-
 Unified Framework- Object Detection
-
-
 
 figure, ...
 
-
-
 Enumerate all possible bounding box y
-
-
 
 Unified framework
 
@@ -494,8 +307,4 @@ Training is to estimate the joint probability of X and Y
 Find the y that makes the joint probability of X and Y be maximum
 
 [https://www.youtube.com/watch?v=5OYu0vxXEv8](https://www.youtube.com/watch?v=5OYu0vxXEv8)
-
-
-
-
 
