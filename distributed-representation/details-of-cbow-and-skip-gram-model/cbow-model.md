@@ -10,8 +10,8 @@ In the bigram model, a word \(context word\) is given to predict the next word \
 
 ![](/assets/import.png)
 
-Architecture of the CBOW model with only one word in the context. $$\bar{\bar{W}}$$ and $$\bar{\bar{W}}'$$ are the input-to-hidden and hidden-to-output weight matrices.  
- $$\bar{v}_{w_k}$$ is the $$k$$-th row of $$\bar{\bar{W}}$$ ; $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$.
+**Fig.1. Architecture of the CBOW model with only one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices.  
+ **$$\bar{v}_{w_k}$$** is the **$$k$$**-th row of **$$\bar{\bar{W}}$$** ; **$$\bar{v}_{w_j}'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$**.**
 
 Fig shows the architecture of the CBOW model with only one context word.
 
