@@ -43,4 +43,6 @@
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [Machine Comprehension of Spoken Content](machine-comprehension-of-spoken-content.md)
+* [CNN](cnn.md)
+  * [An Elaboration of Convolutional Neural Network](cnn/an-elaboration-of-convolutional-neural-network.md)
 
