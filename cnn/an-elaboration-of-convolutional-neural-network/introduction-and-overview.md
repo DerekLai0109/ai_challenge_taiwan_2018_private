@@ -24,13 +24,7 @@ The illustrative example is given in section IV.
 Fig. 1 <\ref{heuristic_on_CNN}> shows the heuristic view of CNN, where $$\bar{\bar{x}}$$ is the input image. $$\bar{y}^L$$ is the output vector of CNN. $$\bar{d}$$ is the desired output vector. $$\bar{e} = \bar{y}^L - \bar{d}$$  is the error vector. $$w_n^\ell$$ ($$\bar{\bar{w}}_n^{\ell}$$) and $$b_n^\ell$$ are the weights and bias, respectively, of $$n$$th neuron in $$\ell$$th layer. $$L$$ is the number of layer. $$N_\ell$$ is the number of neuron in $$\ell$$ layer. These parameters needs to be initialized. The **UpdateNet** block updates weights and biases $$\bar{\bar{w}}_n^{\ell, (t)}, b_n^{\ell, (t)}, w_n^{\ell, (t)}$$ into the new ones, i.e., $$\bar{\bar{w}}_n^{\ell, (t+1)}, b_n^{\ell, (t+1)}, w_n^{\ell, (t+1)}$$.
 
 ###CNN Network Model Overview
-<\begin{figure}[h]
-<\vskip 6.5 cm
-<\hskip -0.2 cm
-<\special{wmf:Layers_architecture_in_CNN.jpg x=9.3 cm y=6.5 cm}
-<\caption{Layers architecture in a CNN. Note that the output layer is fully connected. $\bar{\bar{y}}^\ell_n, \ell=1, 2, \cdots, L-2$, is the $n$th  feature map (2-D output) in $\ell$ layer.}
-<\label{Layers_architecture_in_CNN}
-<\end{figure}
+
 ![Layers_architecture_in_CNN](/assets/Layers_architecture_in_CNN.jpg)
 *Fig.2 Layers architecture in a CNN. Note that the output layer is fully connected. $$\bar{\bar{y}}^\ell_n, \ell=1, 2, \cdots, L-2$$, is the $$n$$th  feature map (2-D output) in $$\ell$$ layer.*
 
