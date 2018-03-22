@@ -13,6 +13,10 @@ The detailed derivations are provided in \[3\].
 
 An interacitve demo is available at \[4\].
 
+\[0\]
+
+X. Rong, "word2vec parameter learning explained," arXiv:1411.2738v4, June 2016.
+
 \[1\]
 
 T. Mikolov, K. Chen, G. Corrado and J. Dean, Efficient estimation of word representations in vector space,
