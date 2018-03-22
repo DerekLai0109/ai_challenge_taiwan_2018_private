@@ -9,13 +9,13 @@ The two word2vec models, CBOW model and skip-gram model, proposed by Mikolov \[1
 
 Efficiency improvement techniques, hierarchical softmax and negative sampling, are proposed in \[2\].
 
-The detailed derivations are provided in \[3\].
+The detailed derivations are provided in \[0\].
 
-An interacitve demo is available at \[4\].
+An interacitve demo is available at \[3\].
 
 \[0\]
 
-X. Rong, "word2vec parameter learning explained," arXiv:1411.2738v4, June 2016.
+X. Rong, word2vec parameter learning explained, arXiv:1411.2738, 2014.
 
 \[1\]
 
@@ -28,10 +28,6 @@ arXiv:1301.3781, 2013.
 T. Mikolov, I. Sutskever, K. Chen, G. Corrado and J. Dean, Distributed representations of words and phrases and their compositionality,  arXiv:1301.4546, 2013.
 
 \[3\]
-
-X. Rong, word2vec parameter learning explained, arXiv:1411.2738, 2014.
-
-\[4\]
 
 [http://bit.ly/wevi-online](http://bit.ly/wevi-online)
 
