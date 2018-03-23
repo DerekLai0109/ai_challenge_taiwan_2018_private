@@ -12,31 +12,27 @@ Define a vocabulary containing V words as
 
 
 $$
-{\cal V} = \{ d_1, d_2, \cdots, d_i, \cdots, d_V\}
+{\cal V} = \{ d_1, d_2, \cdots, d_k, \cdots, d_V\}
 $$
 
 
-where $$d_i$$ is the  $$i$$-th word in the vocabulary.
+where $$d_k$$ is the  $$k$$-th word in the vocabulary.
+
+![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of the neural network \(NN\) for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. **$$\bar{v}_k$$** and **$$\bar{v}_j'$$** are word vectors and are named input vector and ouput vector, respectively.**
+
+Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the one-hot encoded vector of word $$d_k$$ and is the input of the neural network \(NN\) for CBOW model with one-word context, expanded as 
+$$
+\bar{x}^k = [x_1^k, x_2^k, \cdots, x_k^k, \cdots, x_V^k]^t, \tag{1}
+$$
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$.
 
 ![](/assets/import.png)
 
-**Fig.1. Architecture of NN for the CBOW model with only one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices.            
- **$$\bar{v}_{w_k}$$** is the **$$k$$**-th row of **$$\bar{\bar{W}}$$** ; **$$\bar{v}_{w_j}'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$**.**
+**Fig.2. Architecture of NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
 
-Fig.1 shows the architecture of the neural network \(NN\) for the CBOW model with one context word.
+Fig.2 shows the architecture of the neural network \(NN\) for the CBOW model with one context word.
 
 The the number of neurons in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_.
-
-The input is a one-hot encoded vector as
-
-
-$$
-\bar{x} = [x_1, x_2, \cdots, x_V]^t 
-\tag{1}
-$$
-
-
-The one-hot encoding means that, for word $$w_k (k = 1,2, \cdots, V)$$, the $$k$$-th component is $$x_k = 1$$ and other components are $$x_{i \neq k} = 0$$.
 
 The input-to-hidden weight between the neuron $$k$$ in the input layer and the neuron $$i$$ in the hidden layer is denoted as $$w_{ki}$$ , forming a $$V \times N$$ weight matrix as
 
