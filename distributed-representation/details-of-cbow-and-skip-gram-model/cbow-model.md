@@ -32,7 +32,7 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 ![](/assets/CBOW_1word_1.jpg)
 
-**Fig.2. Architecture of NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
+**Fig.2. Architecture of NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
 
 Fig.2 shows the architecture of the neural network \(NN\) for the CBOW model with one context word.
 
@@ -59,12 +59,43 @@ Thus, the hidden-layer output is obtained as
 
 
 $$
-\bar{h} = \bar{\bar{W}}^t \cdot \bar{x} = \bar{v}_{w_k}
+\bar{h} = \bar{\bar{W}}^t \bar{x}^k 
+\\
+ = \left[
+\begin{matrix}
+w_{11} & w_{21} & \cdots & w_{k1} & \cdots & w_{V1} \\ 
+w_{12} & w_{22} & \cdots & \cdots & \cdots & w_{V2} \\ 
+\vdots & \cdots & \cdots & w_{ki}& \cdots  & \vdots \\ 
+\vdots & \cdots & \ddots& \cdots & \vdots & \vdots \\ 
+w_{1N} & w_{2N} & \cdots & w_{kN} & \cdots & w_{VN}
+\end{matrix}
+\right] 
+\left[ 
+\begin{matrix}
+0 \\
+\vdots \\
+0 \\
+x_k^k = 1 \\
+0 \\
+\vdots \\
+0
+\end{matrix}
+\right] 
+= \left[ 
+\begin{matrix}
+w_{k1} \\
+\vdots \\
+w_{ki} \\
+\vdots \\
+w_{kN}
+\end{matrix}
+\right]
+\doteq \bar{v}_{k}
 \tag{3}
 $$
 
 
-where the superscript $$t$$ means transpose and $$\bar{v}_{w_k}$$ is the $$N$$-dimensional vector representation of the input word $$w_k$$ and its components are the values in the $$k$$-th row of $$\bar{\bar{W}}$$.
+where $$\bar{v}_k$$ is the $$N$$-dimensional vector representation of the input word $$d_k$$ and is the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$.
 
 The hidden-to-output weights are denoted as $$w_{ij}'$$, which form a $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as
 
