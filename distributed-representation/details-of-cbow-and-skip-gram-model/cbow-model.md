@@ -18,19 +18,19 @@ $$
 
 where $$d_k$$ is the  $$k$$-th word in the vocabulary.
 
-![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of the neural network \(NN\) for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. **$$\bar{v}_k$$** and **$$\bar{v}_j'$$** are word vectors and are named input vector and ouput vector, respectively.**
+![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. **$$\bar{v}_k$$** and **$$\bar{v}_j'$$** are word vectors and are named input vector and ouput vector, respectively.**
 
 Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the one-hot encoded vector of word $$d_k$$ and is the input of the neural network \(NN\) for CBOW model with one-word context, expanded as
 
 
 $$
-\bar{x}^k = [x_1^k, x_2^k, \cdots, x_k^k, \cdots, x_V^k]^t, \tag{1}
+\bar{x}^k = [x_1^k, x_2^k, \cdots, x_k^k, \cdots, x_V^k]^t \tag{1}
 $$
 
 
 where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.
 
-![](/assets/import.png)
+![](/assets/CBOW_1word_1.jpg)
 
 **Fig.2. Architecture of NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
 
@@ -55,7 +55,7 @@ w_{V1} & w_{V2} & \cdots & \cdots & w_{VN}
 $$
 
 
-Thus, output of the hidden layer is obtained as
+Thus, the hidden-layer output is obtained as
 
 
 $$
