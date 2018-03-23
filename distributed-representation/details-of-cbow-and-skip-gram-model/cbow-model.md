@@ -1,6 +1,6 @@
 # CBOW Model with One-word Context
 
-Derek, 03/09/2018 created; 03/22/2018 last modified
+Derek, 03/09/2018 created; 03/23/2018 last modified
 
 The CBOW model predicts one target word by its context words \[1\].
 
@@ -20,11 +20,15 @@ where $$d_k$$ is the  $$k$$-th word in the vocabulary.
 
 ![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of the neural network \(NN\) for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. **$$\bar{v}_k$$** and **$$\bar{v}_j'$$** are word vectors and are named input vector and ouput vector, respectively.**
 
-Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the one-hot encoded vector of word $$d_k$$ and is the input of the neural network \(NN\) for CBOW model with one-word context, expanded as 
+Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the one-hot encoded vector of word $$d_k$$ and is the input of the neural network \(NN\) for CBOW model with one-word context, expanded as
+
+
 $$
 \bar{x}^k = [x_1^k, x_2^k, \cdots, x_k^k, \cdots, x_V^k]^t, \tag{1}
 $$
-where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$.
+
+
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.
 
 ![](/assets/import.png)
 
