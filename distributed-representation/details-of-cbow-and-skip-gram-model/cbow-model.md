@@ -95,7 +95,7 @@ w_{kN}
 $$
 
 
-where $$\bar{v}_k$$ is the $$N$$-dimensional vector representation of the input word $$d_k$$ and is the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$.
+where $$\bar{v}_k$$ is the $$N$$-dimensional vector representation of the input word $$d_k$$ and is the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$, which contains the weights between the neuron $$k$$ in the input layer and all neurons in the hidden layer as shown in Fig.2.
 
 The hidden-to-output weights are denoted as $$w_{ij}'$$, which form a $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as
 
