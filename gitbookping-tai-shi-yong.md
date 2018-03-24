@@ -4,7 +4,7 @@
 
 ![](/assets/document_file_structure.png)
 
-圖1 利用Gitbook文件檔案結構將知識架構化的概念。
+**圖1 利用Gitbook文件檔案結構將知識架構化的概念。**
 
 圖1 呈現利用Gitbook文件檔案結構的特質，將知識架構化的概念。
 
@@ -27,10 +27,6 @@ CBOW Model with one-word context, CBOW model with multi-word context。
 各自再有的第五層內容是Backword Pass文件。
 
 總的來說，文件結構可再圖像化為圖2。
-
-
-
-
 
 Fig.2 文件檔案結構示意圖
 
