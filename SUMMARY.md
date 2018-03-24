@@ -7,7 +7,7 @@
   * [Word2Vector](distributed-representation/word2vector.md)
     * [CBOW Model](distributed-representation/word2vector/cbow.md)
       * [CBOW Model with One-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model.md)
-        * [Update equations for weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/update-equation-for-hidden-to-output-weights.md)
+        * [Backward Pass](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/update-equation-for-hidden-to-output-weights.md)
       * [CBOW Model with Multi-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context.md)
         * [Update equations for hidden-to-output and input-to-hidden weights](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context/update-equations-for-hidden-to-output-and-input-to-hidden-weights.md)
     * [Skip-gram Model](distributed-representation/details-of-cbow-and-skip-gram-model/skip-gram-model.md)
