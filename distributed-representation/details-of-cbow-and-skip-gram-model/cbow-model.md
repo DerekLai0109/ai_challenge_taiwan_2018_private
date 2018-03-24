@@ -168,45 +168,51 @@ w_{kN}
 $$
 
 
-which can be represented as
-
-
+which can be represented as 
 $$
-\bar{u} = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k
+\bar{u} = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k 
+= \left[ \begin{matrix}
+u_1 \\
+\vdots \\
+u_j \\
+\vdots \\
+u_V
+\end{matrix} \right] 
+= \left[ \begin{matrix}
+\bar{v}_1'^t \bar{v}_k \\
+\vdots \\
+\bar{v}_j'^t \bar{v}_k \\
+\vdots \\
+\bar{v}_V'^t \bar{v}_k
+\end{matrix} \right] 
+= \left[ \begin{matrix}
+\bar{v}_1' \cdot \bar{v}_k \\
+\vdots \\
+\bar{v}_j' \cdot \bar{v}_k \\
+\vdots \\
+\bar{v}_V' \cdot \bar{v}_k
+\end{matrix} \right]
 \tag{7}
 $$
 
 
-where $$\bar{v}_{w_j}'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$. The $$j$$-th neuron in the output layer has a softmax output as
+The output $$y_j$$ of the $$j$$-th neuron in the output layer is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}_k$$ as
 
 
 $$
-y_j = p(w_j | w_k)= \frac{e^{u_j}}{\displaystyle \sum_{j = 1}^V e^{u_j}} 
-\tag{6}
+y_j = p(d_j | \bar{x}_k)= \frac{e^{u_j}}{\displaystyle \sum_{j = 1}^V e^{u_j}} = \frac{e^{\bar{v}'_j \cdot \bar{v}_k}}{\displaystyle \sum_{j = 1}^V e^{\bar{v}'_j \cdot \bar{v}_k}} 
+\tag{8}
 $$
-
-
-By substituting $$(5)$$ into $$(6)$$, we have
+The training objective is to maximize the probability $$y_{j_o}$$ of observing the target word $$d_{j_o}$$ given $$\bar{x}_k$$. The loss function is defined as
 
 
 $$
-y_j = p(w_j | w_k) = \frac{e^{\bar{v}'_{w_j} \cdot \bar{v}_{w_k}}}{\displaystyle \sum_{j = 1}^V e^{\bar{v}'_{w_j} \cdot \bar{v}_{w_k}}} 
-\tag{7}
-$$
-
-
-Note that $$\bar{v}_w$$ and $$\bar{v}'_w$$ are two representations of word $$w$$ and are called input vector and output vector, respectively.
-
-The training objective is to maximize the probability of observing the target word $$w_{j_o}$$ given the input context word $$w_k$$.Define the loss function as
-
-
-$$
-E = -\ln p(w_{j_o} | w_k) 
+E = -\ln p(d_{j_o} | \bar{x}_k) 
 \tag{8}
 $$
 
 
-Thus, to maximize $$p(w_{j_o} | w_k)$$ is to minimize $$E$$.
+Thus, to maximize $$y_{j_o} = p(d_{j_o} | \bar{x}_k)$$ is to minimize $$E$$.
 
 The loss function is a special case of the cross-entropy measurement between two probabilistic distributions.
 
