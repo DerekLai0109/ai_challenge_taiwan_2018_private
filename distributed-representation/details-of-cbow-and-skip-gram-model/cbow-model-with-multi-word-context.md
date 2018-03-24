@@ -24,18 +24,10 @@ where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$.
 
 ![](/assets/CBOW_cword.png)
 
-**Fig.1. Architecture of CBOW model with **$$C$$** context words.**
+**Fig.1. Architecture of the NN for CBOW model with **$$C$$** context words of the target word **$$d_{j_o}$$**.**
 
-Fig.1. shows the architecture of CBOW model with $$C$$ context words. A softmax function is still imposed at the end of the output layer.  
-Define the context set formed by the context of target word $$w_{j_o}$$ as
+Fig.1. shows the architecture of the NN for CBOW model with $$C$$ context words of the target word $$d_{j_o}$$. A softmax function is still imposed at the end of the output layer.  
 
-
-$$
-Cx (w_{j_o}) = \left\{ w_{c_m}| w_{c_m} \hbox{ is the word in the context of } w_{j_o}, m = 1, 2, \cdots, C \right\} \tag{1}
-$$
-
-
-where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$.
 
 The hidden layer output is calcuted as
 
