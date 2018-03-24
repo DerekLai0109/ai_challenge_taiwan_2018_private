@@ -18,7 +18,9 @@
 
 ![](/assets/statistical_NLP_DLM.png)
 
-
+![](/assets/statistical_NLP_DNM_0325.png)
 
 **Fig.1 statistical NLP  v.s. deep learning model**
+
+真e真正在比的主題是statistical NLP與deep learning model, 所以應該他們兩個黑實方框。
 
