@@ -1,8 +1,8 @@
 # Update equation for hidden-to-output weights
 
-Derek 03/09/2018
+Derek 03/24/2018
 
-The partial derivative of $$E$$ with respect to $$j$$-th neuron input $$u_j$$ is
+The partial derivative of $$E$$ with respect to $$u_j$$ is
 
 
 $$
