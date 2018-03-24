@@ -2,6 +2,8 @@
 
 Derek 03/24/2018
 
+The CBOW model predicts one target word by its context words \[1\].
+
 Consider a vocabulary containing _V_ words can be expressed as
 
 
@@ -60,4 +62,14 @@ $$
 E = -\ln p(w_{j_o}| Cx(w_{j_o})) \tag{5}
 $$
 
+
+\[0\]
+
+X. Rong, word2vec parameter learning explained, arXiv:1411.2738, 2014.
+
+\[1\]
+
+T. Mikolov, K. Chen, G. Corrado and J. Dean, Efficient estimation of word representations in vector space,
+
+arXiv:1301.3781, 2013.
 
