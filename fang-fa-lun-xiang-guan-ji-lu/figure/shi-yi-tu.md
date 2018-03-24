@@ -14,7 +14,11 @@
 
 **Fig. 1 Schematic for HMM \(hidden Markov model\), GMM \(Gaussian mixture model\) and DNN \(Deep neural network\). DNN serves an alternative way for GMM.**
 
-不同的邏輯角色賦予不同框框型式
+## 不同的邏輯角色賦予不同框框型式
 
 ![](/assets/statistical_NLP_DLM.png)
+
+
+
+**Fig.1 statistical NLP  v.s. deep learning model**
 
