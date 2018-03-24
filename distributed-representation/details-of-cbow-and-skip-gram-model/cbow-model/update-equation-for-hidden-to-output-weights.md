@@ -1,6 +1,8 @@
-# Update equation for hidden-to-output weights
+# Backward Pass
 
 Derek 03/24/2018
+
+## Update equation for hidden-to-output weights
 
 The loss function is
 
@@ -61,7 +63,7 @@ where $$\eta > 0$$ is the learning rate.
 
 If $$j \neq j_o$$, the error is greater than zero $$e_j > 0$$ \(overestimating\) and $$\bar{v}'_{w_j}$$ subtract a scaled $$\bar{v}_{w_k}$$such that the angle between $$\bar{v}'_{w_j}$$ and $$\bar{v}_{w_k}$$ increases.If $$j = j_o$$, the error is smaller than zero $$e_j < 0$$ \(underestimating\) and $$\bar{v}'_{w_j}$$ add a scaled $$\bar{v}_{w_k}$$such that the angle between $$\bar{v}'_{w_j}$$ and $$\bar{v}_{w_k}$$ decreases. If $$y_{j_o}$$ is close to 1, the error is close to 0 and $$\bar{v}'_{w_{j_o}}$$.
 
-# Update equation for input-to-hidden weights
+## Update equation for input-to-hidden weights
 
 The derivative of $$E$$  to $$h_i$$ is
 
