@@ -48,43 +48,45 @@ $$
 
 
 By using stochastic gradient descent, we obtain the updating equation for  hidden-to-output weights $$w_{ij}'$$ as
+
+
 $$
 w_{ij}'^{(new)} = w_{ij}'^{(old)} - \eta \frac{\partial E}{\partial w'_{ij}}
 = w_{ij}'^{(old)} - \eta e_j w_{ki}^{(old)} \tag{3}
 $$
+
+
 or equivalently
+
+
 $$
 \bar{v}_j'^{(new)} = \bar{v}_j'^{(old)} - \eta e_j \bar{v}_k^{(old)} \tag{4}
 $$
+
+
 where $$\eta > 0$$ is the learning rate.
 
 At $$j \neq j_o$$, the error in $$(2)$$ is greater than zero $$e_j > 0$$ \(overestimating\) and, in $$(4)$$,  $$\bar{v}_j'^{(old)}$$ subtract a scaled $$\bar{v}_k^{(old)}$$such that the angle between $$\bar{v}_j'^{(new)}$$ and $$\bar{v}_k^{(old)}$$ increases.At $$j = j_o$$, the error in $$(2)$$ is smaller than zero $$e_j < 0$$ \(underestimating\) and $$\bar{v}_j'^{(old)}$$ add a scaled $$\bar{v}_k^{(old)}$$such that the angle between $$\bar{v}_j'^{(new)}$$ and $$\bar{v}_k^{(old)}$$ decreases. If $$y_{j_o}$$ is close to 1, the error is close to 0 and $$\bar{v}'_{j_o}$$ is nearly unchanged.
 
-## Update equation for input-to-hidden weights
-
-The derivative of $$E$$  to $$h_i$$ is
 
 
+Next, find the update equation for input-to-hidden weights. The derivative of $$E$$  to the output of the hidden layer $$h_i$$ is
 $$
 \frac{\partial E}{\partial h_i} = \sum_{j = 1}^V \frac{\partial E}{\partial u_j} \frac{\partial u_j}{\partial h_i} 
  = \sum_{j = 1}^V e_j w'_{ij} \tag{5}
 $$
-
-
-Since the inputs are one-hot encoding vectors, the output of the hidden layer is
-
-
+The supporting material of $$(5)$$ is 
 $$
-h_i = v_{w_k, i} = w_{ki} \tag{6}
+h_i = w_{ki}
 $$
-
-
-by which, the derivative of $$E$$ to the input-to-hidden weights $$w_{ki}$$ is equal to that to the output of the hidden layer $$h_i$$ as
-
-
+ in the CBOW model with one context word and 
+$$
+\frac{\partial u_j}{\partial h_i} = \frac{\partial u_j}{\partial w_{ki}} = w_{ij}'
+$$
+The derivative of $$E$$ to the input-to-hidden weights $$w_{ki}$$ is 
 $$
 \frac{\partial E}{\partial w_{ki}} = \frac{\partial E}{\partial h_i} \frac{\partial h_i}{\partial w_{ki}} = \frac{\partial E}{\partial h_i}
-  = {\displaystyle \sum_{j = 1}^V} e_j w'_{ij} \tag{7}
+  = {\displaystyle \sum_{j = 1}^V} e_j w'_{ij} \tag{6}
 $$
 
 
