@@ -2,11 +2,7 @@
 
 Derek 03/24/2018
 
-## Update equation for hidden-to-output weights
-
 The loss function is
-
-
 $$
 E = -\ln y_{j_o} = - u_{j_o} + \ln \left(\sum_{j=1}^V e^{u_j} \right)
 \tag{1}
