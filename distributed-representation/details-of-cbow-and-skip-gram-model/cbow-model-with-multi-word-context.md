@@ -12,14 +12,22 @@ $$
 $$
 
 
-where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as 
+where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as
+
+
 $$
 {\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}
 $$
-.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, 
+
+
+.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example,
+
+
 $$
 {\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '
 $$
+
+
 The $$C$$-word context of target word $$d_{j_o}$$ in an article is defined as
 
 
@@ -28,7 +36,9 @@ C_x (d_{j_o}) = \left\{ d_{c_m}| d_{c_m} \hbox{ is the word in the context of } 
 $$
 
 
-where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$. For example, in $${\rm article}_1$$, the first 4-word context of $$d_{18}$$ is 
+where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$. For example, in $${\rm article}_1$$, the first 4-word context of $$d_{18}$$ is
+
+
 $$
 C_x (d_{18}) = \{ d_{c_1}, d_{c_2}, d_{c_3}, d_{c_4} \} = \{ d_1, d_5, d_56, d_2 \}
 $$
@@ -36,7 +46,7 @@ $$
 
 ![](/assets/data_flow_of_CBOW_C_word_context_1.jpg)**Fig.1. Data flow of CBOW model with **$$C$$**-word context.**$$\bar{x}^{c_1}, \cdots, \bar{x}^{c_C}$$** are the one-hot encoded vectors of words **$$d_{c_1}, \cdots, d_{c_C}$$** and are input to the NN at the same time for CBOW model with **$$C$$**-word context. **$$\bar{y}$$** is the output of the NN. The input vectors **$$\bar{v}_{c_1}, \cdots, \bar{v}_{c_C}$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
 
-Fig.1. shows the  data flow of CBOW model with $$C$$-word context.The words in the context $$C_x(d_{j_o})$$ are all one-hot encoded into $$\bar{x}^{c_1}, \cdots, \bar{x}^{c_C}$$ which are input to the neural network \(NN\) for the CBOW model.The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the target word is $$d_j$$ given the one-hot encoded vector $$\bar{x}_k$$. 
+Fig.1. shows the  data flow of CBOW model with $$C$$-word context.The words in the context $$C_x(d_{j_o})$$ are all one-hot encoded into $$\bar{x}^{c_1}, \cdots, \bar{x}^{c_C}$$ which are input to the neural network \(NN\) for the CBOW model.The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the target word is $$d_j$$ given the one-hot encoded vectors $$\bar{x}^{c_m}$$, $$m = 1,\cdots, C$$.
 
 ![](/assets/CBOW_cword.png)
 
