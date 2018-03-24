@@ -18,9 +18,9 @@ $$
 
 where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$.
 
-![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. **$$\bar{v}_k$$** and **$$\bar{v}_j'$$** are two kinds of word vector representations and are named input vector and ouput vector, respectively.**
+![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. The input vector **$$\bar{v}_k$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
 
-Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the input of the neural network \(NN\) for CBOW model with one-word context and is the one-hot encoded vector of word $$d_k$$, expanded as
+Fig.1. shows the  data flow of CBOW model with one-word context.The word $$d_k$$ is one-hot encoded into $$\bar{x}_k$$ and $$\bar{x}^k$$ is input to the neural network \(NN\) for CBOW model with one-word context, expanded as
 
 
 $$
@@ -28,7 +28,9 @@ $$
 $$
 
 
-where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.  The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation. The output $$\bar{y}$$ of NN is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}_k$$. The input vector $$\bar{v}_k$$ and output vector $$\bar{v}_j'$$ are two  kinds of word vector representations and will be elaborated later.
+
+The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
 
 ![](/assets/CBOW_1word_1.jpg)
 
