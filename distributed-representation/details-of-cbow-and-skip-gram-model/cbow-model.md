@@ -28,13 +28,13 @@ $$
 $$
 
 
-where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation. A corpus $${\cal C}$$ will be used to train the NN, which can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$. Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$.  The NN is trained by inputting the articles to the NN word by word. 
 
 ![](/assets/CBOW_1word_1.jpg)
 
-**Fig.2. Architecture of NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
+**Fig.2. Architecture of the NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
 
-Fig.2 shows the architecture of the neural network \(NN\) for the CBOW model with one context word.
+Fig.2 shows the architecture of the NN for the CBOW model with one context word.
 
 The the number of neurons in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_.
 
