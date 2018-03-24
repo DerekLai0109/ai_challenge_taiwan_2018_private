@@ -136,7 +136,9 @@ $$
 $$
 
 
-Note that the output vector $$\bar{v}_k'$$ is another $$N$$-dimensional vector representation of the input word $$d_k$$. By substituting $$(5)$$ into $$(4)$$, we can represent $$\bar{\bar{W}}'$$ as 
+Note that the output vector $$\bar{v}_k'$$ is another $$N$$-dimensional vector representation of the input word $$d_k$$. By substituting $$(5)$$ into $$(4)$$, we can represent $$\bar{\bar{W}}'$$ as
+
+
 $$
 \bar{\bar{W}}' = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right] \tag{6}
 $$
@@ -162,23 +164,16 @@ w_{ki} \\
 \vdots \\
 w_{kN}
 \end{matrix}
-\right] = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k 
+\right] = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k
 $$
 
 
-which can be represented as 
+which can be represented as
+
+
 $$
-\bar{u} = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k 
+\bar{u} = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k
 \tag{7}
-$$
-
-
-namely,
-
-
-$$
-u_j = \bar{v}'_{w_j} \cdot \bar{v}_{w_k}, \ j = 1, \cdots, V 
-\tag{5}
 $$
 
 
