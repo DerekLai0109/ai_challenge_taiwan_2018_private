@@ -55,6 +55,7 @@
     * [Illustrative Example of CNN with 6 Layers](cnn/an-elaboration-of-convolutional-neural-network/illustrative-example-of-cnn-with-6-layers.md)
 * [Acoustic Model](acoustic-model.md)
   * [Acoustic Model](acoustic-model/acoustic-model.md)
+  * [Acoustic Model\_D\_Modified](acoustic-model/acoustic-modeld-modified.md)
 * [Machine Learning Basic](machine-learning-basic.md)
   * Optimization
   * [Backpropagation](backpropagation.md)
