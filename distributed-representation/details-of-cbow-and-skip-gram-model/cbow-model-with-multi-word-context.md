@@ -22,7 +22,9 @@ $$
 
 where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$.
 
-![](/assets/data_flow_of_CBOW_C_word_context.jpg)**Fig.1. Data flow of CBOW model with **$$C$$**-word context.**$$\bar{x}^{c_m}$$** is the one-hot encoded vector of word **$$d_{c_m}$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. The input vector **$$\bar{v}_k$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
+![](/assets/data_flow_of_CBOW_C_word_context_1.jpg)**Fig.1. Data flow of CBOW model with **$$C$$**-word context.**$$\bar{x}^{c_1}, \cdots, \bar{x}^{c_C}$$** are the one-hot encoded vectors of words **$$d_{c_1}, \cdots, d_{c_C}$$** and are input to the NN at the same time for CBOW model with **$$C$$**-word context. **$$\bar{y}$$** is the output of the NN. The input vectors **$$\bar{v}_{c_1}, \cdots, \bar{v}_{c_C}$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
+
+Fig.1. shows the  data flow of CBOW model with $$C$$-word context.The words in the context $$C_x(d_{j_o})$$ are all one-hot encoded into $$\bar{x}^{c_1}, \cdots, \bar{x}^{c_C}$$ which are input to the neural network \(NN\) for the CBOW model.
 
 ![](/assets/CBOW_cword.png)
 
