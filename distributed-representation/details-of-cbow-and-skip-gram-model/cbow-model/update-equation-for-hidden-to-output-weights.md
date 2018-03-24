@@ -2,7 +2,9 @@
 
 Derek 03/24/2018
 
-The loss function is 
+The loss function is
+
+
 $$
 E = -\ln y_{j_o} = - u_{j_o} + \ln \left(\sum_{j=1}^V e^{u_j} \right)
 \tag{1}
@@ -17,7 +19,9 @@ $$
 $$
 
 
-where $$\delta_{j j_o} = 1$$ for $$j = j_o$$ and $$\delta_{j j_o} = 0$$ for $$j \neq j_o$$. The supporting material is 
+where $$\delta_{j j_o} = 1$$ for $$j = j_o$$ and $$\delta_{j j_o} = 0$$ for $$j \neq j_o$$. The supporting material is
+
+
 $$
 \frac{\partial E}{\partial u_{j_o}} = -1 + \frac{e^{u_{j_o}}  }{\displaystyle \sum_{j=1}^V e^{u_j}} 
  = y_{j_o} - 1 \\ 
@@ -25,11 +29,11 @@ $$
 $$
 
 
-The derivative to the hidden-to-output weight $$w_{ij}'$$ is
+The derivative of $$E$$ to the hidden-to-output weight $$w_{ij}'$$ is
 
 
 $$
-\frac{\partial E}{\partial w'_{ij}} = \frac{\partial E}{\partial u_j} \frac{\partial E}{\partial w'_{ij}} = e_j h_i = e_j w_{ki} 
+\frac{\partial E}{\partial w'_{ij}} = \frac{\partial E}{\partial u_j} \frac{\partial u_j}{\partial w'_{ij}} = e_j h_i = e_j w_{ki} 
 \tag{2}
 $$
 
