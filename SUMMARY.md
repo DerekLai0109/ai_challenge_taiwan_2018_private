@@ -1,7 +1,9 @@
 # Summary
 
 * [Recent Trend in NLP](README.md)
+  * [Recent Trend in NLP\_MM\_修改](recent-trend-in-nlp.md)
 * [NLP Tasks](chapter1.md)
+  * [NLP Tasks\_MM\_修改](chapter1/nlp-tasksmmxiu-gai.md)
 * [Distributed representation](distributed-representation.md)
   * [Word embedding](distributed-representation/word-embedding.md)
   * [Word2Vector](distributed-representation/word2vector.md)
