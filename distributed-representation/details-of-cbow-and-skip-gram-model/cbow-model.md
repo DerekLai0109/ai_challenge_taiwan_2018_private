@@ -18,7 +18,7 @@ $$
 
 where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$.
 
-![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. The input vector **$$\bar{v}_k$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
+![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is input to the NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. The input vector **$$\bar{v}_k$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
 
 Fig.1. shows the  data flow of CBOW model with one-word context.The word $$d_k$$ is one-hot encoded into $$\bar{x}_k$$ and $$\bar{x}^k$$ is input to the neural network \(NN\) for CBOW model with one-word context, expanded as
 
