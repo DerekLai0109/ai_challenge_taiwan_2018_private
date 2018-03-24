@@ -57,6 +57,6 @@
   * [Backpropagation](backpropagation.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
-* 方法論相關紀錄
-* GitBook平台使用
+* [方法論相關紀錄](fang-fa-lun-xiang-guan-ji-lu.md)
+* [GitBook平台使用](gitbookping-tai-shi-yong.md)
 
