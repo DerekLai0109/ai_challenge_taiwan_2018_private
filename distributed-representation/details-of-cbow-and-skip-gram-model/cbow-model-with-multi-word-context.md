@@ -2,9 +2,11 @@
 
 Derek 03/09/2018
 
-![](/assets/CBOW_cword.png)Architecture of CBOW model with $$C$$ context words.
+![](/assets/CBOW_cword.png)
 
-Fig. shows the architecture of CBOW model with $$C$$ context words. A softmax function is still imposed at the end of the output layer.  
+**Fig.1. Architecture of CBOW model with **$$C$$** context words.**
+
+Fig.1. shows the architecture of CBOW model with $$C$$ context words. A softmax function is still imposed at the end of the output layer.  
 Define the context set formed by the context of target word $$w_{j_o}$$ as
 
 
