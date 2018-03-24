@@ -38,8 +38,6 @@ Fig.2 shows the architecture of the NN for the CBOW model with one context word.
 
 The neuron numbers in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_. For example, $$V = 8000$$ and $$N = 60$$ or $$100$$.
 
-
-
 ## Forward pass
 
 The input-to-hidden weight between the neuron $$k$$ in the input layer and the neuron $$i$$ in the hidden layer is denoted as $$w_{ki}$$ , forming a $$V \times N$$ weight matrix as
@@ -57,7 +55,11 @@ w_{V1} & w_{V2} & \cdots & \cdots & w_{VN}
 \end{matrix}
 \right] \tag{2}
 $$
-where the $$k$$-th row of $$\bar{\bar{W}}$$ contains the weights whcih connect the neuron $$k$$ in the input layer to all neurons in the hidden layer as shown in Fig.2. Define the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$ as the input vector $$\bar{v}_k$$, namely, 
+
+
+where the $$k$$-th row of $$\bar{\bar{W}}$$ contains the weights whcih connect the neuron $$k$$ in the input layer to all neurons in the hidden layer as shown in Fig.2. Define the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$ as the input vector $$\bar{v}_k$$, namely,
+
+
 $$
 \bar{v}_{k} \doteq \left[ 
 \begin{matrix}
@@ -65,6 +67,8 @@ w_{k1}, \cdots, w_{ki}, \cdots, w_{kN}
 \end{matrix}
 \right]^t
 $$
+
+
 which is the $$N$$-dimensional vector representation of the input word $$d_k$$.
 
 The hidden-layer output is obtained as
@@ -105,6 +109,8 @@ w_{kN}
 = \bar{v}_{k}
 \tag{3}
 $$
+
+
 The hidden-to-output weights are denoted as $$w_{ij}'$$, which connect the neuron $$i$$ in the hidden layer and the neuron $$j$$ in the output layer and form an $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as
 
 
@@ -120,13 +126,25 @@ w_{N1}' & w_{N2}' & \cdots & w_{Nj}' & \cdots & w_{NV}'
 \end{matrix}
 \right] \tag{4}
 $$
-where the $$j$$-th column contains the weights which connect all neurons in the hidden layer to the $$j$$-th neuron in the output layer as shown in Fig.2. Define the $$j$$-th column of $$\bar{\bar{W}}'$$ as the output vector $$\bar{v}_j'$$, namely, 
+
+
+where the $$j$$-th column contains the weights which connect all neurons in the hidden layer to the $$j$$-th neuron in the output layer as shown in Fig.2. Define the $$j$$-th column of $$\bar{\bar{W}}'$$ as the output vector $$\bar{v}_j'$$, namely,
+
+
 $$
 \bar{v}_j' = [w_{1j}', w_{2j}', \cdots, w_{ij}', \cdots, w_{Nj}']^t \tag{5}
 $$
-which is also the $$N$$-dimensional vector representation of the input word $$d_k$$. By substituting $$(5)$$ into $$(4)$$, we can represent $$\bar{\bar{W}}'$$ as $$\bar{\bar{W}}' = []$$
 
-The vector $$\bar{h}$$ in $$(3)$$ is weighted by $$\bar{\bar{W}}'$$ to obtain the input of the output layer as 
+
+Note that the output vector $$\bar{v}_k'$$ is another $$N$$-dimensional vector representation of the input word $$d_k$$. By substituting $$(5)$$ into $$(4)$$, we can represent $$\bar{\bar{W}}'$$ as 
+$$
+\bar{\bar{W}}' = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right] \tag{6}
+$$
+
+
+The vector $$\bar{h}$$ in $$(3)$$ is weighted by $$\bar{\bar{W}}'$$ to obtain the input of the output layer as
+
+
 $$
 \bar{u} = \bar{\bar{W}}'^t \cdot \bar{h} = \left[ 
 \begin{matrix}
@@ -144,14 +162,14 @@ w_{ki} \\
 \vdots \\
 w_{kN}
 \end{matrix}
-\right]
+\right] = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k 
 $$
 
 
-
+which can be represented as 
 $$
-\bar{u} = \bar{\bar{W}}'^t \cdot \bar{h} = \left[ \bar{v}'_{w_1}, \cdot, \bar{v}'_{w_j}, \cdot, \bar{v}'_{w_V}\right]^t \cdot \bar{h} 
-\tag{4}
+\bar{u} = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k 
+\tag{7}
 $$
 
 
