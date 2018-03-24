@@ -28,7 +28,7 @@ $$
 $$
 
 
-where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.  The NN is trained by inputting the articles to the NN word by word.
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.  The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
 
 ![](/assets/CBOW_1word_1.jpg)
 
