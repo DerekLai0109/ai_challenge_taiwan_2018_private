@@ -2,15 +2,28 @@
 
 Derek 03/24/2018
 
+The loss function is 
+$$
+E = -\ln y_{j_o} = - u_{j_o} + \ln \left(\sum_{j=1}^V e^{u_j} \right)
+\tag{1}
+$$
+
+
 The partial derivative of $$E$$ with respect to $$u_j$$ is
 
 
 $$
-\frac{\partial E}{\partial u_j} = y_j - \delta_{j j_o} \doteq e_j \tag{1}
+\frac{\partial E}{\partial u_j} = y_j - \delta_{j j_o} \doteq e_j \tag{2}
 $$
 
 
-where $$\delta_{j j_o} = 1$$ for $$j = j_o$$ and $$\delta_{j j_o} = 0$$ for $$j \neq j_o$$.
+where $$\delta_{j j_o} = 1$$ for $$j = j_o$$ and $$\delta_{j j_o} = 0$$ for $$j \neq j_o$$. The supporting material is 
+$$
+\frac{\partial E}{\partial u_{j_o}} = -1 + \frac{e^{u_{j_o}}  }{\displaystyle \sum_{j=1}^V e^{u_j}} 
+ = y_{j_o} - 1 \\ 
+\frac{\partial E}{\partial u_j} = \frac{e^{u_j}  }{\displaystyle \sum_{j=1}^V e^{u_j}} = y_j,  \ j \neq j_o
+$$
+
 
 The derivative to the hidden-to-output weight $$w_{ij}'$$ is
 
