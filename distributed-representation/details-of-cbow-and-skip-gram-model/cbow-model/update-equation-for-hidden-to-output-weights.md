@@ -78,13 +78,21 @@ $$
 
 
 The supporting material of $$(5)$$ is
+
+
 $$
 h_i = w_{ki}
 $$
+
+
 in the CBOW model with one context word and
+
+
 $$
 \frac{\partial u_j}{\partial h_i} = \frac{\partial u_j}{\partial w_{ki}} = w_{ij}'
 $$
+
+
 The derivative of $$E$$ to the input-to-hidden weights $$w_{ki}$$ is
 
 
@@ -94,11 +102,11 @@ $$
 $$
 
 
-Thus, the update equation for input-to-hidden weights is
+The update equation for input-to-hidden weights $$w_{ki}$$ is
 
 
 $$
-w_{ki}^{(new)} = w_{ki}^{(old)} - \eta \frac{\partial E}{\partial w_{ki}}  = w_{ki}^{(old)} - \eta \sum_{j = 1}^V e_j w_{ij}'^{(old)}
+w_{ki}^{(new)} = w_{ki}^{(old)} - \eta \frac{\partial E}{\partial w_{ki}}  = w_{ki}^{(old)} - \eta \sum_{j = 1}^V e_j w_{ij}'^{(old)} \tag{7}
 $$
 
 
@@ -106,11 +114,9 @@ or
 
 
 $$
-\bar{v}_{w_k}^{(new)} = \bar{v}_{w_k}^{(old)} - \eta \sum_{j = 1}^V e_j \bar{v}_{w_j}'^{(old)} \tag{8}
+\bar{v}_k^{(new)} = \bar{v}_k^{(old)} - \eta \sum_{j = 1}^V e_j \bar{v}_j'^{(old)} \tag{8}
 $$
 
 
-The input vector $$\bar{v}_{w_k}$$ is updated by adding the sum of scaled output vectors $$\bar{v}_{w_j}'$$.For a specific neuron $$j$$, if the probability $$y_j$$ is overestimated \($$y_j > \delta_{j j_o}$$\), the contribution of the output vector $$\bar{v}_{w_j}'$$ will put the input vector $$\bar{v}_{w_k}$$ farther away from $$\bar{v}_{w_j}'$$. Conversely, if the probability $$y_j$$ is underestimated \($$y_j < \delta_{j j_o}$$\), the contribution of the output vector $$\bar{v}_{w_j}'$$ will move the input vector $$\bar{v}_{w_k}$$ closer to $$\bar{v}_{w_j}'$$. If the contribution of all the output vectors is nearly zero, the input vector remains nearly unchanged.
-
-The weights will be updated iteratively by inputting the context-target word pairs generated from a training corpus.
+The input vector $$\bar{v}_k$$ is updated by adding the sum of scaled output vectors $$\bar{v}_j'$$. At $$j \neq j_o$$ \($$e_j > 0$$\) , the contribution of the output vector $$\bar{v}_j'$$ will put the input vector $$\bar{v}_k$$ farther away from $$\bar{v}_j'$$. At $$j = j_o$$ \($$e_j < 0$$\), the contribution of the output vector $$\bar{v}_{j_o}'$$ will move the input vector $$\bar{v}_k$$ closer to $$\bar{v}_{j_o}'$$. If the contribution of all the output vectors is nearly zero, the input vector remains nearly unchanged.
 
