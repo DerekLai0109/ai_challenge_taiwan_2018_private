@@ -62,4 +62,6 @@
   * [Figure](fang-fa-lun-xiang-guan-ji-lu/figure.md)
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
+* [Acoustic Model](acoustic-model.md)
+  * [Acoustic Model](acoustic-model/acoustic-model.md)
 
