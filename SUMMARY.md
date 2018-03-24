@@ -53,15 +53,16 @@
     * [Forward Problem](cnn/an-elaboration-of-convolutional-neural-network/forward-problem.md)
     * [Backward Problem](cnn/an-elaboration-of-convolutional-neural-network/backward-problem.md)
     * [Illustrative Example of CNN with 6 Layers](cnn/an-elaboration-of-convolutional-neural-network/illustrative-example-of-cnn-with-6-layers.md)
+* [Acoustic Model](acoustic-model.md)
+  * [Acoustic Model](acoustic-model/acoustic-model.md)
 * [Machine Learning Basic](machine-learning-basic.md)
   * Optimization
   * [Backpropagation](backpropagation.md)
+    * [Backpropagation\_TY\_修改](backpropagation/backpropagationts-xiu-gai.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [方法論相關紀錄](fang-fa-lun-xiang-guan-ji-lu.md)
   * [Figure](fang-fa-lun-xiang-guan-ji-lu/figure.md)
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
-* [Acoustic Model](acoustic-model.md)
-  * [Acoustic Model](acoustic-model/acoustic-model.md)
 
