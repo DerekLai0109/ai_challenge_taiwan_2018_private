@@ -12,7 +12,15 @@ $$
 $$
 
 
-where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$.
+where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$. The context of target word $$d_{j_o}$$ in an article is defined as
+
+
+$$
+C_x (d_{j_o}) = \left\{ d_{c_m}| d_{c_m} \hbox{ is the word in the context of } d_{j_o}, m = 1, 2, \cdots, C \right\} \tag{1}
+$$
+
+
+where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$.
 
 ![](/assets/CBOW_cword.png)
 
