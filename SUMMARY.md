@@ -58,6 +58,7 @@
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [方法論相關紀錄](fang-fa-lun-xiang-guan-ji-lu.md)
+  * [Figure](fang-fa-lun-xiang-guan-ji-lu/figure.md)
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
 
