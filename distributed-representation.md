@@ -2,11 +2,11 @@
 
 MM 03/01 2018
 
-![](/assets/statistical_NLP_DLM.png)
+![](/assets/statistical_NLP_DNM_0325.png)
 
-**Learning joint probability v.s. distributed representation.**
+**Fig.1 statistical NLP  v.s. deep learning model**
 
-Fig. shows the mechanism improvement from learning joint probability to distributed representation.
+Fig.1 shows the mechanism improvement from learning joint probability to distributed representation.
 
 Statistical NLP has emerged as the primary option for modeling natural language tasks.  
 However, it often used to suffer from the "curse of dimensionality" while learning joint probability functions of language models. This led to the motivation of learning distributed representations of words existing in low-dimensional space.  

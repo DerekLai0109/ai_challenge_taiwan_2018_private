@@ -58,6 +58,9 @@
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [方法論相關紀錄](fang-fa-lun-xiang-guan-ji-lu.md)
   * [圖片與方法論](fang-fa-lun-xiang-guan-ji-lu/figure.md)
+    * [示意圖](fang-fa-lun-xiang-guan-ji-lu/figure/shi-yi-tu.md)
+    * 流程圖
+    * 檔案結構圖
   * [優化文件要點](fang-fa-lun-xiang-guan-ji-lu/you-hua-wen-jian-yao-dian.md)
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
