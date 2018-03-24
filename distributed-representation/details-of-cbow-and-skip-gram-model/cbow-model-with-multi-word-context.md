@@ -1,6 +1,16 @@
 # CBOW Model with Multi-word Context
 
-Derek 03/09/2018
+Derek 03/24/2018
+
+A vocabulary containing V words can be expressed as
+
+
+$$
+{\cal V} = \{ d_1, d_2, \cdots, d_k, \cdots, d_V\}
+$$
+
+
+where $$d_k$$ is the  $$k$$-th word in the vocabulary.
 
 ![](/assets/CBOW_cword.png)
 
