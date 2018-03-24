@@ -4,11 +4,13 @@ AnAn 3/18 2018 unfinished
 
 1. Basic Approach tfor Speech Recognition
 
-As speech recognition system transforms a piece of speech into a sentence. The input is the sound signal in the real world and the output is word sequence in a computer.
+A speech recognition system transforms a piece of speech into a sentence. The input is the speech signal and the output is a sequence of words in a computer.
 
 To implement a speech recognition process, first, a front-end signal processing is needed to transform the signal from the real world into the digital signals that is easy to compute by computers. Second, the feature extraction process extracts the linguistic features from the digital signals. These features can be represented by vectors. Third, computers output the most appropriate word sequence from features vectors by the trained acoustic models, the lexicon, and the trained language models.
 
-![](/assets/speech recognition.jpg)
+![](/assets/speech recognition.jpg)**Fig.1. Schematic of speech recognition.**
+
+Fig.1. shows the schematic of speech recognition.
 
 The acoustic models are to predict the phonemes or syllables from the feature vectors, and the lexicon is a database to form basic phonetic unit into words, and the language models are to predict the appropriate sentence from the possible word sequences. Both the acoustic models and language models can be trained by machine learning, and the lexicon has done by linguists.
 
