@@ -6,7 +6,9 @@ The objective of a Linear SVC \(Support Vector Classifier\) isto obtain a "best 
 
 ![](/assets/procedure_of_conducting_linear_SVC.png)
 
-**Import packages**![](/assets/SVM_CODE_01.png)  
+**Import packages**  
+![](/assets/CODE02import.png)
+
 Numpy is for array conversion.
 
 Maitipzlotlib is for data visualization that can show how linear SVC works.
@@ -15,11 +17,11 @@ Maitipzlotlib is for data visualization that can show how linear SVC works.
 
 Considering the data points with \(x,y\) coordinate values of \(1,2\), \(5,8\), \(1.5,1.8\) \(8,8\), \(1,0.6\) and \(9,11\). These data has two dimension feature, i.e., x and y coordinate values.
 
-Therefore, these data serves as two-feature data example, and they can be expressed as.![](/assets/SVM_CODE_02.png)
+Therefore, these data serves as two-feature data example, and they can be expressed as.![](/assets/SVM_CODE03.png)
 
-##### Graph the data.
+##### Graph the data.![](/assets/SVM_CODE04.png)
 
-![](/assets/distribution_data_fig2.png)
+![](/assets/SVM_FIG02import.png)
 
 F**ig. 02 The distribution of data features**
 
@@ -45,8 +47,6 @@ Two features derive a 2D graph. Thus, the problem occurs when there are thousand
 
 ![](/assets/a_is_minus.png)
 
-
-
 ![](/assets/fig_3_distribution_data_feature.png)
 
 **Fig. 03 The distribution of data features and the dividing line**
@@ -62,10 +62,4 @@ Two features derive a 2D graph. Thus, the problem occurs when there are thousand
 \[1\] Errors: “Expected 2D array got 1D array instead”
 
 [https://stackoverflow.com/questions/45554008/error-in-python-script-expected-2d-array-got-1d-array-instead](https://stackoverflow.com/questions/45554008/error-in-python-script-expected-2d-array-got-1d-array-instead)
-
-
-
-
-
-
 
