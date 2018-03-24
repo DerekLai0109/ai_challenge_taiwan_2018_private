@@ -1,3 +1,9 @@
+# Backpropagation
+
+HS 03/20/2018
+
+
+
 一個Neural Network裡可能有上百萬的參數，在使用Gradient Descent作訓練時就會產生上百萬維的矩陣，如下圖一所示:
 
 ![](/assets/1import.png)
@@ -76,33 +82,23 @@ Backpropagation主要的數學是Chain rule，如下圖二所示:
 
 圖十一
 
-
-
 接下來討論case2如圖十二，當C對z’與C對z”該層的neural還不是最後一層，此時需要再往下一層反推上來，即利用如上述的反向公式反推回來，如果下層還不是最後一層就一直往下層找到最後一層反推上來。
 
 ![](/assets/import.png12)
 
 圖十二
 
-
-
 最後給一個範例如圖十三，其告訴我們當我們想求得下圖十三裡C對w的偏微分時，其可看成如圖十四的backward pass的運作。先求到C對z5偏微分與C對z6偏微分再乘上weighting後，再各別乘上sigmoid對z3或z4的偏微份後，即往上一層推進。依此類推反推到最上層。
 
 結論如圖十五，Cost C對w的的偏微分即拆成forward pass的結果乘上backward pass的結果。
-
-
 
 ![](/assets/import.png13)
 
 圖十三
 
-
-
 ![](/assets/import.png14)
 
 圖十四
-
-
 
 ![](/assets/import.png15)
 
