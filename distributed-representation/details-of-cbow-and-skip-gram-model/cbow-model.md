@@ -32,9 +32,9 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 ![](/assets/CBOW_1word_1.jpg)
 
-**Fig.2. Architecture of the NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is a word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is a word vector representation of **$$d_j$$, **named output vector.**
+**Fig.2. Architecture of the NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is the first kind of word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is the second kind of word vector representation of **$$d_j$$, **named output vector.**
 
-Fig.2 shows the architecture of the NN for the CBOW model with one context word.
+Fig.2 shows the architecture of the NN for the CBOW model with one context word.$$\bar{\bar{W}}$$ and $$\bar{\bar{W}}'$$ are the input-to-hidden and hidden-to-output weight matrices. $$\bar{v}_k$$ is the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$  and is the first kind of word vector representation of $$d_k$$, named input vector; $$\bar{v}_j'$$ is the $$j$$-th column of $$\bar{\bar{W}}'$$ and is the second kind of word vector representation of $$d_j$$, named output vector.
 
 The neuron numbers in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_. For example, $$V = 8000$$ and $$N = 60$$ or $$100$$.
 
