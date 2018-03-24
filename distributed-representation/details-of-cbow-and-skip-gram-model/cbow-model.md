@@ -36,7 +36,11 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 Fig.2 shows the architecture of the NN for the CBOW model with one context word.
 
-The neuron numbers in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_.
+The neuron numbers in the input layer and in the output layer are both chosen to be the vocabulary size $$V$$, and the hidden layer size is _N_. Usually, _V_ &gt;&gt; _N_. For example, $$V = 8000$$ and $$N = 60$$ or $$100$$.
+
+
+
+## Forward pass
 
 The input-to-hidden weight between the neuron $$k$$ in the input layer and the neuron $$i$$ in the hidden layer is denoted as $$w_{ki}$$ , forming a $$V \times N$$ weight matrix as
 
@@ -53,9 +57,17 @@ w_{V1} & w_{V2} & \cdots & \cdots & w_{VN}
 \end{matrix}
 \right] \tag{2}
 $$
+where the $$k$$-th row of $$\bar{\bar{W}}$$ contains the weights whcih connect the neuron $$k$$ in the input layer to all neurons in the hidden layer as shown in Fig.2. Define the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$ as the input vector $$\bar{v}_k$$, namely, 
+$$
+\bar{v}_{k} \doteq \left[ 
+\begin{matrix}
+w_{k1}, \cdots, w_{ki}, \cdots, w_{kN}
+\end{matrix}
+\right]^t
+$$
+which is the $$N$$-dimensional vector representation of the input word $$d_k$$.
 
-
-Thus, the hidden-layer output is obtained as
+The hidden-layer output is obtained as
 
 
 $$
@@ -90,31 +102,51 @@ w_{ki} \\
 w_{kN}
 \end{matrix}
 \right]
-\doteq \bar{v}_{k}
+= \bar{v}_{k}
 \tag{3}
 $$
-
-
-where $$\bar{v}_k$$ is the $$N$$-dimensional vector representation of the input word $$d_k$$ and is the transpose of the $$k$$-th row of $$\bar{\bar{W}}$$, which contains the weights between the neuron $$k$$ in the input layer and all neurons in the hidden layer as shown in Fig.2.
-
-The hidden-to-output weights are denoted as $$w_{ij}'$$, which form a $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as
+The hidden-to-output weights are denoted as $$w_{ij}'$$, which connect the neuron $$i$$ in the hidden layer and the neuron $$j$$ in the output layer and form an $$N \times V$$ weight matrix $$\bar{\bar{W}}'$$ as
 
 
 $$
 \bar{\bar{W}}' = \left[
 \begin{matrix}
-w_{11}' & w_{12}' & \cdots & \cdots & w_{1V}' \\ 
-w_{21}' & w_{22}' & \cdots& \cdots  & w_{2V}' \\ 
-\vdots & \cdots & \ddots& \cdots  & \vdots \\ 
-w_{i1}' & \cdots & w_{ij}' & \cdots  & w_{iV}' \\ 
-\vdots & \cdots & \ddots& \cdots  & \vdots \\ 
-w_{N1}' & w_{N2}' & \cdots & \cdots & w_{NV}'
+w_{11}' & w_{12}' & \cdots & w_{1j}' & \cdots & w_{1V}' \\ 
+w_{21}' & w_{22}' & \cdots & w_{2j}'& \cdots  & w_{2V}' \\ 
+\vdots & \cdots & \ddots & \cdots & \cdots  & \vdots \\ 
+w_{i1}' & \cdots & \cdots & w_{ij}' & \cdots  & w_{iV}' \\ 
+\vdots & \cdots & \ddots & \cdots & \cdots  & \vdots \\ 
+w_{N1}' & w_{N2}' & \cdots & w_{Nj}' & \cdots & w_{NV}'
 \end{matrix}
-\right] \tag{3}
+\right] \tag{4}
+$$
+where the $$j$$-th column contains the weights which connect all neurons in the hidden layer to the $$j$$-th neuron in the output layer as shown in Fig.2. Define the $$j$$-th column of $$\bar{\bar{W}}'$$ as the output vector $$\bar{v}_j'$$, namely, 
+$$
+\bar{v}_j' = [w_{1j}', w_{2j}', \cdots, w_{ij}', \cdots, w_{Nj}']^t \tag{5}
+$$
+which is also the $$N$$-dimensional vector representation of the input word $$d_k$$. By substituting $$(5)$$ into $$(4)$$, we can represent $$\bar{\bar{W}}'$$ as $$\bar{\bar{W}}' = []$$
+
+The vector $$\bar{h}$$ in $$(3)$$ is weighted by $$\bar{\bar{W}}'$$ to obtain the input of the output layer as 
+$$
+\bar{u} = \bar{\bar{W}}'^t \cdot \bar{h} = \left[ 
+\begin{matrix}
+w_{11}' & w_{21}' & \cdots & w_{i1}' & \cdots & w_{N1}' \\ 
+w_{12}' & w_{22}' & \cdots & \vdots & \cdots & w_{N2}' \\ 
+\vdots & \vdots & \ddots & w_{ij}' & \cdots & \vdots \\ 
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\ 
+w_{1V}' & w_{2V}' & \cdots & w_{iV}' & \cdots & w_{NV}'
+\end{matrix}
+\right] \left[ 
+\begin{matrix}
+w_{k1} \\
+\vdots \\
+w_{ki} \\
+\vdots \\
+w_{kN}
+\end{matrix}
+\right]
 $$
 
-
-The vector $$\bar{h}$$ is weighted by $$\bar{\bar{W}}'$$ to obtain the input of the output layer as
 
 
 $$
