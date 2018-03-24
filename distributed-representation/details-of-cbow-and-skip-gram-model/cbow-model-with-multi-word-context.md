@@ -12,7 +12,7 @@ $$
 $$
 
 
-where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$. The context of target word $$d_{j_o}$$ in an article is defined as
+where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\cal C}$$  can be constituted by $$N_a$$ articles as $${\cal C} = \{ {\rm article}_1, {\rm article}_2, \cdots, {\rm article}_{N_a} \}$$.Each article is constituted by the words in the vocabulary $${\cal V}$$. For example, $${\rm article}_1 = 'd_1 \ d_5 \ d_{18} \ d_{56} \ d_2 \ \cdots '$$. The $$C$$-word context of target word $$d_{j_o}$$ in an article is defined as
 
 
 $$
@@ -21,6 +21,8 @@ $$
 
 
 where the subscript $$c_m$$ can be the integers between $$1$$ and $$V$$.
+
+![](/assets/data_flow_of_CBOW_C_word_context.jpg)**Fig.1. Data flow of CBOW model with **$$C$$**-word context.**$$\bar{x}^{c_m}$$** is the one-hot encoded vector of word **$$d_{c_m}$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. The input vector **$$\bar{v}_k$$** and output vector **$$\bar{v}_j'$$** are two kinds of word vector representations.**
 
 ![](/assets/CBOW_cword.png)
 
