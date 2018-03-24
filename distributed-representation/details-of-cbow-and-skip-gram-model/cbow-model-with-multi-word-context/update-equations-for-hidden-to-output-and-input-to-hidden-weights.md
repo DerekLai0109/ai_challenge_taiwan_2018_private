@@ -1,6 +1,8 @@
-# Update equation for the hidden-to-output weights
+# Backward Pass
 
 Derek 03/09/2018
+
+## Update equation for the hidden-to-output weights
 
 The update equation for the hidden-to-output weights is derived as
 
@@ -18,7 +20,7 @@ $$
 $$
 
 
-# Update equation for the input-to-hidden weights
+## Update equation for the input-to-hidden weights
 
 The derivative of $$E$$  to $$h_i$$ is repeated as
 
