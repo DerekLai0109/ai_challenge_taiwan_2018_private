@@ -3,6 +3,8 @@
 Derek 03/24/2018
 
 The loss function is
+
+
 $$
 E = -\ln y_{j_o} = - u_{j_o} + \ln \left(\sum_{j=1}^V e^{u_j} \right)
 \tag{1}
@@ -31,15 +33,15 @@ The derivative of $$E$$ to the hidden-to-output weight $$w_{ij}'$$ is
 
 
 $$
-\frac{\partial E}{\partial w'_{ij}} = \frac{\partial E}{\partial u_j} \frac{\partial u_j}{\partial w'_{ij}} = e_j h_i = e_j w_{ki} 
+\frac{\partial E}{\partial w'_{ij}} = \frac{\partial E}{\partial u_j} \frac{\partial u_j}{\partial w'_{ij}} = e_j w_{ki} 
 \tag{2}
 $$
-
-
-Therefore, using stochastic gradient descent, we obtain the weight updating equation for  
- hidden-to-output weights as
-
-
+The supporting material of $$(2)$$ is 
+$$
+u_j = \bar{v}_j' \cdot \bar{v}_k = \sum_{i = 1}^N w_{ij}' w_{ki} \\  
+\frac{\partial u_j}{\partial w'_{ij}} = w_{ki}
+$$
+By using stochastic gradient descent, we obtain the updating equation for  hidden-to-output weights $$w_{ij}'$$ as
 $$
 w_{ij}'^{(new)} = w_{ij}'^{(old)} - \eta \frac{\partial E}{\partial w'_{ij}}
 = w_{ij}'^{(old)} - \eta e_j h_i = w_{ij}'^{(old)} - \eta e_j w_{ki}^{(old)} \tag{3}
