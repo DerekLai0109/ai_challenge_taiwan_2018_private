@@ -44,19 +44,15 @@ Two features derive a 2D graph. Thus, the problem occurs when there are thousand
 
 ![](/assets/a_is_minus.png)
 
-![](/assets/fig_3_distribution_data_feature.png)
+![](/assets/SVM_FIG03.02import.png)
 
 **Fig. 03 The distribution of data features and the dividing line**
-
-
 
 The learned classifier can be test as follows:
 
 ![](/assets/learnt_svm.png)![](/assets/SVM_FIG04.png)
 
 **Fig. 04 The distribution of the test points \(the blue and red points\)**
-
-
 
 **Environment: KaggleFig. 04 The distribution of the test points \(the blue and red points\)**
 
