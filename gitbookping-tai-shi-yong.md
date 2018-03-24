@@ -10,5 +10,27 @@
 
 圖1左側呈現文件檔案結構第一層\(章\)有的內容是：
 
-Recent Trend in NLP, NLP tasks, Distributed
+Recent Trend in NLP, NLP tasks, Distributed representation, SVM, RNN, LSTM, CNN。
+
+其中，Distributed representation裡又有四個第二層\(節\)的內容是：
+
+Word embedding, Word2Vector, Character Embedding, Sequence-to-sequence。
+
+其中，word2vector裡又有四個第三層\(小節\)的內容是：
+
+CBOW model, skip-gram model, efficiency improvement techniques, word2Vector\_coding。
+
+其中，CBOW model裡又有兩個第四層的內容是：
+
+CBOW Model with one-word context, CBOW model with multi-word context。
+
+各自再有的第五層內容是Backword Pass文件。
+
+總的來說，文件結構可再圖像化為圖2。
+
+
+
+
+
+Fig.2 文件檔案結構示意圖
 
