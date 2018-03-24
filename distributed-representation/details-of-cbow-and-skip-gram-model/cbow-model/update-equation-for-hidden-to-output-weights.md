@@ -48,26 +48,17 @@ $$
 
 
 By using stochastic gradient descent, we obtain the updating equation for  hidden-to-output weights $$w_{ij}'$$ as
-
-
 $$
 w_{ij}'^{(new)} = w_{ij}'^{(old)} - \eta \frac{\partial E}{\partial w'_{ij}}
 = w_{ij}'^{(old)} - \eta e_j w_{ki}^{(old)} \tag{3}
 $$
-
-
 or equivalently
-
-
 $$
-\bar{v}_{w_j}'^{(new)} = \bar{v}_{w_j}'^{(old)} - \eta e_j \bar{h} 
-= \bar{v}_{w_j}'^{(old)} - \eta e_j \bar{v}_{w_k}^{(old)}, \hbox{ for } j = 1, 2, \cdots, V \tag{4}
+\bar{v}_j'^{(new)} = \bar{v}_j'^{(old)} - \eta e_j \bar{v}_k^{(old)} \tag{4}
 $$
-
-
 where $$\eta > 0$$ is the learning rate.
 
-If $$j \neq j_o$$, the error is greater than zero $$e_j > 0$$ \(overestimating\) and $$\bar{v}'_{w_j}$$ subtract a scaled $$\bar{v}_{w_k}$$such that the angle between $$\bar{v}'_{w_j}$$ and $$\bar{v}_{w_k}$$ increases.If $$j = j_o$$, the error is smaller than zero $$e_j < 0$$ \(underestimating\) and $$\bar{v}'_{w_j}$$ add a scaled $$\bar{v}_{w_k}$$such that the angle between $$\bar{v}'_{w_j}$$ and $$\bar{v}_{w_k}$$ decreases. If $$y_{j_o}$$ is close to 1, the error is close to 0 and $$\bar{v}'_{w_{j_o}}$$.
+At $$j \neq j_o$$, the error in $$(2)$$ is greater than zero $$e_j > 0$$ \(overestimating\) and, in $$(4)$$,  $$\bar{v}_j'^{(old)}$$ subtract a scaled $$\bar{v}_k^{(old)}$$such that the angle between $$\bar{v}_j'^{(new)}$$ and $$\bar{v}_k^{(old)}$$ increases.At $$j = j_o$$, the error in $$(2)$$ is smaller than zero $$e_j < 0$$ \(underestimating\) and $$\bar{v}_j'^{(old)}$$ add a scaled $$\bar{v}_k^{(old)}$$such that the angle between $$\bar{v}_j'^{(new)}$$ and $$\bar{v}_k^{(old)}$$ decreases. If $$y_{j_o}$$ is close to 1, the error is close to 0 and $$\bar{v}'_{j_o}$$ is nearly unchanged.
 
 ## Update equation for input-to-hidden weights
 
