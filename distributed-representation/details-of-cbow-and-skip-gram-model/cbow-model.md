@@ -216,9 +216,7 @@ E = -\ln p(d_{j_o} | \bar{x}_k)
 $$
 
 
-Thus, to maximize $$y_{j_o} = p(d_{j_o} | \bar{x}_k)$$ is to minimize $$E$$.
-
-The loss function is a special case of the cross-entropy measurement between two probabilistic distributions.
+Thus, to maximize $$y_{j_o} = p(d_{j_o} | \bar{x}_k)$$ is to minimize $$E$$.  The loss function is a special case of the cross-entropy measurement between two probabilistic distributions.
 
 \[0\]
 
