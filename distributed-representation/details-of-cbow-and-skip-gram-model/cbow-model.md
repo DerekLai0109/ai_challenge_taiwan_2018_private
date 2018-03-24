@@ -132,7 +132,7 @@ where the $$j$$-th column contains the weights which connect all neurons in the 
 
 
 $$
-\bar{v}_j' = [w_{1j}', w_{2j}', \cdots, w_{ij}', \cdots, w_{Nj}']^t \tag{5}
+\bar{v}_j' \doteq [w_{1j}', w_{2j}', \cdots, w_{ij}', \cdots, w_{Nj}']^t \tag{5}
 $$
 
 
