@@ -168,7 +168,9 @@ w_{kN}
 $$
 
 
-which can be represented as 
+which can be represented as
+
+
 $$
 \bar{u} = \left[ \bar{v}'_1, \cdots, \bar{v}'_j, \cdots, \bar{v}'_V \right]^t \bar{v}_k 
 = \left[ \begin{matrix}
@@ -203,12 +205,14 @@ $$
 y_j = p(d_j | \bar{x}_k)= \frac{e^{u_j}}{\displaystyle \sum_{j = 1}^V e^{u_j}} = \frac{e^{\bar{v}'_j \cdot \bar{v}_k}}{\displaystyle \sum_{j = 1}^V e^{\bar{v}'_j \cdot \bar{v}_k}} 
 \tag{8}
 $$
+
+
 The training objective is to maximize the probability $$y_{j_o}$$ of observing the target word $$d_{j_o}$$ given $$\bar{x}_k$$. The loss function is defined as
 
 
 $$
 E = -\ln p(d_{j_o} | \bar{x}_k) 
-\tag{8}
+\tag{9}
 $$
 
 
