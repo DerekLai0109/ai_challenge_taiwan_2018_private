@@ -20,7 +20,7 @@ where $$d_k$$ is the  $$k$$-th word in the vocabulary. The training corpus $${\c
 
 ![](/assets/data_flow_of_CBOW_one_word_context.jpg)**Fig.1. Data flow of CBOW model with one-word context.**$$\bar{x}^k$$** is the one-hot encoded vector of word **$$d_k$$** and is the input of NN for CBOW model with one-word context. **$$\bar{y}$$** is the output of the NN. **$$\bar{v}_k$$** and **$$\bar{v}_j'$$** are word vectors and are named input vector and ouput vector, respectively.**
 
-Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the one-hot encoded vector of word $$d_k$$ and is the input of the neural network \(NN\) for CBOW model with one-word context, expanded as
+Fig.1. shows the  data flow of CBOW model with one-word context. $$\bar{x}^k$$ is the input of the neural network \(NN\) for CBOW model with one-word context and is the one-hot encoded vector of word $$d_k$$, expanded as
 
 
 $$
