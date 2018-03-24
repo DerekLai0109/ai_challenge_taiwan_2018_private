@@ -2,7 +2,7 @@
 
 Derek 03/24/2018
 
-A vocabulary containing V words can be expressed as
+Consider a vocabulary containing _V_ words can be expressed as
 
 
 $$
