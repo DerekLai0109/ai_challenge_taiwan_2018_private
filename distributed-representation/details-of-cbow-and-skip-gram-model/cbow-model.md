@@ -1,6 +1,6 @@
 # CBOW Model with One-word Context
 
-Derek, 03/09/2018 created; 03/23/2018 last modified
+Derek, 03/24/2018
 
 The CBOW model predicts one target word by its context words \[1\].
 
