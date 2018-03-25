@@ -32,7 +32,7 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 ![](/assets/schematic_of_y.jpg)**Fig.2. Schematic of NN output **$$\bar{y}$$** given a specific **$$\bar{x}^k$$** with the target word **$$d_{j_o}$$**. \(a\) non-trained NN, \(b\) well-trained NN**.
 
-Fig.2. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively. 
+Fig.2. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively. For a well-trained NN, the probability $$y_{j_o}$$ of the target word $$d_{j_o}$$ to be the next word would be the maximum over $$y_1$$ to $$y_V$$ and the other probabilities $$y_j$$ \($$j \neq j_o$$\) would be suppressed to nearly zero.
 
 ![](/assets/CBOW_1word_1.jpg)
 
