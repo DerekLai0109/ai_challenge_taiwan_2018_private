@@ -64,4 +64,5 @@
   * [優化文件要點](fang-fa-lun-xiang-guan-ji-lu/you-hua-wen-jian-yao-dian.md)
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
+  * [Formula Module](gitbookping-tai-shi-yong/formula-module.md)
 
