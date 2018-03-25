@@ -2,7 +2,7 @@
 
 什麼是structure learning, 到目前為止，我們考慮的問題，他的input其實都是一個vector，output都是另外一個vector。不管我們是在作SVM，還是在作Deep Learning的實後。我們的input或output都只是vector而以。但實際上我們要面對的問題往往比這個更困難。我們可能需要input或是output事一個sequence，我們可能需要output事一個list。Output 事一個tree。
 
-Output 事一個bounding box等等。像你在representation 的final裡面。你可能希望你的output就直接室一個list，而不是一個一個element。
+Output 事一個bounding box等等。像你在representation 的final裡面。你可能希望你的output就直接室一個list，而不是一個一個element
 
 當然在大原則上我們知道怎麼做。我們就事要找一個function他的input就是我們要的object，
 
