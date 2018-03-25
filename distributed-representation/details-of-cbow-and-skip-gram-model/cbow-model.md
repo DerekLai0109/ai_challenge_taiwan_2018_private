@@ -32,7 +32,7 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 ![](/assets/schematic_of_y.jpg)**Fig.2. Schematic of NN output **$$\bar{y}$$** given a specific **$$\bar{x}^k$$** with the target word **$$d_{j_o}$$**. \(a\) non-trained NN, \(b\) well-trained NN**.
 
-Fig.2. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively.
+Fig.2. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively. 
 
 ![](/assets/CBOW_1word_1.jpg)
 
