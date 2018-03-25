@@ -1,5 +1,7 @@
 # Recurrent Neural Networks Tutorial, Part 1 - Introduction to RNNs
 
+YingTing 2018/03/01
+
 Recurrent Neural Networks \(RNNs\) are models in many Neuro Linguistic Programming \(NLP\) tasks. This tutorial will cover the following part:
 
 1. Introduction to RNNs \(this post\)

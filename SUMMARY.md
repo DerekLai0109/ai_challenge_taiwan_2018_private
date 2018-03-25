@@ -51,7 +51,7 @@
   * [Acoustic Model](acoustic-model/acoustic-model.md)
   * [Acoustic Model\_D\_Modified](acoustic-model/acoustic-modeld-modified.md)
 * [Machine Learning Basic](machine-learning-basic.md)
-  * Optimization
+  * [Optimization](optimization.md)
   * [Backpropagation](backpropagation.md)
     * [Backpropagation\_TY\_修改](backpropagation/backpropagationts-xiu-gai.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
@@ -59,8 +59,8 @@
 * [方法論相關紀錄](fang-fa-lun-xiang-guan-ji-lu.md)
   * [圖片與方法論](fang-fa-lun-xiang-guan-ji-lu/figure.md)
     * [示意圖](fang-fa-lun-xiang-guan-ji-lu/figure/shi-yi-tu.md)
-    * 流程圖
-    * 檔案結構圖
+    * [流程圖](fang-fa-lun-xiang-guan-ji-lu/figure/liu-cheng-tu.md)
+    * [檔案結構圖](fang-fa-lun-xiang-guan-ji-lu/figure/dang-an-jie-gou-tu.md)
   * [優化文件要點](fang-fa-lun-xiang-guan-ji-lu/you-hua-wen-jian-yao-dian.md)
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
