@@ -1,14 +1,12 @@
 # Backpropagation
 
-HS 03/20/2018
-
-
+HS 03/20/2018 
 
 一個Neural Network裡可能有上百萬的參數，在使用Gradient Descent作訓練時就會產生上百萬維的矩陣，如下圖一所示:
 
 ![](/assets/1import.png)
 
-圖一
+圖一 
 
 而我們可利用Backpropagation來讓訓練Neural Network變得更有效率。
 
