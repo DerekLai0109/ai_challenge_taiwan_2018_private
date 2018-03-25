@@ -34,6 +34,12 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 Fig.2. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively. For a non-trained NN, all the probabilities $$y_j$$ \($$j = 1, \cdots, V$$\) can be arbitrary values between $$0$$ and $$1$$ and the probability $$y_{j_o}$$ of the target word $$d_{j_o}$$ is not necessarily the maximum over $$y_1$$ to $$y_V$$. For a well-trained NN, the probability $$y_{j_o}$$ would be the maximum over $$y_1$$ to $$y_V$$ and the other probabilities $$y_j$$ \($$j \neq j_o$$\) would be suppressed to nearly zero.
 
+![](/assets/flowchart_to_train_word_vector.jpg)
+
+**Fig.3. Flow-chart to train distributed vector representations of words in vocabulary **$${\cal V}$$** by a training corpus **$${\cal C}$$**.**
+
+Fig.3. shows a flow-chart to train distributed vector representations of words in vocabulary $${\cal V}$$ by a training corpus $${\cal C}$$.
+
 ![](/assets/CBOW_1word_1.jpg)
 
 **Fig.2. Architecture of the NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is the first kind of word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is the second kind of word vector representation of **$$d_j$$, **named output vector.**
