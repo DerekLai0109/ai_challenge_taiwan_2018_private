@@ -65,4 +65,5 @@
 * [GitBook平台使用](gitbookping-tai-shi-yong.md)
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
   * [Formula Module](gitbookping-tai-shi-yong/formula-module.md)
+* [Terminology](terminology.md)
 
