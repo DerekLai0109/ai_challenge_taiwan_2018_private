@@ -30,6 +30,10 @@ $$
 
 where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation. The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$. The input vector $$\bar{v}_k$$ and output vector $$\bar{v}_j'$$ are two  kinds of word vector representations and will be elaborated later. The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
 
+![](/assets/schematic_of_y.jpg)**Fig.2. Schematic of NN output **$$\bar{y}$$** given a specific **$$\bar{x}^k$$** with the target word **$$d_{j_o}$$**. \(a\) non-trained NN, \(b\) well-trained NN**.
+
+Fig.2. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively.
+
 ![](/assets/CBOW_1word_1.jpg)
 
 **Fig.2. Architecture of the NN for the CBOW model with one context word. **$$\bar{\bar{W}}$$** and **$$\bar{\bar{W}}'$$** are the input-to-hidden and hidden-to-output weight matrices. **$$\bar{v}_k$$** is the transpose of the **$$k$$**-th row of **$$\bar{\bar{W}}$$**  and is the first kind of word vector representation of **$$d_k$$, **named input vector; **$$\bar{v}_j'$$** is the **$$j$$**-th column of **$$\bar{\bar{W}}'$$ **and is the second kind of word vector representation of **$$d_j$$, **named output vector.**
