@@ -12,23 +12,17 @@ Table.1 summarizes the notation used to describe the functional aspects of CNN. 
 | number of layers | $$L= 2a+2$$ |
 | convolution layers | $$C^1$$, $$C^3$$, $$\cdots$$, $$C^{2a+1}$$ |
 | sub-sampling layers | $$S^1$$, $$S^3$$, $$\cdots$$, $$S^{2a}$$ |
-| activation function of layer $$\ell$$ | $$f\_\ell$$ |
-| number of feature maps in layer $$\ell$$ | $$N\_\ell$$ |
-| size of convolution mask for layer | $$h\_\ell \times w\_\ell$$ |
+| activation function of layer $$\ell$$ | $$f_\ell$$ |
+| number of feature maps in layer $$\ell$$ | $$N_\ell$$ |
+| size of convolution mask for layer | $$h_\ell \times w_\ell$$ |
+| convolution mask from feature map $$m$$ &lt;br/&gt; in layer $$S^{\ell-1}$$ to feature map $$n$$ in layer $$C^\ell$$ | $${ w^\ell_{m,n}(i,j) }$$ |
+| weight for feature map $$n$$ in layer $$S^\ell$$ | $$w_n^\ell$$ |
+| bias for feature map $$n$$ in convolution layer $$C^\ell$$ | $$b^\ell_n$$ |
+| bias for feature map $$n$$ in sub-sampling layer $$S^\ell$$ | $$b^\ell_n$$ |
+| feature map $$n$$ in layer $$\ell$$ | $$y_n^\ell(i,j)$$ |
+| size of a feature map in layer $$\ell$$ | $$H_\ell \times W_\ell$$ |
 
-\| convolution mask from feature map $$m$$ &lt;br/&gt; in layer $$S^{\ell-1}$$ to feature map $$n$$ in layer $$C^\ell$$ \| $${ w^\ell\_{m,n}\(i,j\) }$$ \|
-
-\| weight for feature map $$n$$ in layer $$S^\ell$$ \| $$w\_n^\ell$$ \|
-
-\| bias for feature map $$n$$ in convolution layer $$C^\ell$$ \| $$b^\ell\_n$$ \|
-
-\| bias for feature map $$n$$ in sub-sampling layer $$S^\ell$$ \| $$b^\ell\_n$$ \|
-
-\| feature map $$n$$ in layer $$\ell$$ \| $$y\_n^\ell\(i,j\)$$ \|
-
-\| size of a feature map in layer $$\ell$$ \| $$H\_\ell \times W\_\ell$$ \|
-
-\#\#\#\# Convolution layer
+#### Convolution layer
 
 &lt;\begin{figure}\\[h\\]
 
