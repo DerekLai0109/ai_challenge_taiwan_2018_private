@@ -4,9 +4,9 @@ MM 03/05/2018
 
 ![](/assets/CBOW_Skip_gram_0310.png)
 
-**CBOW and skip gram Model are two high-quality distributed vector representation**
+**Fig.1** **CBOW and skip gram Model are two high-quality distributed vector representation**
 
-Fig. shows the schematic for CBOW and skip gram model.
+Fig.1 shows the schematic for CBOW and skip gram model.
 
 CBOW and skip-gram models was proposed as a  revolution of word embeddings  \[1\].  
 CBOW computes the conditional probability of a target word given the context words surrounding it across a window of size k.  
@@ -16,7 +16,9 @@ Considering a simplified version of the CBOW model where only one word is consid
 
 ![](/assets/CBOW_model.jpg)
 
-Fig. shows the  CBOW model, which is a fully connected neural network with one hidden layer.  
+**Fig.2 CBOW model, as a connected neural network with one hidden layer.**
+
+Fig.2 shows the  CBOW model, which is a fully connected neural network with one hidden layer.  
 The input layer takes the one-hot vector of context word, and has V neurons while the hidden layer has $N$ neurons. The output layer is softmax of all words in the vocabulary.
 
 \[0\]
