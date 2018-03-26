@@ -1,6 +1,6 @@
 # Mathematical Model
 
-Table.1 summarizes the notation used to describe the functional aspects of CNN. The symbol $$\ell$$ denotes the index of a network layer. The layer index $$\ell$$ goes from 1 to $$L$$, and $$L$$ is the number of network layers. In this tutorial, there will be $$a+1$$ convolution layer, $$a$$ subsampling layer and one output layer. $$a$$ is a positive integer, and $$L = 2a +2$$. $$N\_\ell$$ is the number of feature maps in layer $$\ell$$, and $$f_\ell(\cdot)$$ is the activation function of layer $$\ell$$. $$\bar{\bar{y}}_n^\ell$$ is the $$n$$th feature map \(output\) of layer $$\ell$$.
+Table.1 summarizes the notation used to describe the functional aspects of CNN. The symbol $$\ell$$ denotes the index of a network layer. The layer index $$\ell$$ goes from 1 to $$L$$, and $$L$$ is the number of network layers. In this tutorial, there will be $$a+1$$ convolution layer, $$a$$ subsampling layer and one output layer. $$a$$ is a positive integer, and $$L = 2a +2$$. $$N_\ell$$ is the number of feature maps in layer $$\ell$$, and $$f_\ell(\cdot)$$ is the activation function of layer $$\ell$$. $$\bar{\bar{y}}_n^\ell$$ is the $$n$$th feature map \(output\) of layer $$\ell$$.
 
 ### Table.1 MATHMATICAL NOTATION FOR CNN
 
@@ -24,23 +24,9 @@ Table.1 summarizes the notation used to describe the functional aspects of CNN. 
 
 #### Convolution layer
 
-&lt;\begin{figure}\\[h\\]
+![a\_convolution\_layer\_in\_CNN\](/assets/a_convolution_layer_in_CNN.jpg)
 
-&lt;\vskip 6.5 cm
-
-&lt;\hskip 0 cm
-
-&lt;\special{wmf:a\\_convolution\\_layer\\_in\\_CNN.jpg x=9 cm y=6.5 cm}
-
-&lt;\caption{A convolution layer in a CNN.}
-
-&lt;\label{a\\_convolution\\_layer\\_in\\_CNN}
-
-&lt;\end{figure}
-
-!\[a\\_convolution\\_layer\\_in\\_CNN\]\(/assets/a\_convolution\_layer\_in\_CNN.jpg\)
-
-\*Fig.1 A convolution layer in a CNN.\*
+*Fig.1 A convolution layer in a CNN.*
 
 Fig.1 shows a convolution layer in CNN. Considering the $$n$$th feature map in a convolution layer $$\ell$$, $$\ell=1,3,\cdots, 2a+1$$, $$\bar{\bar{w}}\_{m,n}^\ell = { w\_{m,n}^\ell\(i,j\) }$$ is the convolution mask, which will take in feature map $m$ in layer $$\(\ell-1\)$$ and generate feature map $$n$$ in layer $$\ell$$. $$b^\ell\_n$$ is the bias term assoicated with feature map $$n$$.
 
