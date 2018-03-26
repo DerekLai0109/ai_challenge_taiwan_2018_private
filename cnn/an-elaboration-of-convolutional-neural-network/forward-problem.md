@@ -28,7 +28,7 @@ Table.1 summarizes the notation used to describe the functional aspects of CNN. 
 
 *Fig.1 A convolution layer in a CNN.*
 
-Fig.1 shows a convolution layer in CNN. Considering the $$n$$th feature map in a convolution layer $$\ell$$, $$\ell=1,3,\cdots, 2a+1$$, $$\bar{\bar{w}}\_{m,n}^\ell = { w\_{m,n}^\ell\(i,j\) }$$ is the convolution mask, which will take in feature map $m$ in layer $$\(\ell-1\)$$ and generate feature map $$n$$ in layer $$\ell$$. $$b^\ell\_n$$ is the bias term assoicated with feature map $$n$$.
+Fig.1 shows a convolution layer in CNN. Considering the $$n$$th feature map in a convolution layer $$\ell$$, $$\ell=1,3,\cdots, 2a+1$$, $$\bar{\bar{w}}_{m,n}^\ell = { w_{m,n}^\ell(i,j) }$$ is the convolution mask, which will take in feature map $m$ in layer $$(\ell-1)$$ and generate feature map $$n$$ in layer $$\ell$$. $$b^\ell_n$$ is the bias term assoicated with feature map $$n$$.
 
 !\[convolution\\_layer\\_in\\_CNN\\_case2\]\(/assets/convolution\_layer\_in\_CNN\_case2.jpg\)
 
