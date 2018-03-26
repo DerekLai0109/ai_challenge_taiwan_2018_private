@@ -9,18 +9,12 @@ Table.1 summarizes the notation used to describe the functional aspects of CNN. 
 | input image size | $$H_0 \times W_0$$ |
 | input image pixel | $$x(i,j)$$ or $$y_1^0(i,j)$$ |
 | layer index | $$\ell$$ |
-
-\| number of layers \| $$L= 2a+2$$ \|
-
-\| convolution layers \| $$C^1$$, $$C^3$$, $$\cdots$$, $$C^{2a+1}$$ \|
-
-\| sub-sampling layers \| $$S^1$$, $$S^3$$, $$\cdots$$, $$S^{2a}$$ \|
-
-\| activation function of layer $$\ell$$ \| $$f\_\ell$$ \|
-
-\| number of feature maps in layer $$\ell$$ \| $$N\_\ell$$ \|
-
-\| size of convolution mask for layer \| $$h\_\ell \times w\_\ell$$ \|
+| number of layers | $$L= 2a+2$$ |
+| convolution layers | $$C^1$$, $$C^3$$, $$\cdots$$, $$C^{2a+1}$$ |
+| sub-sampling layers | $$S^1$$, $$S^3$$, $$\cdots$$, $$S^{2a}$$ |
+| activation function of layer $$\ell$$ | $$f\_\ell$$ |
+| number of feature maps in layer $$\ell$$ | $$N\_\ell$$ |
+| size of convolution mask for layer | $$h\_\ell \times w\_\ell$$ |
 
 \| convolution mask from feature map $$m$$ &lt;br/&gt; in layer $$S^{\ell-1}$$ to feature map $$n$$ in layer $$C^\ell$$ \| $${ w^\ell\_{m,n}\(i,j\) }$$ \|
 
