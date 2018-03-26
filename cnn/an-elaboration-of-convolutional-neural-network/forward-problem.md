@@ -30,15 +30,13 @@ Table.1 summarizes the notation used to describe the functional aspects of CNN. 
 
 Fig.1 shows a convolution layer in CNN. Considering the $$n$$th feature map in a convolution layer $$\ell$$, $$\ell=1,3,\cdots, 2a+1$$, $$\bar{\bar{w}}_{m,n}^\ell = { w_{m,n}^\ell(i,j) }$$ is the convolution mask, which will take in feature map $m$ in layer $$(\ell-1)$$ and generate feature map $$n$$ in layer $$\ell$$. $$b^\ell_n$$ is the bias term assoicated with feature map $$n$$.
 
-!\[convolution\\_layer\\_in\\_CNN\\_case2\]\(/assets/convolution\_layer\_in\_CNN\_case2.jpg\)
+![convolution\_layer\_in\\_CNN\_case2\](/assets/convolution_layer_in_CNN_case2.jpg)
 
-\*Fig.2 The second convolution layer \\(layer 3\\) as an illustrative example.\*
+*Fig.2 The second convolution layer \(layer 3\) as an illustrative example.*
 
-Fig.2 &lt;\ref{convolution\\_layer\\_in\\_CNN\\_case2}&gt; shows an illustrative example for the second convolution layer, layer 3.
+Fig.2 shows an illustrative example for the second convolution layer, layer 3. The second and fourth feature maps in second layer, $$\bar{\bar{y}}_2^2$$ and $$\bar{\bar{y}}_4^2$$, serve as input sources for the fourth feature map in third layer, $$\bar{\bar{y}}_4^3$$.
 
-The second and fourth feature maps in second layer, $$\bar{\bar{y}}\_2^2$$ and $$\bar{\bar{y}}\_4^2$$, serve as input sources for the fourth feature map in third layer, $$\bar{\bar{y}}\_4^3$$.
-
-!\[convolution\\_layer\\_in\\_CNN\\_case1\]\(/assets/convolution\_layer\_in\_CNN\_case1.jpg\)
+![convolution\_layer\_in\_CNN\\_case1\](/assets/convolution_layer_in_CNN_case1.jpg)
 
 \*Fig.3 First convolution layer as an illustrative example.\*
 
