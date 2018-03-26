@@ -6,7 +6,7 @@ Distributed representations \(embeddings\) are mainly learnt through context. Du
 
 ![](/assets/distributional_vectors_by_a_D_dimensional_vec.jpg)
 
-**Fig.1 Distributional vectors represented by a D-dimensional vector hwere D &lt;&lt; V, where V is size of Vocabulary.**
+**Fig.1 Distributional vectors represented by a D-dimensional vector where D &lt;&lt; V, where V is size of Vocabulary.**
 
 Fig. shows that the distributed vectors or word embeddings.
 
