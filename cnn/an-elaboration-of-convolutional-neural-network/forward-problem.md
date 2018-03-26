@@ -1,6 +1,6 @@
 # Mathematical Model
 
-Table.1 <\ref{mathematic\_notation\_CNN}> summarizes the notation used to describe the functional aspects of CNN. The symbol $$\ell$$ denotes the index of a network layer. The layer index $$\ell$$ goes from 1 to $$L$$, and $$L$$ is the number of network layers. In this tutorial, there will be $$a+1$$ convolution layer, $$a$$ subsampling layer and one output layer. $$a$$ is a positive integer, and $$L = 2a +2$$. $$N_\ell$$ is the number of feature maps in layer $$\ell$$, and $$f_\ell(\cdot)$$ is the activation function of layer $$\ell$$. $$\bar{\bar{y}}_n^\ell$$ is the $$n$$th feature map \(output\) of layer $$\ell$$.
+Table.1 summarizes the notation used to describe the functional aspects of CNN. The symbol $$\ell$$ denotes the index of a network layer. The layer index $$\ell$$ goes from 1 to $$L$$, and $$L$$ is the number of network layers. In this tutorial, there will be $$a+1$$ convolution layer, $$a$$ subsampling layer and one output layer. $$a$$ is a positive integer, and $$L = 2a +2$$. $$N_\ell$$ is the number of feature maps in layer $$\ell$$, and $$f_\ell(\cdot)$$ is the activation function of layer $$\ell$$. $$\bar{\bar{y}}_n^\ell$$ is the $$n$$th feature map \(output\) of layer $$\ell$$.
 
 
 ### Table.1 MATHMATICAL NOTATION FOR CNN
