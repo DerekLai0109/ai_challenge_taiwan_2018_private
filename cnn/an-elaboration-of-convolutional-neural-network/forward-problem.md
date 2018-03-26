@@ -4,14 +4,11 @@ Table.1 summarizes the notation used to describe the functional aspects of CNN. 
 
 ### Table.1 MATHMATICAL NOTATION FOR CNN
 
-| description \| symbol |
+| description | symbol |
 | -- | -- |
-
-\| input image size \| $$H\_0 \times W\_0$$ \|
-
-\| input image pixel \| $$x\(i,j\)$$ or $$y\_1^0\(i,j\)$$ \|
-
-\| layer index \| $$\ell$$ \|
+| input image size | $$H_0 \times W_0$$ |
+| input image pixel | $$x(i,j)$$ or $$y_1^0(i,j)$$ |
+| layer index | $$\ell$$ |
 
 \| number of layers \| $$L= 2a+2$$ \|
 
