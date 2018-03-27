@@ -183,18 +183,17 @@ $$
 
 The feature map $$n$$ of sub-sampling layer $$\ell$$ is calculated as
 
-\begin{eqnarray}
+$$
+\bar{\bar{y}}_n^\ell = f_\ell( \bar{\bar{z}}_n^{\ell} \times w^\ell_n + b_n^\ell ) =f_\ell(\bar{\bar{s}}_n^\ell)
+$$
 
-\bar{\bar{y}}\_n^\ell = f\_\ell\\( \bar{\bar{z}}\_n^{\ell} \times w^\ell\_n + b\\_n^\ell \\) =f\_\ell\\(\bar{\bar{s}}\_n^\ell\\)
+where $$w^\ell_n$$ and $$b_n^\ell$$ are the weight and bias term, respectively. The size of feature map $$\bar{\bar{y}}_n^\ell$$ in sub-sampling layer $$\ell$$ is
 
-\label{subsampling\\_layer\\_output}
+$$
+H\_\ell= H\_{\ell-1}/2, \hspace{0.1 in} W\_\ell = W\\_{\ell-1}/2
 
-\end{eqnarray}
-
-where $w^\ell\\_n$ and $b\\_n^\ell$ are the weight and bias term, respectively.
-
-The size of feature map $\bar{\bar{y}}\\_n^\ell$ in sub-sampling layer $\ell$ is
-
+\nonumber
+$$
 \begin{eqnarray}
 
 H\_\ell= H\_{\ell-1}/2, \hspace{0.1 in} W\_\ell = W\\_{\ell-1}/2
