@@ -110,7 +110,13 @@ $$
 where $$\otimes$$ is the 2D convolution operator.
 
 The computation of convolution operation can be explicitly expressed as
+$$
+\bar{\bar{C}}^\ell_{m,n}(i,j) = \sum_{i'=1}^{ h_\ell} \hspace{0.1 in} \sum_{j'=1}^{w_\ell} \nonumber \\
 
+\bar{\bar{y}}_m^{\ell-1}(i'-1+i, j'-1+j) \times \bar{\bar{w}}^\ell_{m,n}(i',j') \nonumber \\
+
+1 \leq i \leq H_{\ell-1} - h_\ell+1, \hspace{0.1 in} 1 \leq j \leq W_{\ell-1} - w_\ell+1 \nonumber
+$$
 \begin{eqnarray}
 
 &&\bar{\bar{C}}^\ell\_{m,n}\\(i,j\\) = \sum\_{i'=1}^{ h\_\ell} \hspace{0.1 in} \sum\_{j'=1}^{w\_\ell} \nonumber \
