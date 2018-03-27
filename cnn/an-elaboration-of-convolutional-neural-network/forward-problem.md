@@ -118,11 +118,10 @@ Feature map $$n$$ of convolution layer $$\ell$$ is calculated as
 
 
 $$
-\bar{\bar{y}}\_n^\ell = f\_\ell \left\(\sum\_{m \in V\_n^\ell} \bar{\bar{y}}^{\ell -1}\_m \otimes
+\bar{\bar{y}}_n^\ell = f_\ell \left(\sum_{m \in V_n^\ell} \bar{\bar{y}}^{\ell -1}_m \otimes
+\bar{\bar{w}}_{m,n}^\ell + b_n^\ell \right) \\
 
-\bar{\bar{w}}\_{m,n}^\ell + b\_n^\ell \right\) \\
-
-=f\_\ell \left\( \sum\_{m \in V\_n^\ell} \bar{\bar{C}}\_{m,n}^\ell + b\_n^\ell \right\) = f\_\ell \( \bar{\bar{s}}\_n^\ell \) \nonumber
+=f_\ell \left( \sum_{m \in V_n^\ell} \bar{\bar{C}}_{m,n}^\ell + b_n^\ell \right) = f_\ell ( \bar{\bar{s}}_n^\ell ) \nonumber
 $$
 
 
