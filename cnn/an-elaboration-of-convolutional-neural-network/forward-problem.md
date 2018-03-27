@@ -160,21 +160,9 @@ y_m^{\ell-1}(i',j') \times w_{m,n}^\ell(i'-i+1,j'-j+1) \nonumber
 $$
 
 ####Sub-sampling layer
-\subsection{Sub-sampling layer}
+![a\_subsampling\_layer\_CNN](/assets/a_subsampling_layer_CNN_01262017.jpg)
+*Fig.8 A sub-sampling layer in a CNN, where $$W^\ell=W^{\ell-1}/2$$ and $$H^\ell=H^{\ell-1}/2$$.*
 
-\begin{figure}\\[h\\]
-
-\vskip 4.3 cm
-
-\hskip 0 cm
-
-\special{wmf:a\\_subsampling\\_layer\\_CNN\\_01262017.jpg x=9 cm y=4.3 cm}
-
-\caption{A sub-sampling layer in a CNN, where $W^\ell=W^{\ell-1}/2$ and $H^\ell=H^{\ell-1}/2$.}
-
-\label{a\\_subsampling\\_layer\\_CNN}
-
-\end{figure}
 
 Fig.\ref{a\\_subsampling\\_layer\\_CNN} shows a sub-sampling layer in a CNN.
 
