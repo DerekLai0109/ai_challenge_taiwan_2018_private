@@ -117,34 +117,20 @@ $$
 
 1 \leq i \leq H_{\ell-1} - h_\ell+1, \hspace{0.1 in} 1 \leq j \leq W_{\ell-1} - w_\ell+1 \nonumber
 $$
-\begin{eqnarray}
-
-&&\bar{\bar{C}}^\ell\_{m,n}\\(i,j\\) = \sum\_{i'=1}^{ h\_\ell} \hspace{0.1 in} \sum\_{j'=1}^{w\_\ell} \nonumber \
-
-&&\bar{\bar{y}}\_m^{\ell-1}\\(i'-1+i, j'-1+j\\) \times \bar{\bar{w}}^\ell\_{m,n}\\(i',j'\\)
-
-\nonumber \
-
-&&1 \leq i \leq H\_{\ell-1} - h\_\ell+1, \hspace{0.1 in} 1 \leq j \leq W\_{\ell-1} - w\_\ell+1 \nonumber
-
-\end{eqnarray}
 
 Or
+$$
+\bar{\bar{C}}^\ell_{m,n}(i,j)=\sum_{i'=i}^{h_\ell + i -1} \sum_{j'=j}^{w_\ell+j-1} \nonumber \\
 
-\begin{eqnarray}
+\bar{\bar{y}}^{\ell-1}_m(i',j') \times \bar{\bar{w}}_{m,n}^\ell (i'-i+1,j'-j+1) \nonumber \\
 
-&&\bar{\bar{C}}^\ell\_{m,n}\\(i,j\\)=\sum\_{i'=i}^{h\_\ell + i -1} \sum\_{j'=j}^{w\_\ell+j-1} \nonumber \
+1 \leq i \leq H_{\ell}, \hspace{0.1 in} 1 \leq j \leq W_{\ell} \nonumber \\
 
-&&\bar{\bar{y}}^{\ell-1}\_m\\(i',j'\\) \times \bar{\bar{w}}\_{m,n}^\ell \\(i'-i+1,j'-j+1\\)
+1 \leq i' - i +1 \leq h_\ell, \hspace{0.1 in} 1 \leq j' - j +1 \leq w_\ell \nonumber
+$$
 
-\nonumber \
-
-&&1 \leq i \leq H\_{\ell}, \hspace{0.1 in} 1 \leq j \leq W\_{\ell} \nonumber \
-
-&& 1 \leq i' - i +1 \leq h\_\ell, \hspace{0.1 in} 1 \leq j' - j +1 \leq w\_\ell \nonumber
-
-\end{eqnarray}
-
+![schematic\_convolution\\_operation\\_ell\\_nth\\_neuron](/assets/schematic_convolution_operation_01242017.jpg)
+*Fig.7 Schematic of convolution operation, $\bar{\bar{C}}\_{m,n}^{\ell}= \bar{\bar{y}}^{\ell -1}\_m \bigcirc !!!!!!! \times \hspace{0.1 in} \bar{\bar{w}}\_{m,n}^\ell$.*
 \begin{figure}\\[h\\]
 
 \vskip 6 cm
