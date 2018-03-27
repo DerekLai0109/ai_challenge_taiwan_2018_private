@@ -1,8 +1,1 @@
 # RNN
-
-```asciidoc
-[#img-sunset] 
-.A mountain sunset 
-[link=https://www.flickr.com/photos/javh/5448336655] 
-image::sunset.jpg[Sunset,300,200]
-```
