@@ -199,31 +199,15 @@ $$
 The output of sigmoidal neuron $n$ is calculated as
 
 $$
-&&y\_n^L = f\_L \left\\( \sum\_{m=1}^{N\_{L-1}} y\_m^{L-1} w\_{m,n}^L + b\_n^L \right\\) \label{outupt\\_layer\\_output} \
+y_n^L = f_L \left( \sum_{m=1}^{N_{L-1}} y_m^{L-1} w_{m,n}^L + b_n^L \right)  \\
+= f_L ( s_n^L ) 
+$$
 
-&& = f\\_L \\( s\\_n^L \\) \label{outupt\\_layer\\_output\\_reduced}
-
+where $$N^L$$ is the number of output sigmoidal neuron, $$w_{m,n}^L$$ denotes the weight from feature map $$m$$ of the last convolutional layer, to neuron $$n$$ of the output layer. $$b_n^L$$ be the bias term associated with neuron of layer $$L$$. The outputs of all sigmoidal neurons form the network outputs:
 
 $$
-\begin{eqnarray}
-
-&&y\_n^L = f\_L \left\\( \sum\_{m=1}^{N\_{L-1}} y\_m^{L-1} w\_{m,n}^L + b\_n^L \right\\) \label{outupt\\_layer\\_output} \
-
-&& = f\\_L \\( s\\_n^L \\) \label{outupt\\_layer\\_output\\_reduced}
-
-\end{eqnarray}
-
-where $N^L$ is the number of output sigmoidal neuron, $w\_{m,n}^L$ denotes the weight from feature map $m$ of the last convolutional layer, to neuron $n$ of the output layer. $b\_n^L$ be the bias term associated with neuron of layer $L$.
-
-The outputs of all sigmoidal neurons form the network outputs:
-
-\begin{eqnarray}
-
-\bar{y}= \left\\[ y\_1^L, y\\_2^L, \cdots, y\_{N\\_L}^L \right\\]
-
-\nonumber
-
-\end{eqnarray}
+\bar{y}= \left[ y_1^L, y_2^L, \cdots, y_{N_L}^L \right] \nonumber
+$$
 
 \subsection{SoftMax function \\(usually adopted for output layer\\)}
 
