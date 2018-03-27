@@ -169,27 +169,19 @@ Fig.8 shows a sub-sampling layer in a CNN. Considering the feature map $$n$$ in 
 $$\bar{\bar{z}}_n^{\ell}$$ is a matrix, and its element is obtained by summing the four pixels in each block,
 
 $$
-z_n^{\ell}(i,j)= y_n^{\ell-1} (2i-1,2j-1) + y_n^{\ell-1} (2i-1, 2j) \nonumber \\
-+ y_n^{\ell-1} (2i, 2j-1) + y_n^{\ell-1} (2i, 2j)
-\label{z_y_relation}
-
+\bar{\bar{z}}_n^{\ell}(i,j) = y_n^{\ell-1} (2i-1,2j-1) + y_n^{\ell-1} (2i-1, 2j) \nonumber \\
++ y_n^{\ell-1} (2i, 2j-1) + y_n^{\ell-1} (2i, 2j) 
 $$
 
 ####Max Pooling
+$$\bar{\bar{z}}_n^{\ell}$$ is a matrix, and its element is assigned with the maximal entry among the four pixels in each block,
 
-$\bar{\bar{z}}\\_n^{\ell}$ is a matrix, and its element is assigned with the maximal entry among the four pixels in each block,
+$$
+\bar{\bar{z}}_n^{\ell}(i,j)= \max \left\{ {y_n^{\ell-1} (2i-1,2j-1), y_n^{\ell-1} (2i-1, 2j), \nonumber \\
+y_n^{\ell-1} (2i, 2j-1), y_n^{\ell-1} (2i, 2j} \right\}
+$$
 
-\begin{eqnarray}
-
-&&z\\_n^{\ell}\\(i,j\\)= \max { y\\_n^{\ell-1} \\(2i-1,2j-1\\), y\\_n^{\ell-1} \\(2i-1, 2j\\), \nonumber \
-
-&& y\\_n^{\ell-1} \\(2i, 2j-1\\), y\\_n^{\ell-1} \\(2i, 2j\\) }
-
-\label{z\\_y\\_relation\\_max\\_pooling}
-
-\end{eqnarray}
-
-The feature map $n$ of sub-sampling layer $\ell$ is calculated as
+The feature map $$n$$ of sub-sampling layer $$\ell$$ is calculated as
 
 \begin{eqnarray}
 
