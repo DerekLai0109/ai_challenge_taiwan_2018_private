@@ -83,20 +83,9 @@ U_n^\ell={ 1,2,\cdots, N_{\ell+1} } \\
 V_n^\ell={ 1,2, \cdots, N_{\ell-1} } \nonumber
 $$
 
+![convolution\_layer\_in\_CNN\_case1\_general](/assets/convolution_layer_in_CNN_case1_general.jpg)
+*Fig.5 Convolution layer one-multiple mapping \($$U^\ell_n$$\).*
 
-\begin{figure}\\[h\\]
-
-\vskip 6 cm
-
-\hskip 0 cm
-
-\special{wmf:convolution\\_layer\\_in\\_CNN\\_case1\\_general.jpg x=9 cm y=6 cm}
-
-\caption{Convolution layer one-multiple mapping \\($U^\ell\\_n$\\).}
-
-\label{convolution\\_layer\\_in\\_CNN\\_case1\\_general}
-
-\end{figure}
 
 \begin{figure}\\[h\\]
 
