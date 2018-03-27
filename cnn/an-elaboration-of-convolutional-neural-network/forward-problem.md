@@ -89,7 +89,7 @@ $$
 ![convolution\_layer\_in\_CNN\_case2\_general](/assets/convolution_layer_in_CNN_case2_general.jpg)
 *Fig.6 Convolution layer multiple-one mapping \($$V^\ell_m$$\).*
 
-Fig.5 and Fig.6 show the schematic of convolution layer by exploiting the concept of U \\(one-multiple mapping\\) and V \\(multiple-one mapping\\).
+Fig.5 and Fig.6 show the schematic of convolution layer by exploiting the concept of U \(one-multiple mapping\) and V \(multiple-one mapping\).
 
 Feature map $$n$$ of convolution layer $$\ell$$ is calculated as
 
@@ -101,20 +101,13 @@ $$
 =f_\ell \left( \sum_{m \in V_n^\ell} \bar{\bar{C}}_{m,n}^\ell + b_n^\ell \right) = f_\ell ( \bar{\bar{s}}_n^\ell ) \nonumber
 $$
 
-
-is
-
 where
+$$
+\bar{\bar{C}}_{m,n}^\ell= \bar{\bar{y}}_m^{\ell-1}  \otimes \bar{\bar{w}}_{m,n}^\ell \nonumber
+$$
 
-\begin{eqnarray}
 
-\bar{\bar{C}}\_{m,n}^\ell= \bar{\bar{y}}\_m^{\ell-1} \bigcirc !!!!!!! \times \hspace{0.1 in} \bar{\bar{w}}\_{m,n}^\ell
-
-\nonumber
-
-\end{eqnarray}
-
-where $\bigcirc !!!!! \times$ is the 2D convolution operator.
+where $$\otimes$$ is the 2D convolution operator.
 
 The computation of convolution operation can be explicitly expressed as
 
