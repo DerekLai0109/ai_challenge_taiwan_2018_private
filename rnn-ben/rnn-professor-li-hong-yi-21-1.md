@@ -17,6 +17,7 @@ Tsung-Yung 3/20/2018
 
 Recurrent Network就是讓網路具備記憶的一種方式。
 
+
 Elman Network vs Jordan Network
 
 Bi-directional RNN
