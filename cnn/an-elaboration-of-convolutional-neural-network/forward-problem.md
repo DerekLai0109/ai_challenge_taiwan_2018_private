@@ -38,19 +38,19 @@ Fig.2 shows an illustrative example for the second convolution layer, layer 3. T
 
 ![convolution\_layer\_in\_CNN\\_case1\](/assets/convolution_layer_in_CNN_case1.jpg)
 
-\*Fig.3 First convolution layer as an illustrative example.\*
+*Fig.3 First convolution layer as an illustrative example.*
 
-Fig.3 &lt;\ref{convolution\_layer\\_in\\_CNN\\_case1}&gt; shows another illustrative example for the first convolution layer. The feature maps of 1, 2, 3 and 4 in first layer, $$\bar{\bar{y}}\_{1}^1$$, $$\bar{\bar{y}}\_{2}^1$$, $$\bar{\bar{y}}\_{3}^1$$, $$\bar{\bar{y}}\_{4}^1$$, have idendical input source of the image map $$\bar{\bar{y}}\_1^0$$ in the input layer; however, different convolution masks are applied, $$\bar{\bar{w}}\_{1,1}^1$$, $$\bar{\bar{w}}\_{1,2}^1$$, $$\bar{\bar{w}}\_{1,3}^1$$, $$\bar{\bar{w}}\_{1,4}^1$$.
+Fig.3 shows another illustrative example for the first convolution layer. The feature maps of 1, 2, 3 and 4 in first layer, $$\bar{\bar{y}}_{1}^1$$, $$\bar{\bar{y}}_{2}^1$$, $$\bar{\bar{y}}_{3}^1$$, $$\bar{\bar{y}}_{4}^1$$, have idendical input source of the image map $$\bar{\bar{y}}_1^0$$ in the input layer; however, different convolution masks are applied, $$\bar{\bar{w}}_{1,1}^1$$, $$\bar{\bar{w}}_{1,2}^1$$, $$\bar{\bar{w}}_{1,3}^1$$, $$\bar{\bar{w}}_{1,4}^1$$.
 
-!\[schematic\\_convolution\\_U\\_and\\_V\]\(/assets/schematic\_convolution\_U\_and\_V.jpg\)
+![schematic\_convolution\_U\_and\_V\](/assets/schematic_convolution_U_and_V.jpg)
 
-\*Fig.4 Schematic of $$U^\ell$$ and $$V^{\ell+1}$$, which are applied to describe the connection between successive layer.\*
+*Fig.4 Schematic of $$U^\ell$$ and $$V^{\ell+1}$$, which are applied to describe the connection between successive layer.*
 
-Fig.4 &lt;\ref{schematic\\_convolution\\_U\\_and\\_V}&gt; shows the schematic of $$U^\ell$$ and $$V^{\ell+1}$$, which are applied to describe the connection between successive layer. $$U^\ell\_n$$ stores the next elements connection for $$n$$th neuron \\(feature map\\) in layer $$\ell$$ to $$\ell+1$$ layer. $$V^{\ell+1}\\_m$$ stores the preceding elements conection for $$m$$th neuron \\(feature map\\) in layer $$\ell+1$$ to $$\ell$$ layer. In this illustrative example, the first neuron in layer $$\ell$$ is connected to the first, second and fourth neurons in the layer $$\ell+1$$ \\(next layer\\), and it renders
+Fig.4 shows the schematic of $$U^\ell$$ and $$V^{\ell+1}$$, which are applied to describe the connection between successive layer. $$U^\ell_n$$ stores the next elements connection for $$n$$th neuron \(feature map\) in layer $$\ell$$ to $$\ell+1$$ layer. $$V^{\ell+1}_m$$ stores the preceding elements conection for $$m$$th neuron \(feature map\) in layer $$\ell+1$$ to $$\ell$$ layer. In this illustrative example, the first neuron in layer $$\ell$$ is connected to the first, second and fourth neurons in the layer $$\ell+1$$ \(next layer\), and it renders
 
 
 $$
-U\_1^\ell = \[U\_1^\ell\(1\), U\_1^\ell\(2\), U\_1^\ell\(3\) \] = \[1,2,4\] \nonumber
+U_1^\ell = [U_1^\ell(1), U_1^\ell(2), U_1^\ell(3)] = [1,2,4] \nonumber
 $$
 
 
