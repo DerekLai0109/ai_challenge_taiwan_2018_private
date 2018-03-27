@@ -134,42 +134,32 @@ $$
 
 Fig.7 shows the schematic of convolution operation.
 
-If the size of input feature maps $$\bar{\bar{y}}^{\ell-1}\_m$$ is $H\_{\ell-1} \times W\_{\ell-1}$ pixels and the size of convolution masks $\bar{\bar{w}}\_{m,n}^\ell$ is $h\_\ell \times w\_\ell$, the size of output feature map $\bar{\bar{y}}\_n^\ell$ is
+If the size of input feature maps $$\bar{\bar{y}}^{\ell-1}_m$$ is $$H_{\ell-1} \times W_{\ell-1}$$ pixels and the size of convolution masks $$\bar{\bar{w}}_{m,n}^\ell$$ is $$h_\ell \times w_\ell$$, the size of output feature map $$\bar{\bar{y}}_n^\ell$$ is
 
-\begin{eqnarray}
-
-H\_\ell \times W\_\ell = \left\\( H\_{\ell-1} - h\_\ell+1 \right\\) \times \left\\( W\_{\ell-1} - w\\_\ell+1 \right\\)
-
-\nonumber
-
-\end{eqnarray}
+$$
+H_\ell \times W_\ell = \left( H_{\ell-1} - h_\ell+1 \right) \times \left( W_{\ell-1} - w_\ell+1 \right) \nonumber
+$$
 
 For the last convolution layer, the output will become a scalar.
 
-From \\(\ref{convolution\_layer\\_output}\\), the $n$th neuron for the last convolution layer \\($L-1$\\) can be expressed as
+From \\(\ref{convolution\_layer\\_output}\\)沒辦法直接引用equation number, the $$n$$th neuron for the last convolution layer ($$L-1$$) can be expressed as
 
-\begin{eqnarray}
+$$
+y_n^{L-1} = f_{L-1} (s_n^{L-1}) \nonumber \\
+s_n^{L-1} = s_n^{L-1}(1,1) = b_n^{L-1} + \sum_{m \in V_n^{L-1}} \sum_{i'=1}^{h_{L-1}} \sum_{j'=1}^{w_{L-1}} \nonumber \\
+y_m^{L-2}(i',j') \times w_{m,n}^{L-1}(i',j') \nonumber
+$$
 
-&&y\_n^{L-1} = f\_{L-1} \\(s\_n^{L-1}\\) \nonumber \
 
-&&s\_n^{L-1} = s\\_n^{L-1}\\(1,1\\) = b\\_n^{L-1} + \sum\_{m \in V\_n^{L-1}} \sum\_{i'=1}^{h\_{L-1}} \sum\_{j'=1}^{w\_{L-1}} \nonumber \
+From \\(\ref{convolution\_layer\\_output}\\), the $$n$$th neuron for the other convolutioh layer \($$\ell=2a+1, a=0,1,2, \cdots$$\) can be expressed as
 
-&&y\_m^{L-2}\\(i',j'\\) \times w\_{m,n}^{L-1}\\(i',j'\\) \nonumber
+$$
+\bar{\bar{y}}_n^\ell = f_\ell (\bar{\bar{s}}_n^\ell) \nonumber \\
+s_n^\ell(i,j) =b_n^{\ell} + \sum_{m \in V_n^\ell} \sum_{i'=i}^{h_\ell +i-1} \sum_{j'=j}^{w_\ell + j-1} \nonumber \\
+y_m^{\ell-1}(i',j') \times w_{m,n}^\ell(i'-i+1,j'-j+1) \nonumber
+$$
 
-\end{eqnarray}
-
-From \\(\ref{convolution\_layer\\_output}\\), the $n$th neuron for the other convolutioh layer \\($\ell=2a+1, a=0,1,2, \cdots$\\) can be expressed as
-
-\begin{eqnarray}
-
-&&\bar{\bar{y}}\_n^\ell = f\_\ell \\(\bar{\bar{s}}\_n^\ell\\) \nonumber \
-
-&&s\_n^\ell\\(i,j\\) =b\\_n^{\ell} + \sum\_{m \in V\_n^\ell} \sum\_{i'=i}^{h\_\ell +i-1} \sum\_{j'=j}^{w\_\ell + j-1} \nonumber \
-
-&&y\_m^{\ell-1}\\(i',j'\\) \times w\_{m,n}^\ell\\(i'-i+1,j'-j+1\\) \nonumber
-
-\end{eqnarray}
-
+####Sub-sampling layer
 \subsection{Sub-sampling layer}
 
 \begin{figure}\\[h\\]
