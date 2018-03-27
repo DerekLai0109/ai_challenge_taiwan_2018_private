@@ -12,5 +12,5 @@ PyTorch is better for rapid prototyping in research for small scale projects. Te
 
 _Winner: PyTorch_
 
-
+PyTorch is a GPU enabled drop-in replacement for NumPy, PyTorch equipped with higher-level functionality for building and training deep neural networks than TensorFlow. 
 
