@@ -209,25 +209,17 @@ $$
 \bar{y}= \left[ y_1^L, y_2^L, \cdots, y_{N_L}^L \right] \nonumber
 $$
 
-\subsection{SoftMax function \\(usually adopted for output layer\\)}
-
+###SoftMax function \(usually adopted for output layer\)
 Softmax function model generalizes logistic regression to clasification problems where the class label can take on multiple values.
 
-\begin{eqnarray}
+$$
+y_n^{\ell}= \frac{\exp( s_n^\ell) }{\displaystyle \sum_{n_\ell=1}^{N_\ell} \exp( s_{n_\ell}^\ell)}
 
-y\_n^{\ell}= \frac{\exp\\( s\_n^\ell\\) }{\displaystyle \sum\_{n\_\ell=1}^{N\_\ell} \exp\\( s\_{n\_\ell}^\ell\\)}
+$$
 
-\label{soft\\_max\\_function}
+All output values in the range \(0,1\) and sum up to 1 for softmax function, and this property make it suitable for a probablistic interpretation. If we have $$N_L$$ output classes, the softmax can be interpreted as
 
-\end{eqnarray}
-
-All output values in the range \\(0,1\\) and sum up to 1 for softmax function, and this property make it suitable for a probablistic interpretation.
-
-If we have $N\\_L$ output classes, the softmax can be interpreted as
-
-\begin{eqnarray}
-
-y\\_n^{L}= \hbox{P}\\(x \in \hbox{n-th class}\\) \nonumber
-
-\end{eqnarray}
+$$
+y_n^{L}= \hbox{P}(x \in \hbox{n-th class}) \nonumber
+$$
 
