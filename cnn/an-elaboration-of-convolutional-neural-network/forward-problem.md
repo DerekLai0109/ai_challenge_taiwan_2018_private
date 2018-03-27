@@ -86,22 +86,10 @@ $$
 ![convolution\_layer\_in\_CNN\_case1\_general](/assets/convolution_layer_in_CNN_case1_general.jpg)
 *Fig.5 Convolution layer one-multiple mapping \($$U^\ell_n$$\).*
 
+![convolution\_layer\_in\_CNN\_case2\_general](/assets/convolution_layer_in_CNN_case2_general.jpg)
+*Fig.6 Convolution layer multiple-one mapping \($$V^\ell_m$$\).*
 
-\begin{figure}\\[h\\]
-
-\vskip 5 cm
-
-\hskip 0 cm
-
-\special{wmf:convolution\\_layer\\_in\\_CNN\\_case2\\_general.jpg x=9 cm y=5 cm}
-
-\caption{Convolution layer multiple-one mapping \\($V^\ell\\_m$\\).}
-
-\label{convolution\\_layer\\_in\\_CNN\\_case2\\_general}
-
-\end{figure}
-
-Fig.\ref{convolution\\_layer\\_in\\_CNN\\_case1\\_general} and Fig.\ref{convolution\\_layer\\_in\\_CNN\\_case2\\_general} show the schematic of convolution layer by exploiting the concept of U \\(one-multiple mapping\\) and V \\(multiple-one mapping\\).
+Fig.5 and Fig.6 show the schematic of convolution layer by exploiting the concept of U \\(one-multiple mapping\\) and V \\(multiple-one mapping\\).
 
 Feature map $$n$$ of convolution layer $$\ell$$ is calculated as
 
