@@ -129,25 +129,12 @@ $$
 1 \leq i' - i +1 \leq h_\ell, \hspace{0.1 in} 1 \leq j' - j +1 \leq w_\ell \nonumber
 $$
 
-![schematic\_convolution\\_operation\\_ell\\_nth\\_neuron](/assets/schematic_convolution_operation_01242017.jpg)
-*Fig.7 Schematic of convolution operation, $\bar{\bar{C}}\_{m,n}^{\ell}= \bar{\bar{y}}^{\ell -1}\_m \bigcirc !!!!!!! \times \hspace{0.1 in} \bar{\bar{w}}\_{m,n}^\ell$.*
-\begin{figure}\\[h\\]
+![schematic\_convolution\_operation\_ell\_nth\_neuron](/assets/schematic_convolution_operation_01242017.jpg)
+*Fig.7 Schematic of convolution operation, $$\bar{\bar{C}}_{m,n}^{\ell}= \bar{\bar{y}}^{\ell -1}_m  \otimes \hspace{0.1 in} \bar{\bar{w}}_{m,n}^\ell$$.*
 
-\vskip 6 cm
+Fig.7 shows the schematic of convolution operation.
 
-\hskip 0 cm
-
-\special{wmf:schematic\_convolution\\_operation\\_01242017.jpg x=8.5 cm y=6 cm}
-
-\caption{Schematic of convolution operation, $\bar{\bar{C}}\_{m,n}^{\ell}= \bar{\bar{y}}^{\ell -1}\_m \bigcirc !!!!!!! \times \hspace{0.1 in} \bar{\bar{w}}\_{m,n}^\ell$.}
-
-\label{schematic\_convolution\\_operation\\_ell\\_nth\\_neuron}
-
-\end{figure}
-
-Fig.\ref{schematic\\_convolution\\_operation\\_ell\\_nth\\_neuron} shows the schematic of convolution operation.
-
-If the size of input feature maps $\bar{\bar{y}}^{\ell-1}\_m$ is $H\_{\ell-1} \times W\_{\ell-1}$ pixels and the size of convolution masks $\bar{\bar{w}}\_{m,n}^\ell$ is $h\_\ell \times w\_\ell$, the size of output feature map $\bar{\bar{y}}\_n^\ell$ is
+If the size of input feature maps $$\bar{\bar{y}}^{\ell-1}\_m$$ is $H\_{\ell-1} \times W\_{\ell-1}$ pixels and the size of convolution masks $\bar{\bar{w}}\_{m,n}^\ell$ is $h\_\ell \times w\_\ell$, the size of output feature map $\bar{\bar{y}}\_n^\ell$ is
 
 \begin{eqnarray}
 
