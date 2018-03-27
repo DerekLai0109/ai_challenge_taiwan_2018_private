@@ -54,23 +54,23 @@ U_1^\ell = [U_1^\ell(1), U_1^\ell(2), U_1^\ell(3)] = [1,2,4] \nonumber
 $$
 
 
-The second neuron in layer $$\ell+1$$ is connected to the first, second and third neruons in the $$\ell$$ layer \\(preceding neuron\\), and it renders
+The second neuron in layer $$\ell+1$$ is connected to the first, second and third neruons in the $$\ell$$ layer \(preceding neuron\), and it renders
 
 
 $$
-V\_2^{\ell+1} = \[V\_2^{\ell+1}\(1\), V\_2^{\ell+1}\(2\), V\_2^{\ell+1}\(3\) \] = \[1,2,3\] \nonumber
+V_2^{\ell+1} = [V_2^{\ell+1}(1), V_2^{\ell+1}(2), V_2^{\ell+1}(3) ] = [1,2,3] \nonumber
 $$
 
 
 Note that the U in $$\ell$$ layer, $$U^\ell$$, and V in $$\ell+1$$ layer, $$V^{\ell+1}$$ carry equivalent information.
 
-From fig.4 &lt;\ref{schematic\\_convolution\\_U\\_and\\_V}&gt;, it indicates that
+From fig.4, it indicates that
 
 
 $$
-\hbox{if } m \in U\\_n^\ell \hspace{0.1 in} \to n \in V\\_m^{\ell+1} \nonumber \\
+\hbox{if } m \in U_n^\ell \hspace{0.1 in} \to n \in V_m^{\ell+1} \nonumber \\
 
-\hbox{if } n \in V\\_m^{\ell+1} \to m \in U\\_n^\ell \nonumber
+\hbox{if } n \in V_m^{\ell+1} \to m \in U_n^\ell \nonumber
 $$
 
 
@@ -78,9 +78,9 @@ Typically, fully connections are adopted for CNN, i.e.,
 
 
 $$
-U\_n^\ell={ 1,2,\cdots, N\_{\ell+1} } \\
+U_n^\ell={ 1,2,\cdots, N_{\ell+1} } \\
 
-V\_n^\ell={ 1,2, \cdots, N\_{\ell-1} } \nonumber
+V_n^\ell={ 1,2, \cdots, N_{\ell-1} } \nonumber
 $$
 
 
