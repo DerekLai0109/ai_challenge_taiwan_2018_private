@@ -33,5 +33,7 @@
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [撰寫Gitbook相關](zhuan-xie-gitbook-xiang-guan.md)
   * [如何撰寫數學式](zhuan-xie-gitbook-xiang-guan/ru-he-zhuan-xie-shu-xue-shi.md)
-  * 如何使用Change Request
+  * [如何使用Change Request](zhuan-xie-gitbook-xiang-guan/ru-he-shi-yong-change-request.md)
+* [Deep Learning Framework](deep-learning-framework.md)
+  * [Pytorch or Tensorflow ?](deep-learning-framework/pytorch-or-tensorflow.md)
 
