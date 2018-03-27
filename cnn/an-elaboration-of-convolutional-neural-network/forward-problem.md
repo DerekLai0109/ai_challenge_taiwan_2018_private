@@ -190,22 +190,21 @@ $$
 where $$w^\ell_n$$ and $$b_n^\ell$$ are the weight and bias term, respectively. The size of feature map $$\bar{\bar{y}}_n^\ell$$ in sub-sampling layer $$\ell$$ is
 
 $$
-H\_\ell= H\_{\ell-1}/2, \hspace{0.1 in} W\_\ell = W\\_{\ell-1}/2
+H_\ell= H_{\ell-1}/2, \hspace{0.1 in} W_\ell = W_{\ell-1}/2
 
 \nonumber
 $$
-\begin{eqnarray}
 
-H\_\ell= H\_{\ell-1}/2, \hspace{0.1 in} W\_\ell = W\\_{\ell-1}/2
-
-\nonumber
-
-\end{eqnarray}
-
-\subsection{Output Layer Fully Connected Layer}
-
+###Output Layer Fully Connected Layer
 The output of sigmoidal neuron $n$ is calculated as
 
+$$
+&&y\_n^L = f\_L \left\\( \sum\_{m=1}^{N\_{L-1}} y\_m^{L-1} w\_{m,n}^L + b\_n^L \right\\) \label{outupt\\_layer\\_output} \
+
+&& = f\\_L \\( s\\_n^L \\) \label{outupt\\_layer\\_output\\_reduced}
+
+
+$$
 \begin{eqnarray}
 
 &&y\_n^L = f\_L \left\\( \sum\_{m=1}^{N\_{L-1}} y\_m^{L-1} w\_{m,n}^L + b\_n^L \right\\) \label{outupt\\_layer\\_output} \
