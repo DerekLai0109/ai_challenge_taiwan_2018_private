@@ -176,7 +176,6 @@ z_n^{\ell}(i,j)= y_n^{\ell-1} (2i-1,2j-1) + y_n^{\ell-1} (2i-1, 2j) \nonumber \\
 $$
 
 ####Max Pooling
-\subsubsection{Max Pooling}
 
 $\bar{\bar{z}}\\_n^{\ell}$ is a matrix, and its element is assigned with the maximal entry among the four pixels in each block,
 
