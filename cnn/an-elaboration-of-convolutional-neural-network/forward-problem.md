@@ -159,29 +159,23 @@ s_n^\ell(i,j) =b_n^{\ell} + \sum_{m \in V_n^\ell} \sum_{i'=i}^{h_\ell +i-1} \sum
 y_m^{\ell-1}(i',j') \times w_{m,n}^\ell(i'-i+1,j'-j+1) \nonumber
 $$
 
-####Sub-sampling layer
+###Sub-sampling layer
 ![a\_subsampling\_layer\_CNN](/assets/a_subsampling_layer_CNN_01262017.jpg)
 *Fig.8 A sub-sampling layer in a CNN, where $$W^\ell=W^{\ell-1}/2$$ and $$H^\ell=H^{\ell-1}/2$$.*
 
+Fig.8 shows a sub-sampling layer in a CNN. Considering the feature map $$n$$ in a sub-sampling layer $$\ell$$, $$\ell=2,4,\cdots,2a$$, the feature map $$n$$ of convolution layer $$\ell-1$$ is divided into non-overlapping blocks of size $$2 \times 2$$ pixels.
 
-Fig.\ref{a\\_subsampling\\_layer\\_CNN} shows a sub-sampling layer in a CNN.
+####Average Pooling
+$$\bar{\bar{z}}_n^{\ell}$$ is a matrix, and its element is obtained by summing the four pixels in each block,
 
-Considering the feature map $n$ in a sub-sampling layer $\ell$, $\ell=2,4,\cdots,2a$, the feature map $n$ of convolution layer $\ell-1$ is divided into non-overlapping blocks of size $2 \times 2$ pixels.
+$$
+z_n^{\ell}(i,j)= y_n^{\ell-1} (2i-1,2j-1) + y_n^{\ell-1} (2i-1, 2j) \nonumber \\
++ y_n^{\ell-1} (2i, 2j-1) + y_n^{\ell-1} (2i, 2j)
+\label{z_y_relation}
 
-\subsubsection{Average Pooling}
+$$
 
-$\bar{\bar{z}}\\_n^{\ell}$ is a matrix, and its element is obtained by summing the four pixels in each block,
-
-\begin{eqnarray}
-
-&&z\\_n^{\ell}\\(i,j\\)= y\\_n^{\ell-1} \\(2i-1,2j-1\\) + y\\_n^{\ell-1} \\(2i-1, 2j\\) \nonumber \
-
-&&+ y\\_n^{\ell-1} \\(2i, 2j-1\\) + y\\_n^{\ell-1} \\(2i, 2j\\)
-
-\label{z\\_y\\_relation}
-
-\end{eqnarray}
-
+####Max Pooling
 \subsubsection{Max Pooling}
 
 $\bar{\bar{z}}\\_n^{\ell}$ is a matrix, and its element is assigned with the maximal entry among the four pixels in each block,
