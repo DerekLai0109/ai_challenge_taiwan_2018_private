@@ -42,11 +42,12 @@ Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分
 ![](/assets/lstm-overview.png)
 *圖七 Block View of LSTM*
 
-圖八
+圖八更詳細解釋Gate數學模型，每個控制訊號$$z_x$$會經過一個activation function $$f(\cdot)$$再跟我們主訊號相乘，控制訊號的activation function通常會是sigmoid function，值域會在0~1之間，主要是模擬開關，開是0，關是1。我們在input gate跟output gate還各有一個activation function $$g(\cdot)$$, $$h(\cdot)$$來調整主訊號的值域，輸入訊號$$z$$通過input gate會產生$$g(z)f(z_i)$$的內部訊號，新的記憶$$c'$$會等於$$g(z)f(z_i)$$加上前一時刻記憶$$c$$乘上forget gate $$f(z_f)$$。輸出訊號$$a$$等於記憶$$c'$$通過一個activation function $$h(\cdot)$$ 乘以output gate $$f(z_o)$$。常見的$$g(\cdot)$$跟$$h(\cdot)$$會使用hyperbolic tangent $$tanh$$，主要模擬資料壓縮$$(-inf,inf) \to (-1,1)$$。
 ![](/assets/lstm-details.png)
 *圖八 Mathimatical View of LSTM*
 
 #### Illustrative Example of LSTM
+我們
 ![](/assets/lstm-example1.png)
 *Example Sequence*
 
