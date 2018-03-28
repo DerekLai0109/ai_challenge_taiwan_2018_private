@@ -4,5 +4,9 @@ Training model is the most time consuming and expensive part of machine learning
 
 Colab is aimed at being an education and research tool for collaborating on machine learning projects. Colab is completely free forever.
 
-Using Colab doesn't need to setup, even log in.
+Using Colab doesn't need to setup, only need to log in google account.
+
+Colab provide k80 GPU for unlimited access of 12 hours, and unlimited times, only get disconnected after 12 hours.
+
+
 
