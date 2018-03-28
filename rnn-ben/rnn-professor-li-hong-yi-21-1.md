@@ -58,20 +58,28 @@ Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分
 LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在這裡我們先不討論如何這些權重，假設我們已經得到這些權重。如圖十所示，$$(x_1,x_2,x_3)$$在輸入的權重是$$(1,0,0)$$加bias=0，input gate權重是$$(0,100,0)$$加bias=-10，forget gate權重是$$(0,100,0)$$加bias=10，output gate權重是$$(0,0,100)$$加bias=-10，為了簡化計算，我們假設$$g(\cdot)$$跟$$h(\cdot)$$都是linear function $$(y=x)$$
 ![](/assets/lstm-example2.png)
 *圖十 Time=1*
-第一個時間點，我們輸入端會得到$$g(z)=3$$，$$f(z_i) \approx 1$$，所以memory $$c=0+f(z_i)g(z)=3
+
+第一個時間點，我們輸入端會得到$$g(z)=3$$，$$f(z_i) \approx 1$$，所以memory $$c=0+f(z_i)g(z)=3$$
 
 ![](/assets/lstm-example3.png)
 *圖十一 Time=2*
-第二個時間點
+
+第二個時間點，$$x_1=2 \to g(z)=4$$，$$x_2=1 \to f(z_i) \approx 1$$， $$c'= c+f(z_i)g(z) = 3 + 1\times 4=7$$
 
 ![](/assets/lstm-example4.png)
 *圖十二 Time=3*
 
+第三個時間點，因為$$x_2=0 \to f(z_i) \approx 0$$，所以$$f(z_i)g(z) = 0 \to c'= c = 7$$
+
 ![](/assets/lstm-example5.png)
 *圖十三 Time=4*
 
+第四個時間點因為$$x_2=0 \to f(z_i)g(z) = 0 \times 1 = 0$$，$$c'=c=7$$，但因為$$x_3=1$$，所以$$f(z_o) \approx 1$$，所以output $$a= f(z_o)h(c')= 7$$ 
+
 ![](/assets/lstm-example6.png)
-*Time 5*
+*圖十四 Time=5*
+
+第五個時間點因為$$x_2=-1$$，所以$$f(z_i) \approx 0$$, $$f(z_f) \approx 0$$，所以$$c'= f(z_i)g(z) + cf(z_f)= 0 \times 3 + 7 \times 0 = 0$$，output $$a = f(z_o)h(c') = 0$$。
 
 #### simple RNN vs LSTM
 ![](/assets/simple-neuron.png)
