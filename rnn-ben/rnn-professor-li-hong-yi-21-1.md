@@ -47,21 +47,28 @@ Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分
 *圖八 Mathimatical View of LSTM*
 
 #### Illustrative Example of LSTM
-我們
+舉一個簡單的例子，我們定義一組函數$$y=f(x_1,x_2,x_3)$$，這個函數有下列的規則：
+1. $$x_2=1$$時，把$$x_1$$值寫入記憶$$c$$
+2. $$x_2=-1$$時，把記憶$$c$$歸零
+3. $$x_3=1$$時，把記憶$$c$$值輸出
+如圖九所示，這個規則底下，我們有上半部黃色區域$$x_1,x_2,x_3$$的輸入序列，我們可以手解紅色區域$$y$$的輸出。
 ![](/assets/lstm-example1.png)
-*Example Sequence*
+*圖九 Example Sequence*
 
+LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在這裡我們先不討論如何這些權重，假設我們已經得到這些權重。如圖十所示，$$(x_1,x_2,x_3)$$在輸入的權重是$$(1,0,0)$$加bias=0，input gate權重是$$(0,100,0)$$加bias=-10，forget gate權重是$$(0,100,0)$$加bias=10，output gate權重是$$(0,0,100)$$加bias=-10，為了簡化計算，我們假設$$g(\cdot)$$跟$$h(\cdot)$$都是linear function $$(y=x)$$
 ![](/assets/lstm-example2.png)
-*Time 1*
+*圖十 Time=1*
+第一個時間點，我們輸入端會得到$$g(z)=3$$，$$f(z_i) \approx 1$$，所以memory $$c=0+f(z_i)g(z)=3
 
 ![](/assets/lstm-example3.png)
-*Time 2*
+*圖十一 Time=2*
+第二個時間點
 
 ![](/assets/lstm-example4.png)
-*Time 3*
+*圖十二 Time=3*
 
 ![](/assets/lstm-example5.png)
-*Time 4*
+*圖十三 Time=4*
 
 ![](/assets/lstm-example6.png)
 *Time 5*
