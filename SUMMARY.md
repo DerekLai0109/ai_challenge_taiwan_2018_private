@@ -68,4 +68,6 @@
   * [Formula Module](gitbookping-tai-shi-yong/formula-module.md)
 * [Terminology](terminology.md)
 * Brief Introduction to NLP
+* [Colab](colab.md)
+  * [Train ML models on google's GPUs for free - forever](colab/train-ml-models-on-googles-gpus-for-free-forever.md)
 
