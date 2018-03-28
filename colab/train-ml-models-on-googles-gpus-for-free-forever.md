@@ -10,7 +10,9 @@ Colab provide k80 GPU for unlimited access of 12 hours, and unlimited times, onl
 
 ---
 
-To use Colab, first step is to prepare a notebook \(.ipynb\) file, the following is [an example](https://www.gitbook.com/book/mmchiou/ai_challenge_taiwan_2018-private/edit#/edit/master/colab/Tensorflow for Poets.ipynb?_k=w02ioi).![](/assets/notebook_file.png)Fig.1. An example of a notebook \(.ipynb\) file
+To use Colab, first step is to prepare a notebook \(.ipynb\) file, the following is [an example](https://www.gitbook.com/book/mmchiou/ai_challenge_taiwan_2018-private/edit#/edit/master/colab/Tensorflow for Poets.ipynb?_k=w02ioi).![](/assets/notebook_file.png)Fig.1 An example of a notebook \(.ipynb\) file
 
 Go to [Google Colab](http://g.co/colab), sign into google account.
+
+Choose `File` &gt; `Upload notebook...` :
 
