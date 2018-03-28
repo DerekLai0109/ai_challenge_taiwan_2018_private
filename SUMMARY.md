@@ -22,6 +22,7 @@
   * [Sequence\_to\_Sequence](distributed-representation/sequenceto-sequence.md)
     * [Sequence2sequence\_using\_Pytorch](distributed-representation/sequenceto-sequence/sequence2sequenceusing-pytorch.md)
   * [Word Embedding \(Professor 李宏毅 \#14\)](distributed-representation/word-embedding-professor-li-hong-yi-14.md)
+* [Brief Introduction to NLP](brief-introduction-to-nlp.md)
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
 * [RNN](rnn.md)
@@ -66,6 +67,5 @@
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
   * [Formula Module](gitbookping-tai-shi-yong/formula-module.md)
 * [Terminology](terminology.md)
-* [Deep Learning Framework](deep-learning-framework.md)
-  * PyTorch or TensorFlow ?
+* Brief Introduction to NLP
 
