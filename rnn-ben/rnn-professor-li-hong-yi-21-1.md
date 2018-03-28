@@ -104,13 +104,17 @@ LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在
 ![](/assets/lstm-reform-seq2seq.png)
 *圖十九 Seq2Seq LSTM without recurrent*
 
-真實的情況
+真實的情況是，我們在產生$$(\bar{z}_f,\bar{z}_i,\bar{z}_o,\bar{z})$$，除了當下的訊號$$\bar{x}^t$$，還有前一個時間的output recurrent訊號$$\bar{h}^{t-1}$$，如圖二十所示。
+
 ![](/assets/lstm-reform-recurrent.png)
 *圖二十 Seq2Seq LSTM with recurrent*
+
+更複雜的情況是，除了$$\bar{x}^t$$跟recurrent $$\bar{h}^{t-1}$$，還有前一個時間記憶$$\bar{c}^{t-1}$$也參與$$(\bar{z}_f,\bar{z}_i,\bar{z}_o,\bar{z})$$的產生，這種做法叫做peephole。
 
 ![](/assets/lstm-reform-recurrent-peephole.png)
 *圖二十一 peephole LSTM*
 
+我們也不止
 ![](/assets/lstm-reform-mutlilayer.png)
 *圖二十二 Multi-Layer LSTM*
 
