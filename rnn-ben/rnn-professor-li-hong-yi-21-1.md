@@ -38,11 +38,13 @@ Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分
 *圖六 Bi-directional RNN*
 
 ###LSTM
+因為記憶結構限制，讓RNN能夠記憶只有前後幾個時間點的資訊，為了克服這個問題，又發展出長短期記憶元(long short-term memory)來捕捉比較長時間的訊號關係。LSTM在原本的Memory cell加入門(gate)的機制，讓memory可以被外部訊號可以更精細控制。如圖七所示，LSTM總共有3個Gate：1. input gate 2. forget gate 3. output gate，每個gate有被一個外部的訊號所控制，輸入訊號從下方進入神經元，首先經過input gate，input gate根據控制訊號，決定有多少量的輸入可以通過，Forget gate根據控制訊號，決定有多少原本存在記憶元的資料要保留，跟新的輸入混合，存入記憶單元。最後output gate根據控制訊號，決定要取出多少量的記憶單元資料輸出，跟一般神經元是一個輸入加一個輸出不同，LSTM是有四個輸入加一個輸出。
 ![](/assets/lstm-overview.png)
 *圖七 Block View of LSTM*
 
+圖八
 ![](/assets/lstm-details.png)
-*Mathimatical View of LSTM*
+*圖八 Mathimatical View of LSTM*
 
 #### Illustrative Example of LSTM
 ![](/assets/lstm-example1.png)
