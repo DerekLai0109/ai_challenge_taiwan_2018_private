@@ -82,31 +82,31 @@ LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在
 第五個時間點因為$$x_2=-1$$，所以$$f(z_i) \approx 0$$, $$f(z_f) \approx 0$$，所以$$c'= f(z_i)g(z) + cf(z_f)= 0 \times 3 + 7 \times 0 = 0$$，output $$a = f(z_o)h(c') = 0$$。
 
 #### simple RNN vs LSTM
-雖然
+當我們想把simple RNN換成LSTM時，如圖十五跟十六所示，只是把藍色的RNN神經元換成LSTM神經元就完成了，要稍微注意的是，因為跟simple rnn比起來，LSTM多了三個gate input，所以要訓練的參數也變成原本的四倍。
 ![](/assets/simple-neuron.png)
-*simple rnn*
+*圖十五 simple rnn*
 
 ![](/assets/lstm-neuron.png)
-*lstm neuron*
+*圖十六 lstm neuron*
 
 ### Vector View of LSTM
 ![](/assets/lstm-vector.png)
-*Vector*
+*圖十七 Vector*
 
 ![](/assets/lstm-reform.png)
-*Reformulated LSTM*
+*圖十八 Reformulated LSTM*
 
 ![](/assets/lstm-reform-seq2seq.png)
-*Seq2Seq LSTM*
+*圖十九 Seq2Seq LSTM*
 
 ![](/assets/lstm-reform-recurrent.png)
-*Real LSTM*
+*圖二十 Real LSTM*
 
 ![](/assets/lstm-reform-recurrent-peephole.png)
-*peephole LSTM*
+*圖二十一 peephole LSTM*
 
 ![](/assets/lstm-reform-mutlilayer.png)
-*Multi-Layer LSTM*
+*圖二十二 Multi-Layer LSTM*
 
 
 
