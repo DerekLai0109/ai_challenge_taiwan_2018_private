@@ -118,7 +118,7 @@ LSTM的層數也不限於一層，如圖二十二所示，可以把多個單層�
 ![](/assets/lstm-reform-mutlilayer.png)
 *圖二十二 Multi-Layer LSTM*
 
-雖然
+雖然LSTM數學上運算比較複雜，不過現在主流的深度學習框架(eg:keras, tensorflow)都已經支援lstm的api，只需要簡單一兩行就可以呼叫內建的LSTM，在開發上可以省不少時間。另外要注意的是，現在研究人員提到他們有使用RNN模型時，絕大部分就是指LSTM或是另外一個參數比較少的Gated Recurrent Unit(GRU)，如果是最原始到RNN，則會用simple RNN來表示。
 
 
 [0] [ML Lecture 21-1: Recurrent Neural Network (Part I)](https://www.youtube.com/watch?v=xCGidAeyS4M)
