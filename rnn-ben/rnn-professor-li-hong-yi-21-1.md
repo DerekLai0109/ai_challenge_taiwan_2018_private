@@ -26,13 +26,16 @@ RNN會把隱藏層(hidden state)儲存起來，跟下個時間點單字同時輸
 ![](/assets/rnn-ticket-slot-recognition.png)
 *圖四 How RNN solve Ticket Slot Problem*
 
+在RNN，我們常見的網路又稱作Elman Network(圖五)，另外還有另外一種Jordan Network，兩者的差異是Jordan Network儲存的不是隱藏層的資料，而是輸出層。根據李宏毅的survey，聽說Jordan network的performance會比Elman Network好一些，原因是Jordan Network直接是從輸出結果來直接影響網路，而不是Elman Network是比較間接。
 
+Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分的RNN都是用Elman Network?
 
 ![](/assets/elman-jordan-network.png)
 *圖五 Elman Network vs Jordan Network*
 
+除了單個時間由前到後的RNN之外，我們還可以把兩個RNN如圖六所示並聯起來，一個是正常時間方向，一個是反著時間方向，用順跟逆時間的資訊來預測每個時間點的輸出，這樣的網路叫做Bidirectional RNN，這樣架構的好處，可以讓每個時間的預測是參照全文的內容，而不是原本RNN，只看原本輸入之前的時間點。
 ![](/assets/bi-direction-rnn.png)
-*Bi-directional RNN*
+*圖六 Bi-directional RNN*
 
 ###LSTM
 ![](/assets/lstm-overview.png)
