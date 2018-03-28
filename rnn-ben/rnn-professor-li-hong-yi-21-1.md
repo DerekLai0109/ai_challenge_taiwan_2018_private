@@ -20,14 +20,16 @@ Tsung-Yung 3/20/2018
 Recurrent Network就是讓網路具備記憶的一種方式。我們以ticket booking system為例，如圖三所示：
 ![](/assets/rnn_seq2seq.png)
 *圖三 ticket booking system using RNN*
-我們在
-
+我們在不同的時間把單字依序輸入網路，輸出還是跟Feedforward network一樣是每個單字對目的地跟抵達日期的機率，不同的地方是
+RNN會把隱藏層(hidden state)儲存起來，跟下個時間點單字同時輸入網路。圖三裡面畫法不是代表有三個獨立的網路，而是同一個RNN在不同時間點被重複使用。因為RNN有記憶功能，所以如圖四所示，對於我們之前舉的例子而言，雖然都是輸入"Taipei"，但是因為網路還有之前輸入是"leave"還是"arrive"，所以對於Probability of "Taipei"會不同。
 
 ![](/assets/rnn-ticket-slot-recognition.png)
-*rnn_solve-ticket-slot-problem*
+*圖四 How RNN solve Ticket Slot Problem*
+
+
 
 ![](/assets/elman-jordan-network.png)
-*Elman Network vs Jordan Network*
+*圖五 Elman Network vs Jordan Network*
 
 ![](/assets/bi-direction-rnn.png)
 *Bi-directional RNN*
