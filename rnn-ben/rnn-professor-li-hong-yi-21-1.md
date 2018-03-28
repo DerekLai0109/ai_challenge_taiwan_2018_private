@@ -90,17 +90,23 @@ LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在
 *圖十六 lstm neuron*
 
 ### Vector View of LSTM
+在真實使用時，我們使用多個LSTM神經元並排在一起，形成一個記憶向量$$\bar{c}^{t}$$，在這種表示方式下，我們可以如圖十七～二十二那樣，重新描述LSTM的架構。圖十七表示，我們可以把輸入訊號向量$$\bar{x}^t$$乘上對應權重產生控制向量加主訊號$$(\bar{z}_f,\bar{z}_i,\bar{z}_o,\bar{z})$$，$$z_x$$的維度跟LSTM神經元數量相同。
 ![](/assets/lstm-vector.png)
 *圖十七 Vector*
+
+我們可以把LSTM的模型外型重新排列，從原本圖十八的右半邊，變成左半邊。
 
 ![](/assets/lstm-reform.png)
 *圖十八 Reformulated LSTM*
 
-![](/assets/lstm-reform-seq2seq.png)
-*圖十九 Seq2Seq LSTM*
+所以原本圖三seq2seq的模型，就會變成如圖十九所示，每個時間點都會從原本$$\bar{c}^{t-1}$$跟$$\bar{x}^t$$產生新的$$\bar{c}^{t}$$跟輸出$$\bar{y}^t$$，再往後傳遞
 
+![](/assets/lstm-reform-seq2seq.png)
+*圖十九 Seq2Seq LSTM without recurrent*
+
+真實的情況
 ![](/assets/lstm-reform-recurrent.png)
-*圖二十 Real LSTM*
+*圖二十 Seq2Seq LSTM with recurrent*
 
 ![](/assets/lstm-reform-recurrent-peephole.png)
 *圖二十一 peephole LSTM*
