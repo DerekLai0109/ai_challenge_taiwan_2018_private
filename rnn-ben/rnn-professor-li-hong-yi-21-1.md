@@ -39,7 +39,7 @@ Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分
 
 ###LSTM
 ![](/assets/lstm-overview.png)
-*Block View of LSTM*
+*圖七 Block View of LSTM*
 
 ![](/assets/lstm-details.png)
 *Mathimatical View of LSTM*
@@ -91,5 +91,5 @@ Q by TY: 如果Jordan Network performance比較好，為什麼現在決大部分
 
 
 
-[0] http://youtube..
+[0] [ML Lecture 21-1: Recurrent Neural Network (Part I)](https://www.youtube.com/watch?v=xCGidAeyS4M)
 
