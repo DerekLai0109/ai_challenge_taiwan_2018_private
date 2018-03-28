@@ -82,6 +82,7 @@ LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在
 第五個時間點因為$$x_2=-1$$，所以$$f(z_i) \approx 0$$, $$f(z_f) \approx 0$$，所以$$c'= f(z_i)g(z) + cf(z_f)= 0 \times 3 + 7 \times 0 = 0$$，output $$a = f(z_o)h(c') = 0$$。
 
 #### simple RNN vs LSTM
+雖然
 ![](/assets/simple-neuron.png)
 *simple rnn*
 
