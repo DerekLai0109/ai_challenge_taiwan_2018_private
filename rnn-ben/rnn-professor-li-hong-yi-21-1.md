@@ -114,10 +114,11 @@ LSTM可以用輸入訊號在每個gate乘上對應權重產生控制訊號，在
 ![](/assets/lstm-reform-recurrent-peephole.png)
 *圖二十一 peephole LSTM*
 
-我們也不止
+LSTM的層數也不限於一層，如圖二十二所示，可以把多個單層的LSTM接在一起變成一個多層LSTM。
 ![](/assets/lstm-reform-mutlilayer.png)
 *圖二十二 Multi-Layer LSTM*
 
+雖然
 
 
 [0] [ML Lecture 21-1: Recurrent Neural Network (Part I)](https://www.youtube.com/watch?v=xCGidAeyS4M)
