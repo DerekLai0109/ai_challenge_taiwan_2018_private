@@ -17,16 +17,71 @@ Tsung-Yung 3/20/2018
 
 Recurrent Network就是讓網路具備記憶的一種方式。
 
+![](/assets/rnn_seq2seq.png)
+*rnn_seq2seq*
 
-Elman Network vs Jordan Network
+![](/assets/rnn-ticket-slot-recognition.png)
+*rnn_solve-ticket-slot-problem*
 
-Bi-directional RNN
+![](/assets/elman-jordan-network.png)
+*Elman Network vs Jordan Network*
 
-LSTM
+![](/assets/bi-direction-rnn.png)
+*Bi-directional RNN*
 
-More Complex Multi-Layer LSTM
+###LSTM
+![](/assets/lstm-overview.png)
+*Block View of LSTM*
+
+![](/assets/lstm-details.png)
+*Mathimatical View of LSTM*
+
+#### Illustrative Example of LSTM
+![](/assets/lstm-example1.png)
+*Example Sequence*
+
+![](/assets/lstm-example2.png)
+*Time 1*
+
+![](/assets/lstm-example3.png)
+*Time 2*
+
+![](/assets/lstm-example4.png)
+*Time 3*
+
+![](/assets/lstm-example5.png)
+*Time 4*
+
+![](/assets/lstm-example6.png)
+*Time 5*
+
+#### simple RNN vs LSTM
+![](/assets/simple-neuron.png)
+*simple rnn*
+
+![](/assets/lstm-neuron.png)
+*lstm neuron*
+
+### Vector View of LSTM
+![](/assets/lstm-vector.png)
+*Vector*
+
+![](/assets/lstm-reform.png)
+*Reformulated LSTM*
+
+![](/assets/lstm-reform-seq2seq.png)
+*Seq2Seq LSTM*
+
+![](/assets/lstm-reform-recurrent.png)
+*Real LSTM*
+
+![](/assets/lstm-reform-recurrent-peephole.png)
+*peephole LSTM*
+
+![](/assets/lstm-reform-mutlilayer.png)
+*Multi-Layer LSTM*
 
 
 
-\[0\] http://youtube..
+[0] http://youtube..
 
