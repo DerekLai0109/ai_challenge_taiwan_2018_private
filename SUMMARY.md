@@ -67,7 +67,7 @@
   * [如何修改他人文件](gitbookping-tai-shi-yong/ru-he-xiu-gai-ta-ren-wen-jian.md)
   * [Formula Module](gitbookping-tai-shi-yong/formula-module.md)
 * [Terminology](terminology.md)
-* Brief Introduction to NLP
+* [Brief Introduction to NLP](brief-introduction-to-nlp.md)
 * [Colab](colab.md)
   * [Train ML models on google's GPUs for free - forever](colab/train-ml-models-on-googles-gpus-for-free-forever.md)
 
