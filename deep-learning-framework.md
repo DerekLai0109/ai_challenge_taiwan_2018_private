@@ -18,3 +18,5 @@ TensorFlow is a programming language embedded within Python. TensorFlow code get
 
 TensorFlow has extra concepts to learn, such as the session, the graph, variable scoping and placeholders. Also template code is needed to get a basic model running. The ramp-up time of TensorFlow is longer than PyTorch.
 
+Graph Creation and Debugging
+
