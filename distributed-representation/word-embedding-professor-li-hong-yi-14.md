@@ -25,12 +25,12 @@ i, w_j$$ ，對word embedding function $$V$$， $$V(w_i) \cdot V(w_j)$$ 跟兩�
 Predicition based approach 如圖一所示，給一個 word $$w_{i-1}$$，它能夠預測下一個word $$w_i$$ 是誰？整個神經網路把$$w_{i-1}$$的1-of-N encoding當作input，經過網路的計算，output代表每個word是 $$w_i$$ 的機率。經過充分訓練之後，我們取該網路第一層neurons的值當作我們的word vector $$V(w)$$，用它來代表word $$w$$。
 
 ![Prediction-based Word Embedding](/assets/prediction-based method.png)
-*圖一 Prediction-based Word Embedding*
+**圖一 Prediction-based Word Embedding**
 
 同樣的原理，我們也可以使用N個word $$(w_{i-N},w_{i-N+1},\cdots, w_{i-1})$$ 來預測下一個word $$w_i$$ ，我們用一個N=2的model，如圖二所示：
 
 ![N-word Prediction-based Word Embedding](/assets/N-word Prediction-based Word Embedding.png)
-*圖二 N-word Prediction-based Word Embedding*
+**圖二 N-word Prediction-based Word Embedding**
 
 $$w_{i-1}$$ 跟 $$w_{i-2}$$ 的1-of-N encoding $$x_{i-1}$$ 和 $$x_{i-2}$$ 的維度都是 $$|V|$$，word embedding vector $$z$$ 維度是 $$|Z|$$。根據圖二，$$z$$ 是 $$x_{i-1}$$, $$x_{i-2}$$ 的線性組合。
 $$
@@ -44,7 +44,7 @@ $$
 $$
 
 ![Prediction-based Training](/assets/Prediction-based Training.png)
-*圖三 Prediction-based Training*
+**圖三 Prediction-based Training**
 
 在Word Embedding的架構裡面，最常使用的架構有兩種：
 1. Continous Bag-of-Word (CBOW) model
@@ -52,7 +52,7 @@ $$
 兩個各有擅長，不分上下。主要的差異如圖四所示，CBOW是使用前後的word當輸入來預測現在出現的詞彙；skip-gram是用現在的詞彙當輸入，來預測前後會出現的詞彙。
 
 ![CBOW vs skip-gram model](/assets/CBOW vs skip-gram model.png) 
-*圖四 CBOW model vs skip-gram model*
+**圖四 CBOW model vs skip-gram model**
 
 
 \[0\]

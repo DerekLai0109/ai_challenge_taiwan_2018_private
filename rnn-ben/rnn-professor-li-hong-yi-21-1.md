@@ -5,7 +5,7 @@ Tsung-Yung 3/20/2018
 舉個例子，如果我們要建一個基於語音辨識的售票系統\(ticket booking system\)，它可以輸入一段語音，它可以從裡面挑出抵達日期\(time of arrival\)跟目的地\(Destination\)。
 
 ![ticket booking system](/assets/ticket-booking system.png) 
-*圖一 ticket booking system*
+**圖一 ticket booking system**
 
 如圖一所示，輸入一段文字 "I would like to arrive Taipei on November $$2^{nd}$$."，它能自動擷取目的地是Taipei，抵達日期是November $$2^{nd}$$。這樣的技術又稱作Slot Filling。
 
