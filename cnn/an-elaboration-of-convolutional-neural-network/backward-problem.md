@@ -475,15 +475,10 @@ where $$n=1,2,\cdots,N_{L-1}$$.
 
 
 #### Sub-Sampling Layer, $$\ell=2a$$
+![](/assets/schematic_for_gradient_w_sub_sampling_layer.jpg)
+**Fig.4 Schematic of gradient computation for sub-sampling layer.**
 
-\begin{figure}[h]
-\vskip 3 cm
-\hskip 0 cm
-\special{wmf:schematic_for_gradient_w_sub_sampling_layer.jpg x=9 cm y=3cm}
-\caption{Schematic of gradient computation for sub-sampling layer.}
-\label{schematic_for_gradient_w_sub_sampling_layer}
-\end{figure}
-Fig.\ref{schematic_for_gradient_w_sub_sampling_layer} shows the schematic for gradient computation of sub-sampling layer. The gradient computation of sub-sampling layer can be derived as
+Fig.4 shows the schematic for gradient computation of sub-sampling layer. The gradient computation of sub-sampling layer can be derived as
 
 $$
 \delta_{w_n}^\ell = \frac{\partial E}{\partial w_n^\ell} =  
@@ -502,15 +497,10 @@ $$
 where $$n=1,2,\cdots,N_\ell$$.
 
 #### Other Convolution Layer, $$\ell=2a+1$$
+![](/assets/gradient_computation_other_convolution_layer.jpg)
+**Fig.5 Schematic of gradient computation for other convolution layer.**
 
-\begin{figure}[h]
-\vskip 5 cm
-\hskip 0 cm
-\special{wmf:gradient_computation_other_convolution_layer.jpg x=9 cm y=5 cm}
-\caption{Schematic of gradient computation for other convolution layer.}
-\label{gradient_computation_other_convolution_layer}
-\end{figure}
-Fig.\ref{gradient_computation_other_convolution_layer} shows the schematic of gradient computation for other convolution layer.
+Fig.5 shows the schematic of gradient computation for other convolution layer.
 
 The gradient computation can be derived as
 $$
