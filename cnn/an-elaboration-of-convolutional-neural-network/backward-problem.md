@@ -194,7 +194,7 @@ $$
 
 Fig.2 shows the error sensitivity computation for other convolution layer.
 
-The error sensitivity of other convolution layer ($\ell=2a+1$) can be expressed as
+The error sensitivity of other convolution layer ($$\ell=2a+1$$) can be expressed as
 
 $$
 \delta_n^{\ell,k}(i,j) = \frac{\partial E}{\partial s_n^{\ell,k}(i,j)} \nonumber \\
