@@ -3,7 +3,7 @@
 ## First Layer
 Feature map $$n$$ of the first layer (convolution layer)  is calculated as
 $$
-\bar{\bar{y}}_n^1 = f_1 \left( \sum_{m \in V_n^1} \bar{\bar{y}}^{0}_m \bigcirc \!\!\!\!\!\!\! \times \hspace{0.1 in} \bar{\bar{w}}_{m,n}^1 + b_n^1 \right)
+\bar{\bar{y}}_n^1 = f_1 \left( \sum_{m \in V_n^1} \bar{\bar{y}}^{0}_m \otimes \bar{\bar{w}}_{m,n}^1 + b_n^1 \right)
 \nonumber \\
 =f_1 \left( \sum_{m \in V_n^1} \bar{\bar{C}}_{m,n}^1 + b_n^1 \right) = f_1 ( \bar{\bar{s}}_n^1 )
 \nonumber 
