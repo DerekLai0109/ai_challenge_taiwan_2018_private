@@ -19,12 +19,10 @@ Training algorithm are devised to perform different visual recognition tasks.The
 | error sensitivity of pixel ($$i,j$$) in 2D layer $$\ell$$ | $$\delta_{i,j}^{\ell,k}$$ | $$\delta_{i,j}^{\ell,k}= \partial E/ \partial s_{i,j}^{\ell,k}$$ |
 | error sensitivity of neuron $$n$$ in 1D layer $$\ell$$ | $$\delta_n^{\ell,k}$$ | $$\delta_n^{\ell,k}= \partial E/ \partial s_n^{\ell,k}$$ |
 
-Table 1 summarizes the definitions used in CNN training, where $$\bar{\bar{x}}^k$$ is the $$k$$th training image, and $$\bar{\bar{d}}^k$$ is the corresponding desired output vector. $$K$$ is the number of input images in the training set.
-The loss function $$E(\bar{w})$$ is defined as
+Table 1 summarizes the definitions used in CNN training, where $$\bar{\bar{x}}^k$$ is the $$k$$th training image, and $$\bar{\bar{d}}^k$$ is the corresponding desired output vector. $$K$$ is the number of input images in the training set. The loss function $$E(\bar{w})$$ is defined as
 
 $$
 E(\bar{\bar{w}},\bar{b}) = \frac{1}{K N_L} \sum_{k=1}^K \sum_{n=1}^{N_L} (y_n^{L,k}-d_n^{k})^2 
-\label{error_function_CNN_definition}
 $$
 
 where $$y_n^{L,k}$$ is the $n$th neuron output of output layer for $$k$$th pattern.
@@ -85,7 +83,6 @@ $$
 \delta_n^{L,k} = \frac{\partial E}{\partial s_n^{L,k}}= \frac{\partial E}{\partial y_n^{L,k}} \frac{\partial y_n^{L,k}}{\partial s_n^{L,k}} \nonumber \\
  = \frac{1}{K \times N_L} \times 2 \times (y_n^{L,k}-d_n^{k}) \times \frac{\partial y_n^{L,k}}{\partial s_n^{L,k}} \nonumber \\
 \hspace{-0.2 in} = \frac{2}{K \times N_L} (y_n^{L,k}-d_n^{k}) f_L'(s_n^{L,k}), \hspace{0.1 in} n=1,2,\cdots, N_L
-\label{error_sensitivity_computation_output_layer}
 $$
 
 where 
@@ -104,7 +101,6 @@ $$
 If softmax function is adopted, the derivative can be computed as
 $$
 \delta_n^{L,k} = \frac{\partial E}{\partial s_n^{L,k}} = \frac{1}{K \times N_L} \frac{1}{y_{n_d}^{L,k}} \frac{\partial y_{n_d}^{L,k}}{\partial y_n^L} 
-\label{error_sensitivity_softmax_function}
 $$
 
 where $$n_d$$ is the label class, and $$\frac{\partial y_{n_d}^{L,k}}{\partial y_n^L}$$ is computed as
@@ -133,7 +129,6 @@ $$
 =\sum_{m=1}^{N_L}\frac{\partial E}{\partial s^{L,k}_m} \times \frac{\partial s^{L,k}_m}{\partial y^{L-1,k}_n} \frac{\partial y_n^{L-1,k} }{\partial s_n^{L-1,k}} \nonumber \\
 = \sum_{m=1}^{N_L} \delta_m^{L,k} \times w^L_{n,m} \times f_{L-1}'(s_n^{L-1,k}) \nonumber \\
 = f_{L-1}'(s_n^{L-1,k}) \times \sum_{m=1}^{N_L} \delta_m^{L,k} w^L_{n,m} 
-\label{error_sensitivity_computation_last_convolution_layer} 
 $$
 
 where 
@@ -158,15 +153,10 @@ $$
 $$
 
 #### Last Sub-sampling Layer
+![](/assets/error_sensitivity_last_subsampling_layer_sche.jpg)
+**Fig.1 Schematic of error sensitivity computation for last sub-sampling layer.**
 
-\begin{figure}[h]
-\vskip 5 cm
-\hskip 0 cm
-\special{wmf:error_sensitivity_last_subsampling_layer_sche.jpg x=9 cm y=5 cm}
-\caption{Schematic of error sensitivity computation for last sub-sampling layer.}
-\label{error_sensitivity_last_subsampling_layer_sche}
-\end{figure}
-Fig.\ref{error_sensitivity_last_subsampling_layer_sche} shows the schematic of error sensitivity computation for last sub-sampling layer.
+Fig.1 shows the schematic of error sensitivity computation for last sub-sampling layer.
 
 The error sensitivity of the last sub-sampling layer $$\ell=L-2$$ can be expressed as
 $$
@@ -217,7 +207,6 @@ $$
 =  \sum_{i'=1}^{H_{\ell+1}} \sum_{j'=1}^{W_{\ell+1}} \frac{\partial E}{\partial s_n^{\ell+1,k} (i',j')} \times \frac{\partial s_n^{\ell+1,k}(i',j')}{\partial s_n^{\ell, k}(i,j)}  \nonumber \\
 = \frac{\partial E}{\partial s_n^{\ell+1,k} (i_c,j_c)} \times \frac{\partial s_n^{\ell+1,k}(i_c,j_c)}{\partial z_n^{\ell+1, k}(i_c,j_c)}  \times \frac{\partial z_n^{\ell+1,k}(i_c,j_c)}{\partial s_n^{\ell, k}(i,j)}  \nonumber \\
 = \delta_n^{\ell+1,k}(i_c,j_c) \times  w_n^{\ell+1} \times \frac{\partial z_n^{\ell+1,k}(i_c,j_c)}{\partial s_n^{\ell, k}(i,j)} 
-\label{error_sensitivity_computation_other_convolution_layer}
 $$
 
 where $$i_c=\lfloor (i+1)/2 \rfloor $$ and $$j_c=\lfloor (j+1)/2 \rfloor $$, and table.\ref{notation_CNN_training_algorithm} lists the illustrative mapping between $$i_c$$ and $$i$$ index.
@@ -237,7 +226,6 @@ Table.2 Illustrative mapping between $$i_c$$ and $$i$$ index.
 $$
 \delta_n^{\ell,k}(i,j) = \frac{\partial E}{\partial s_n^{\ell,k}(i,j)} \nonumber \\
 =\delta_n^{\ell+1,k}(i_c,j_c) \times w_n^{\ell+1} \times f_\ell' [s_n^{\ell,k}(i,j)] 
-\label{error_sensitivity_other_convolution_layer_avg_pooling}
 $$
 
 because
@@ -269,7 +257,6 @@ f_\ell' [s_n^{\ell,k}(i,j)] \delta_n^{\ell+1,k}(i_c,j_c)  w_n^{\ell+1} & (i,j) \
 0 & \hbox{otherwise}
 \end{array}
 \right.
-\label{error_sensitivity_other_convolution_layer_max_pooling}
 $$
 
 where $$i_c=\lfloor (i+1)/2 \rfloor $$ and $$j_c=\lfloor (j+1)/2 \rfloor $$, and table.\ref{notation_CNN_training_algorithm} lists the illustrative mapping between $$i_c$$ and $$i$$ index.
@@ -347,7 +334,7 @@ $$
 
 
 #### Other Sub-sampling Layer
-
+![](/assets/error_sensitivity_computation_other_subsamp_layer.jpg)
 \begin{figure}[h]
 \vskip 5 cm
 \hskip 0 cm
