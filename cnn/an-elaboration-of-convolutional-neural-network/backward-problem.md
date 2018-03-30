@@ -165,7 +165,6 @@ $$
 =\sum_{m=m \in U_n^{L-2}} \delta_m^{L-1,k} \times  \frac{\partial s_m^{L-1,k}}{\partial y_n^{L-2}(i,j)}    \frac{\partial y_n^{L-2}(i,j)}{\partial s_n^{L-2,k}(i,j)}  \nonumber \\
 \hspace{-0.1 in}=\sum_{m \in U_n^{L-2}} \delta_m^{L-1,k}   w_{n,m}^{L-1}(i,j)   f'_{L-2}[ s_n^{L-2,k}(i,j) ] \nonumber \\
 \hspace{-0.1 in}=  f'_{L-2}[ s_n^{L-2,k}(i,j) ]  \sum_{m \in U_n^{L-2}} \delta_m^{L-1,k}   w_{n,m}^{L-1}(i,j)  
-\label{error_sensitivity_computation_last_subsampling_layer}
 $$
 
 where $$n=1,2,\cdots,N_{L-2}$$; $$i=1,2,\cdots,H_{L-2}$$; $$j=1,2,\cdots,W_{L-2}$$, and 
@@ -190,15 +189,10 @@ f_{L-2}[ s_n^{L-2,k}(i,j)] = y_n^{L-2,k}(i,j) \nonumber
 $$
 
 #### Other Convolution Layer
+![](/assets/error_sensitivity_other_conv_layer_sche.jpg)
+**Fig.2 Schematic in error sensitivity computation for other convolution layer.**
 
-\begin{figure}[h]
-\vskip 3 cm
-\hskip 0 cm
-\special{wmf:error_sensitivity_other_conv_layer_sche.jpg x=9 cm y=3cm}
-\caption{Schematic in error sensitivity computation for other convolution layer.}
-\label{error_sensitivity_other_conv_layer_sche}
-\end{figure}
-Fig.\ref{error_sensitivity_other_conv_layer_sche} shows the error sensitivity computation for other convolution layer.
+Fig.2 shows the error sensitivity computation for other convolution layer.
 
 The error sensitivity of other convolution layer ($\ell=2a+1$) can be expressed as
 
@@ -335,14 +329,9 @@ $$
 
 #### Other Sub-sampling Layer
 ![](/assets/error_sensitivity_computation_other_subsamp_layer.jpg)
-\begin{figure}[h]
-\vskip 5 cm
-\hskip 0 cm
-\special{wmf:error_sensitivity_computation_other_subsamp_layer.jpg x=9 cm y=5 cm}
-\caption{Schematic in error sensitivity computation for other sub-sampling layer.}
-\label{error_sensitivity_computation_other_subsamp_layer}
-\end{figure}
-Fig.\ref{error_sensitivity_computation_other_subsamp_layer} shows the error sensitivity computation for other sub-sampling layer.
+**Fig.3 Schematic in error sensitivity computation for other sub-sampling layer.**
+
+Fig.3 shows the error sensitivity computation for other sub-sampling layer.
 The error sensitivity of other sub-sampling layer ($$\ell=2a$$) can be expressed as
 
 $$
@@ -351,7 +340,6 @@ $$
 \nonumber \\
 =f_\ell' [s_n^{\ell,k}(i,j)] \times \sum_{m \in U_n^\ell} \sum_{i'=1}^{H_{\ell+1} } \sum_{j'=1}^{W_{\ell+1}} \nonumber \\
  \delta_m^{\ell+1,k}(i',j') \times w_{n,m}^{\ell+1}(i-i'+1,j - j'+1)
-\label{error_sensitivity_computation_other_subsampling_layer}
 $$
 
 Noting 
