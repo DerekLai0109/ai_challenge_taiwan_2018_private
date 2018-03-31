@@ -9,6 +9,7 @@
   * [Word2Vector](distributed-representation/word2vector.md)
     * [CBOW Model](distributed-representation/word2vector/cbow.md)
       * [CBOW Model with One-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model.md)
+        * CBOW Model with One-word Context\_AnAn\_修改
         * [Backward Pass](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/update-equation-for-hidden-to-output-weights.md)
       * [CBOW Model with Multi-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context.md)
         * [Backward Pass](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context/update-equations-for-hidden-to-output-and-input-to-hidden-weights.md)
@@ -55,6 +56,7 @@
   * [Optimization](optimization.md)
   * [Backpropagation](backpropagation.md)
     * [Backpropagation\_TY\_修改](backpropagation/backpropagationts-xiu-gai.md)
+    * [Backpropagation\_AnAn\_修改](backpropagation/backpropagationanan-xiu-gai.md)
 * [AI Great Challenge比賽相關](ai-great-challengebi-sai-xiang-guan-miao-shu.md)
   * [Our Consideration](ai-great-challengebi-sai-xiang-guan-miao-shu/our-consideration.md)
 * [方法論相關紀錄](fang-fa-lun-xiang-guan-ji-lu.md)
