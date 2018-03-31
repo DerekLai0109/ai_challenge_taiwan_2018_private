@@ -26,6 +26,7 @@
 * [Brief Introduction to NLP](brief-introduction-to-nlp.md)
 * [SVM](svm.md)
   * [SVM\_coding](svmcoding.md)
+    * [SVM\_coding\_佳君修改](svmcoding/svmcoding-jia-jun-xiu-gai.md)
 * [RNN](rnn.md)
   * [RNN\(coding\_perspective\)](rnn-ben/rnncodingperspective.md)
   * [RNN \(Professor 李宏毅 \#21-2 45-90 mins\)](rnn-ben/rnn-professor-li-hong-yi-21-2-45-90-mins.md)
