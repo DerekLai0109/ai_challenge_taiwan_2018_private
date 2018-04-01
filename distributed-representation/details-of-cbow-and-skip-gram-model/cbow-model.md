@@ -2,11 +2,11 @@
 
 Derek, 03/24/2018
 
-The CBOW model predicts one target word by its context words \[1\].
+The CBOW model predicts one target word by its context words \(input of CBOW model\) \[1\].
 
-Consider the CBOW model with one context word, which is reduced to a bigram model.
+Considering the context word being one word, the CBOW is reduced to a bigram model.
 
-In the bigram model, a word \(context word\) is given to predict the next word \(target word\).
+In other words, one word \(context word\) is given to predict the next word \(target word\).
 
 Define a vocabulary containing V words as
 
@@ -28,7 +28,19 @@ $$
 $$
 
 
-where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation. The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$. The input vector $$\bar{v}_k$$ and output vector $$\bar{v}_j'$$ are two  kinds of word vector representations and will be elaborated later. The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation. 
+
+
+
+
+
+
+
+
+
+
+
+The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$. The input vector $$\bar{v}_k$$ and output vector $$\bar{v}_j'$$ are two  kinds of word vector representations and will be elaborated later. The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
 
 ![](/assets/schematic_of_y.jpg)**Fig.2. Schematic of NN output **$$\bar{y}$$** given a specific **$$\bar{x}^k$$** with the target word **$$d_{j_o}$$**. \(a\) non-trained NN, \(b\) well-trained NN**.
 
@@ -217,7 +229,9 @@ y_j = p(d_j | \bar{x}_k)= \frac{e^{u_j}}{\displaystyle \sum_{j = 1}^V e^{u_j}} =
 $$
 
 
-The training objective is to maximize the probability $$y_{j_o}$$ of observing the target word $$d_{j_o}$$ given $$\bar{x}_k$$. The loss function is defined as
+The training objective is to maximize the probability $$y_{j_o}$$ of observing the target word $$d_{j_o}$$ given $$\bar{x}_k$$.
+
+The loss function is defined as
 
 
 $$
@@ -226,7 +240,9 @@ E = -\ln p(d_{j_o} | \bar{x}_k)
 $$
 
 
-Thus, to maximize $$y_{j_o} = p(d_{j_o} | \bar{x}_k)$$ is to minimize $$E$$.  The loss function is a special case of the cross-entropy measurement between two probabilistic distributions.
+Note that maximizing $$y_{j_o} = p(d_{j_o} | \bar{x}_k)$$ is to minimize $$E$$.
+
+The loss function is a special case of the cross-entropy measurement between two probabilistic distributions.
 
 \[0\]
 
