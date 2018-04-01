@@ -24,7 +24,8 @@ Fig.1. shows the  data flow of CBOW model with one-word context.The word $$d_k$$
 
 
 $$
-\bar{x}^k = [x_1^k, x_2^k, \cdots, x_{k-1}^k, x_k^k, x_{k+1}^k, \cdots, x_V^k]^t \tag{1}
+\bar{x}^k = [x_1^k, x_2^k, \cdots, x_{k-1}^k, x_k^k, x_{k+1}^k, \cdots, x_V^k]^t 
+\tag{1}
 $$
 
 
@@ -36,7 +37,7 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 Fig.2 shows the schematic of one-hot-encoding for $$k$$-th word.
 
-The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$.
+The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$; $$y_j = p(d_j| \bar{x}^k)$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$ and will be elaborated later.
 
 ![](/assets/schematic_of_w2v_output_and_meaning.jpg)
 
