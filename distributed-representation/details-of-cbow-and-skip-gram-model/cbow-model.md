@@ -24,7 +24,7 @@ Fig.1. shows the  data flow of CBOW model with one-word context.The word $$d_k$$
 
 
 $$
-\bar{x}^k = [x_1^k, x_2^k, \cdots, x_k^k, \cdots, x_V^k]^t \tag{1}
+\bar{x}^k = [x_1^k, x_2^k, \cdots, x_{k-1}^k, x_k^k, x_{k+1}^k, \cdots, x_V^k]^t \tag{1}
 $$
 
 
