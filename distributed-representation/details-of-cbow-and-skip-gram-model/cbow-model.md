@@ -37,7 +37,7 @@ where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpo
 
 Fig.2 shows the schematic of one-hot-encoding for $$k$$-th word.
 
-The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$; $$y_j = p(d_j| \bar{x}^k)$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$ and will be elaborated later.
+The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$; $$y_j = p(d_j| \bar{x}^k)$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$ with the property that $$\displaystyle \sum_{j=1}^V y_j=1$$ and will be elaborated later.
 
 ![](/assets/schematic_of_w2v_output_and_meaning.jpg)
 
