@@ -28,17 +28,13 @@ $$
 $$
 
 
-where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation. 
+where $$x_n^k = 0$$ for $$n \neq k$$ and $$x_k^k = 1$$; $$t$$ stands for transpose operation.
 
+![](/assets/one_hot_encoding_of_kth_word.jpg)
 
+**Fig.2 Schematic of one-hot encoding for **$$k$$**-th word, **$$d_k \to \bar{x}^k = [x_1^k, x_2^k,\cdots, x^k_k,\cdots, x_V]=[0,\cdots, 1, \cdots, 0]$$**  **
 
-
-
-
-
-
-
-
+Fig.2 shows the schematic of one-hot-encoding for $$k$$-th word.
 
 The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$ and $$y_j$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$. The input vector $$\bar{v}_k$$ and output vector $$\bar{v}_j'$$ are two  kinds of word vector representations and will be elaborated later. The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
 
