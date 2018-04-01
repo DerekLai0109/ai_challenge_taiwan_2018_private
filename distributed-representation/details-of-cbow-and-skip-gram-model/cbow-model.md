@@ -39,17 +39,9 @@ Fig.2 shows the schematic of one-hot-encoding for $$k$$-th word.
 
 The output $$\bar{y} = [y_1, \cdots, y_j, \cdots, y_V]^t$$ has the size of $$V$$; $$y_j = p(d_j| \bar{x}^k)$$ is a probability that the next word is $$d_j$$ given the one-hot encoded vector $$\bar{x}^k$$ with the property that $$\displaystyle \sum_{j=1}^V y_j=1$$ and will be elaborated later.
 
-![](/assets/schematic_of_w2v_output_and_meaning.jpg)
-
-**Fig.3 Schematic of word2vector model output, **$$\bar{y}$$**, and its meaning : probability of each word given input context **$$x$$**.**
-
-Fig.3 shows the schematic of word2vector model forward problem, where $$x$$ is the input context, and $$\bar{y}$$is the output. $$y_k$$refers to the probability of word $$k$$.
-
-Note that $$\displaystyle \sum_{k=1}^V y_k=1$$
-
 The NN is trained by inputting the articles in the training corpus $${\cal C}$$ to the NN word by word.
 
-![](/assets/schematic_of_y.jpg)**Fig.4. Schematic of NN output **$$\bar{y}$$** given a specific **$$\bar{x}^k$$** with the target word **$$d_{j_o}$$**. \(a\) non-trained NN, \(b\) well-trained NN**.
+![](/assets/schematic_of_y_nontrained_welltrained.jpg)**Fig.4. Schematic of NN output **$$\bar{y}$$** given a specific **$$\bar{x}^k$$** with the target word **$$d_{j_o}$$**. \(a\) non-trained NN, \(b\) well-trained NN**.
 
 Fig.4. shows the schematic of NN output $$\bar{y}$$ given a specific $$\bar{x}^k$$ with the target word $$d_{j_o}$$. Fig.2\(a\) and \(b\) shows $$\bar{y}$$ of a non-trained NN and a well-trained NN, respectively. For a non-trained NN, all the probabilities $$y_j$$ \($$j = 1, \cdots, V$$\) can be arbitrary values between $$0$$ and $$1$$ and the probability $$y_{j_o}$$ of the target word $$d_{j_o}$$ is not necessarily the maximum over $$y_1$$ to $$y_V$$. For a well-trained NN, the probability $$y_{j_o}$$ would be the maximum over $$y_1$$ to $$y_V$$ and the other probabilities $$y_j$$ \($$j \neq j_o$$\) would be suppressed to nearly zero.
 
