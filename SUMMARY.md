@@ -9,7 +9,7 @@
   * [Word2Vector](distributed-representation/word2vector.md)
     * [CBOW Model](distributed-representation/word2vector/cbow.md)
       * [CBOW Model with One-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model.md)
-        * CBOW Model with One-word Context\_AnAn\_修改
+        * [CBOW Model with One-word Context\_AnAn\_修改](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/cbow-model-with-one-word-contextanan-xiu-gai.md)
         * [Backward Pass](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model/update-equation-for-hidden-to-output-weights.md)
       * [CBOW Model with Multi-word Context](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context.md)
         * [Backward Pass](distributed-representation/details-of-cbow-and-skip-gram-model/cbow-model-with-multi-word-context/update-equations-for-hidden-to-output-and-input-to-hidden-weights.md)
